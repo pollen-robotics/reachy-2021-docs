@@ -5,10 +5,10 @@
   url = "/docs/prologue/"
 
 [[docs]]
-  name = "Examples"
-  weight = 20
-  identifier = "examples"
-  url = "/docs/examples/"
+  name = "Python SDK"
+  weight = 30
+  identifier = "python-sdk"
+  url = "/docs/python-sdk/"
 
 [[docs]]
   name = "Help"
