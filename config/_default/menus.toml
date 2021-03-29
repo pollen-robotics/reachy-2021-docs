@@ -16,15 +16,32 @@
   identifier = "help"
   url = "/docs/help/"
 
+[[sdk]]
+  name = "Getting Started"
+  weight = 10
+  identifier = "getting-started"
+  url = "/SDK/getting-started/"
+
+[[sdk]]
+  name = "How to make it move?"
+  weight = 20
+  identifier = "how-to-move"
+  url = "/SDK/how-to-move/"
+
 [[main]]
-  name = "Docs"
+  name = "Setup Reachy"
   url = "/docs/prologue/introduction/"
   weight = 10
 
+# [[main]]
+#   name = "Blog"
+#   url = "/blog/"
+#   weight = 90
+
 [[main]]
-  name = "Blog"
-  url = "/blog/"
+  name = "Python SDK"
   weight = 20
+  url = "/SDK/getting-started/install/"
 
 [[social]]
   name = "Twitter"
