@@ -1,29 +1,59 @@
 [[docs]]
-  name = "Prologue"
+  name = "Overview"
   weight = 10
-  identifier = "prologue"
-  url = "/docs/prologue/"
+  identifier = "overview"
+  url = "/docs/overview/"
 
 [[docs]]
-  name = "Python SDK"
+  name = "What needs to be installed"
+  weight = 20
+  identifier = "installation"
+  url = "/docs/installation/"
+
+[[docs]]
+  name = "Getting started"
   weight = 30
-  identifier = "python-sdk"
-  url = "/docs/python-sdk/"
+  identifier = "getting-started"
+  url = "/docs/getting-started/"
 
 [[docs]]
-  name = "Help"
+  name = "What is running/What can I run on my robot"
+  weight = 40
+  identifier = "running"
+  url = "/docs/running/"
+
+[[docs]]
+  name = "Using VR teleoperation"
+  weight = 50
+  identifier = "teleoperation"
+  url = "/docs/teleoperation/"
+
+[[docs]]
+  name = "Something is not working"
   weight = 60
-  identifier = "help"
-  url = "/docs/help/"
+  identifier = "debug"
+  url = "/docs/debug/"
+
+[[docs]]
+  name = "Using services"
+  weight = 70
+  identifier = "services"
+  url = "/docs/services/"
+
+[[docs]]
+  name = "Mechanical specifications"
+  weight = 80
+  identifier = "specifications"
+  url = "/docs/specifications/"
 
 [[main]]
-  name = "Docs"
-  url = "/docs/prologue/introduction/"
+  name = "Full/Starter kit"
+  url = "/docs/overview/torso/"
   weight = 10
 
 [[main]]
-  name = "Blog"
-  url = "/blog/"
+  name = "Arm kit"
+  url = "/arm_kit/overview/torso/"
   weight = 20
 
 [[social]]
