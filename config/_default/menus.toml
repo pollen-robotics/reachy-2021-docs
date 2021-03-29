@@ -60,7 +60,7 @@
 
 [[main]]
   name = "Setup Reachy"
-  url = "/docs/overview/torso/"
+  url = "/docs/overview/full-kit/"
   weight = 10
 
 # [[main]]
