@@ -123,5 +123,6 @@ Examples of use are available in `dev/reachy-sdk/notebooks` or following the lin
 
 {{< alert icon="💡" text="At this level, joints angles are handled in degrees." >}}
 
+**Ready to start using the Python SDK? Check out [Reachy Python SDK documentation](https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/introduction/)!**  
 
 *Haven’t installed all the required packages on your remote computer? See section [Use Reachy SDK]({{< ref "use-sdk" >}}) for the details.*
