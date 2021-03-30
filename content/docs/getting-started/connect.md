@@ -27,6 +27,9 @@ Then, using your own *reachy-ip* you can access it via:
 ssh nuc@<reachy-ip>
 ```
 
+*Don't know what is your reachy-ip? Check out [how to find the ip](https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/finding-ip/).*  
+
+
 ## Check ROS is providing access to the topics
 Open a terminal on the computer, and enter:
 ```bash
