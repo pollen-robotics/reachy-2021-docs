@@ -1,5 +1,5 @@
 ---
-title: "How to connect to your robot"
+title: "Connect to your robot"
 description: "How to connect to your robot."
 lead: "How to connect to your robot."
 date: 2020-10-06T08:48:57+00:00
@@ -13,15 +13,19 @@ weight: 640
 toc: true
 ---
 
+## Connect to the embedded computer
 
+**For Full/Starter kit only:**  
 Connect a screen, a mouse and a keyboard to Reachy.
 
-{{< alert icon="👉" text="Password: reachy" >}}
+{{< alert icon="👉" text="<b>Password: reachy</b>" >}}
 
 
 You can also access it via ssh. You will first need to know Reachy’s IP on your network.
-Then, using your own <reachy-ip> you can access it via:
+Then, using your own *reachy-ip* you can access it via:
+```bash
 ssh nuc@<reachy-ip>
+```
 
 ## Check ROS is providing access to the topics
 Open a terminal on the computer, and enter:
@@ -29,6 +33,7 @@ Open a terminal on the computer, and enter:
 ros2 topic list
 ```
 
+### Full/Starter kit topic list
 You should see the following list:
 ```bash
 /fan_states
@@ -39,6 +44,21 @@ You should see the following list:
 /left_image
 /parameters_events
 /right_image
+/robot_description
+/rosout
+/tf
+/tf_static
+```
+
+### Arm kit topic list
+You should see the following list:
+```bash
+/fan_states
+/force_sensors
+/joint_goals
+/joint_states
+/joint_temperatures
+/parameters_events
 /robot_description
 /rosout
 /tf

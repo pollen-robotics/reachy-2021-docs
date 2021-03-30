@@ -15,4 +15,5 @@ toc: true
 
 Make sure all services are running on your robot before launching the VR teleoperation application.
 
+The teleoperation application is only compatible with **Reachy 2021**.  
 If you purchased the **VR teleoperation application**, please refer to the corresponding user manual for more information.

@@ -13,6 +13,21 @@ weight: 1020
 toc: true
 ---
 
-Make sure all services are running on your robot before launching the VR teleoperation application.
+You can decide to start or stop at any time a service.  
 
-If you purchased the **VR teleoperation application**, please refer to the corresponding user manual for more information.
+If you start a service which is disabled, the service won’t be active anymore after you turn off the robot.  
+If you stop a service which is enabled, the service will be active the next time you turn on the robot.  
+
+To **start** a service:
+```bash
+sudo systemctl start <name_of_the_service>.service
+```
+To **restart** a service that was previously launched:
+```bash
+sudo systemctl restart <name_of_the_service>.service
+```
+
+To **stop** a service:
+```bash
+sudo systemctl stop <name_of_the_service>.service
+```

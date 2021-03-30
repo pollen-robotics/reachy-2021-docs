@@ -1,7 +1,7 @@
 ---
 title: "Arm specifications"
 description: "Reachy's 2021 arm specifications."
-lead: "Reachy's 2021 arm specifications."
+lead: "Reachy 2021 arm specifications."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -30,6 +30,7 @@ Gripper: 230g
 ## Degrees of freedom
 Reachy's arm offers 7 degrees of movement + 1 for the gripper
 
+{{< img alt="Reachy's right arm" src="right-arm-scheme.png" width="600px" >}}
 
 |Right arm|   |   |   |Left arm|   |   |
 |-------|-------------|----------|-------|-------|-------------|----------|

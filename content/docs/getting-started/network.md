@@ -1,7 +1,7 @@
 ---
-title: "How to connect your robot to the network"
+title: "Connect your robot to the network"
 description: "How to connect your robot to the network."
-lead: "How to connect your robot to the network."
+lead: "How to connect your robot to the network (full/starter kit only)."
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
@@ -14,6 +14,8 @@ toc: true
 ---
 
 ## Hard-wired connection
+
+**For Full/Starter kit only:**  
 
 Use an **ethernet cable** to connect your robot to the network.
 The ethernet plug is available at position (b) on [Reachy’s hardware interface]({{< ref "full-kit" >}}).  

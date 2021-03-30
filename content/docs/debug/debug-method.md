@@ -1,5 +1,5 @@
 ---
-title: "How to debug it"
+title: "Debugging"
 description: "Something is not working: how to debug it."
 lead: "Something is not working: how to debug it."
 date: 2020-10-06T08:48:57+00:00
@@ -31,7 +31,9 @@ Open a terminal on the computer, and enter:
 ros2 topic list
 ```
 
-If all services are launched, you should see the following list:
+If all services are launched, you should see the following list:  
+
+**Full/Starter kit topic list:**
 ```bash
 /fan_states
 /force_sensors
@@ -41,6 +43,20 @@ If all services are launched, you should see the following list:
 /left_image
 /parameters_events
 /right_image
+/robot_description
+/rosout
+/tf
+/tf_static
+```
+
+**Arm kit topic list:**
+```bash
+/fan_states
+/force_sensors
+/joint_goals
+/joint_states
+/joint_temperatures
+/parameters_events
 /robot_description
 /rosout
 /tf

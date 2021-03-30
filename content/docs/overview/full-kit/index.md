@@ -1,7 +1,7 @@
 ---
 title: "Full/Starter kit"
 description: "Reachy's torso elements."
-lead: "Full/starter kit overview."
+lead: "Discover your full/starter kit elements."
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
@@ -47,7 +47,7 @@ toc: true
 (12) : Coral cooling/airing grid  
 
 
-## Reachy's harwdware interface
+## Reachy's hardware interface
 
 {{< img alt="Reachy ports on the back" src="hardware-interface-onshape.png" width="100px" >}}
 

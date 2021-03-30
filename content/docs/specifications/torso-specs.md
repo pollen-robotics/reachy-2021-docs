@@ -1,7 +1,7 @@
 ---
 title: "Torso specifications"
 description: "Reachy's 2021 torso specifications."
-lead: "Reachy's 2021 torso specifications."
+lead: "Reachy 2021 torso specifications (full/starter kit only)."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false

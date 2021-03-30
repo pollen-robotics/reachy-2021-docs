@@ -29,7 +29,7 @@
   url = "/docs/teleoperation/"
 
 [[docs]]
-  name = "Something is not working"
+  name = "Quick debug"
   weight = 60
   identifier = "debug"
   url = "/docs/debug/"

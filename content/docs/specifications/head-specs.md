@@ -1,7 +1,7 @@
 ---
 title: "Head specifications"
 description: "Reachy's 2021 head specifications."
-lead: "Reachy's 2021 head specifications."
+lead: "Reachy 2021 head specifications (full/starter kit only)."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false

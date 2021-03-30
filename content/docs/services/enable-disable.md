@@ -13,6 +13,17 @@ weight: 1030
 toc: true
 ---
 
-Make sure all services are running on your robot before launching the VR teleoperation application.
+By enabling or disabling a service, you make it start or not automatically when turning on the robot.  
 
-If you purchased the **VR teleoperation application**, please refer to the corresponding user manual for more information.
+If you enable a service, the service won’t be active until you reboot your robot or manually start the service.  
+If you disable a service, the service will stay active until you reboot your robot or manually stop the service.  
+
+To **enable** a service:
+```bash
+sudo systemctl enable <name_of_the_service>.service
+```
+
+To **disable** a service:
+```bash
+sudo systemctl disable <name_of_the_service>.service
+```

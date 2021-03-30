@@ -1,7 +1,7 @@
 ---
 title: "Full/Starter kit installation process"
 description: "Full/Starter kit installation process."
-lead: "Full/Starter kit installation process."
+lead: "How to install your Full/Starter kit."
 date: 2021-03-16T08:43:34+01:00
 lastmod: 2021-03-16T08:43:34+01:00
 draft: false

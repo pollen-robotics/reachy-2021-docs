@@ -27,15 +27,15 @@ If you have a **Full kit**, `reachy_sdk_server.service` is enabled by default, w
 This service launch the following nodes:  
 * from reachy_kinematics:
   * robot_state_publisher (description)
-  * orbita_kinematics_service
+  * orbita_kinematics_service *(full/starter kit only)*
   * arm_kinematics_service
 * from reachy_controllers:
   * joint_state_controller
-  * camera_publisher
-  * camera_zoom_service
+  * camera_publisher *(full/starter kit only)*
+  * camera_zoom_service *(full/starter kit only)*
 * from reachy_sdk_server:
   * reachy_sdk_server
-  * camera_server
+  * camera_server *(full/starter kit only)*
 
 Activating `reachy_kinematics.service` will launch the nodes from *reachy_kinematics*.
 Activating `reachy_controllers.service` will launch the nodes from *reachy_controllers*.  
