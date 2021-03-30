@@ -29,8 +29,8 @@
   url = "/docs/teleoperation/"
 
 [[docs]]
-  name = "Quick debug"
-  weight = 60
+  name = "I have a problem!"
+  weight = 90
   identifier = "debug"
   url = "/docs/debug/"
 
