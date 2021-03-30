@@ -19,7 +19,7 @@ The Python SDK is a pure Python library. The installation should thus be rather 
 
 We recommend to use [virtual environment](https://docs.python.org/3/tutorial/venv.html) for your development. They make the installation simple and avoid compatibility issues. They also come with their [pip](https://pip.pypa.io/en/stable/) command.
 
-### From [PyPi](https://pypi.org/project/reachy-sdk/)
+### From PyPi
 
 ```bash
 pip install reachy-sdk
