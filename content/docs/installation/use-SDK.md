@@ -25,6 +25,8 @@ pip3 install reachy-sdk
 
 See [https://github.com/pollen-robotics/reachy-sdk](https://github.com/pollen-robotics/reachy-sdk) for more information.
 
+**Ready to start using the Python SDK? Check out [Reachy Python SDK documentation](https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/introduction/)!**  
+
 ## Useful: jupyter notebooks
 
 If you want to use the examples from a remote computer, we advise you to install jupyter to use the notebooks:
