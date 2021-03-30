@@ -24,7 +24,7 @@ Connect a screen, a mouse and a keyboard to Reachy.
 You can also access it via ssh. You will first need to know Reachy’s IP on your network.
 Then, using your own *reachy-ip* you can access it via:
 ```bash
-ssh nuc@<reachy-ip>
+ssh reachy@<reachy-ip>
 ```
 
 *Don't know what is your reachy-ip? Check out [how to find the Reachy's IP](https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/finding-ip/).*  
