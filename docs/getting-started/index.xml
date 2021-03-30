@@ -7,4 +7,5 @@ Use an ethernet cable to connect your robot to the network. The ethernet plug is
 The computer inside Reachy is configured to use DHCP. It should thus be directly accessible on your network.</description></item><item><title>Connect to your robot</title><link>https://pollen-robotics.github.io/reachy-2021-docs/docs/getting-started/connect/</link><pubDate>Tue, 06 Oct 2020 08:48:57 +0000</pubDate><guid>https://pollen-robotics.github.io/reachy-2021-docs/docs/getting-started/connect/</guid><description>Connect to the embedded computer For Full/Starter kit only:
 Connect a screen, a mouse and a keyboard to Reachy.
 👉 Password: reachy You can also access it via ssh. You will first need to know Reachy’s IP on your network. Then, using your own reachy-ip you can access it via:
-ssh nuc@&amp;lt;reachy-ip&amp;gt; Check ROS is providing access to the topics Open a terminal on the computer, and enter:</description></item></channel></rss>
+ssh nuc@&amp;lt;reachy-ip&amp;gt; Don&amp;rsquo;t know what is your reachy-ip? Check out how to find the ip.
+Check ROS is providing access to the topics Open a terminal on the computer, and enter:</description></item></channel></rss>
