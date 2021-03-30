@@ -1,7 +1,7 @@
 ---
 title: "Available services"
 description: "Teleoperate Reachy through the VR teleoperation application."
-lead: "Teleoperate Reachy through the VR teleoperation application."
+lead: "Discover the services provided to automatically launch the suitable nodes."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
