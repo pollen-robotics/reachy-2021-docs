@@ -1,7 +1,7 @@
 ---
 title: "Start/restart or stop a service"
 description: "Teleoperate Reachy through the VR teleoperation application."
-lead: "Teleoperate Reachy through the VR teleoperation application."
+lead: "How to manage services manually."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
