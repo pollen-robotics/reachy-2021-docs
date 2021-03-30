@@ -21,7 +21,6 @@ The SDK is a pure Python library so it can be easily installed on any computer r
 You can install it with pip:
 ```bash
 pip3 install reachy-sdk
-pip3 install reachy-sdk-api nécessaire??
 ```
 
 See [https://github.com/pollen-robotics/reachy-sdk](https://github.com/pollen-robotics/reachy-sdk) for more information.
