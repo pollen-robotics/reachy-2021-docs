@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Overview on</title><link>https://pollen-robotics.github.io/reachy-2021-docs/docs/overview/</link><description>Recent content in Overview on</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Tue, 06 Oct 2020 08:48:45 +0000</lastBuildDate><atom:link href="https://pollen-robotics.github.io/reachy-2021-docs/docs/overview/index.xml" rel="self" type="application/rss+xml"/><item><title>Full/Starter kit</title><link>https://pollen-robotics.github.io/reachy-2021-docs/docs/overview/full-kit/</link><pubDate>Tue, 13 Oct 2020 15:21:01 +0200</pubDate><guid>https://pollen-robotics.github.io/reachy-2021-docs/docs/overview/full-kit/</guid><description>Product Starter kit Full kit Reachy&amp;rsquo;s torso Front (1) : Motors and fan’s housing for Orbita neck
+(2) : Power board
+(3) : Intel NUC embedded computer
+(4) : Microphone
+(5) : USB hub
+(6) : Google Coral TPU
+(7) : Right loudspeaker
+(8) : Left loudspeaker
+(9) : Loudspeakers volume button</description></item><item><title>Arm kit</title><link>https://pollen-robotics.github.io/reachy-2021-docs/docs/overview/arm-kit/</link><pubDate>Tue, 13 Oct 2020 15:21:01 +0200</pubDate><guid>https://pollen-robotics.github.io/reachy-2021-docs/docs/overview/arm-kit/</guid><description>Product Arm kit Reachy&amp;rsquo;s arm (1) : 12V Power supply board (SMPS2Dynamixel)
+(2) : Dynamixel control board
+(3) : USB to serial board (Need to be connected to your computer)
+The arms specifications are available in section Arm mechanical specifications.</description></item></channel></rss>
