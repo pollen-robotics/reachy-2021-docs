@@ -34,7 +34,7 @@ pip install -e reachy-sdk
 
 ## Dependencies
 
-The SDK rely on a few third-party Python packages:
+The SDK relies on a few third-party Python packages:
 
 * [numpy](https://numpy.org) - mostly for trajectory computation
 * [opencv](https://opencv.org) - for camera frame access
