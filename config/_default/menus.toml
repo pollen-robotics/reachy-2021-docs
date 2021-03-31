@@ -50,7 +50,7 @@
   name = "ROS2 Packages"
   weight = 10
   identifier = "ros2"
-  url = "/advanced/ros2/packages/"
+  url = "/advanced/ros2/"
 
 [[advanced]]
   name = "System services"
@@ -76,7 +76,7 @@
 [[main]]
   name = "Advanced"
   weight = 30
-  url = "/advanced/ROS2/packages/"
+  url = "/advanced/ros2/introduction"
 
 [[social]]
   name = "Twitter"
