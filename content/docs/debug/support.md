@@ -17,7 +17,7 @@ toc: true
 
 Visit **[our forum](https://forum.pollen-robotics.com/)** if you have any questions, maybe someone has already asked the same question or other people could benefit from the answer!
 
-{{< alert icon="👉" text="Any questions relative to your development with Reachy?</br><b>Go to forum.pollen-robotics.com</b>" >}}
+{{< alert icon="👉" text="Any questions relative to your development with Reachy?</br><b>Go to <a href=\"https://forum.pollen-robotics.com/\">forum.pollen-robotics.com</a></b>" >}}
 
 
 ## Pollen Robotics support
