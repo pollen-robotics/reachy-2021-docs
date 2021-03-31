@@ -69,11 +69,11 @@ If you want to the right arm's motors back to compliant mode:
 reachy.turn_off('r_arm')
 ```
 
-#### What you need to keep in mind
-You must be careful not to let the joints in stiff mode when you're not using the robot. This mode can be really demanding for a motor.
-
-If an arm is lifted or if the neck is lowered, maintaining the position in stiff mode will be exhausting because the motors would have to compensate the gravity and they could get damaged.
-You can make the analogy with a human. If we ask you to keep stretched out arms, after a certain time it will be painful. So is the case for the joints of the robot.
+> #### What you need to keep in mind
+> You must be careful not to let the joints in stiff mode when you're not using the robot. This mode > can be really demanding for a motor.
+>
+> If an arm is lifted or if the neck is lowered, maintaining the position in stiff mode will be  exhausting because the motors would have to compensate the gravity and they could get damaged.
+> You can make the analogy with a human. If we ask you to keep stretched out arms, after a certain  time it will be painful. So is the case for the joints of the robot.
 
 ### Be aware of obstacles
 
