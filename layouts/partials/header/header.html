@@ -27,6 +27,7 @@
           {{- $active = or $active (and (eq .Name "Guides") (eq $current.Section "guides")) -}}
           {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
           {{- $active = or $active (and (eq .Name "SDK") (eq $current.Section "sdk")) -}}
+          {{- $active = or $active (and (eq .Name "Advanced") (eq $current.Section "advanced")) -}}
           <li class="nav-item{{ if $active }} active{{ end }}">
             <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
           </li>
