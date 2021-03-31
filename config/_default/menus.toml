@@ -17,12 +17,6 @@
   url = "/docs/getting-started/"
 
 [[docs]]
-  name = "What is running/What can I run on my robot"
-  weight = 40
-  identifier = "running"
-  url = "/docs/running/"
-
-[[docs]]
   name = "Using VR teleoperation"
   weight = 50
   identifier = "teleoperation"
@@ -33,12 +27,6 @@
   weight = 90
   identifier = "debug"
   url = "/docs/debug/"
-
-[[docs]]
-  name = "Using services"
-  weight = 70
-  identifier = "services"
-  url = "/docs/services/"
 
 [[docs]]
   name = "Mechanical specifications"
@@ -58,6 +46,19 @@
   identifier = "how-to-move"
   url = "/SDK/how-to-move/"
 
+
+[[advanced]]
+  name = "What is running/What can I run on my robot"
+  weight = 10
+  identifier = "running"
+  url = "/advanced/running/"
+
+[[advanced]]
+  name = "Using services"
+  weight = 70
+  identifier = "services"
+  url = "/advanced/services/"
+
 [[main]]
   name = "Setup Reachy"
   url = "/docs/overview/full-kit/"
@@ -72,6 +73,11 @@
   name = "Python SDK"
   weight = 20
   url = "/SDK/getting-started/introduction/"
+
+[[main]]
+  name = "Advanced"
+  weight = 30
+  url = "/advanced/running/folders/"
 
 [[social]]
   name = "Twitter"
