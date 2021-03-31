@@ -6,11 +6,8 @@ date: 2021-03-16T08:43:34+01:00
 lastmod: 2021-03-16T08:43:34+01:00
 draft: false
 images: []
-menu:
-  docs:
-    parent: "installation"
-weight: 510
 toc: true
+hidden: true
 ---
 
 You decided to buy an **Arm kit**, you have a few things to install on your computer.
