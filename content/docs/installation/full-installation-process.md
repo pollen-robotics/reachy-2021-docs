@@ -1,7 +1,7 @@
 ---
-title: "Installation process"
+title: "Software installation process"
 description: "Full/Starter kit installation process."
-lead: "How to install your Full/Starter kit."
+lead: "How to install the software for your Full/Starter kit."
 date: 2021-03-16T08:43:34+01:00
 lastmod: 2021-03-16T08:43:34+01:00
 draft: false
@@ -17,7 +17,7 @@ You decided to buy a **Full/Starter kit**, congratulations! You won a lot of tim
 
 Everything you need is already installed on your robot.
 
-Of course you may want to know what you have on your robot. Please refer to section [What is running/What can I run on my robot]({{< ref "running" >}}) for more information.  
+Of course you may want to know what you have on your robot. Please refer to section [What is running/What can I run on my robot]({{< ref "ROS2" >}}) for more information.  
   
 <br/><br/>
 

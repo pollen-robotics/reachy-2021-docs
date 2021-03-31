@@ -16,11 +16,11 @@
   identifier = "getting-started"
   url = "/docs/getting-started/"
 
-[[docs]]
-  name = "Using VR teleoperation"
-  weight = 50
-  identifier = "teleoperation"
-  url = "/docs/teleoperation/"
+# [[docs]]
+#  name = "Using VR teleoperation"
+#  weight = 50
+#  identifier = "teleoperation"
+#  url = "/docs/teleoperation/"
 
 [[docs]]
   name = "I have a problem!"
@@ -46,15 +46,14 @@
   identifier = "how-to-move"
   url = "/SDK/how-to-move/"
 
-
 [[advanced]]
-  name = "What is running/What can I run on my robot"
+  name = "ROS2 Packages"
   weight = 10
-  identifier = "running"
-  url = "/advanced/running/"
+  identifier = "ros2"
+  url = "/advanced/ros2/packages/"
 
 [[advanced]]
-  name = "Using services"
+  name = "System services"
   weight = 70
   identifier = "services"
   url = "/advanced/services/"
@@ -77,7 +76,7 @@
 [[main]]
   name = "Advanced"
   weight = 30
-  url = "/advanced/running/folders/"
+  url = "/advanced/ROS2/packages/"
 
 [[social]]
   name = "Twitter"

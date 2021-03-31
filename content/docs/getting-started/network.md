@@ -20,3 +20,7 @@ toc: true
 Use an **ethernet cable** to connect your robot to the network.
 The ethernet plug is available at position (b) on [Reachy’s hardware interface]({{< ref "full-kit" >}}).  
 The computer inside Reachy is configured to use DHCP. It should thus be directly accessible on your network.
+
+## WiFi
+
+Coming soon.
