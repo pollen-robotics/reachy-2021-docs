@@ -80,37 +80,87 @@ reachy.head
 
 ### reachy.joints
 
-```python
+[Joint object](https://pollen-robotics.github.io/reachy-sdk/api/joint.html) containing every joint of the robot, from its arms to its head and antennas. This is useful when you want to get information, like the position, from all joints at once.
 
->>>
+```python
+reachy.joints
+>>> <Holder
+	<Joint name="l_shoulder_pitch" pos="-0.86" mode="compliant">
+	<Joint name="l_shoulder_roll" pos="-0.38" mode="compliant">
+	<Joint name="l_arm_yaw" pos="-81.45" mode="compliant">
+	<Joint name="l_elbow_pitch" pos="-51.38" mode="compliant">
+	<Joint name="l_forearm_yaw" pos="-16.28" mode="compliant">
+	<Joint name="l_wrist_pitch" pos="-41.10" mode="compliant">
+	<Joint name="l_wrist_roll" pos="-21.26" mode="compliant">
+	<Joint name="l_gripper" pos="-3.08" mode="compliant">
+	<Joint name="r_shoulder_pitch" pos="29.65" mode="compliant">
+	<Joint name="r_shoulder_roll" pos="-0.94" mode="compliant">
+	<Joint name="r_arm_yaw" pos="-7.60" mode="compliant">
+	<Joint name="r_elbow_pitch" pos="-71.78" mode="compliant">
+	<Joint name="r_forearm_yaw" pos="-0.73" mode="compliant">
+	<Joint name="r_wrist_pitch" pos="-43.03" mode="compliant">
+	<Joint name="r_wrist_roll" pos="-37.10" mode="compliant">
+	<Joint name="r_gripper" pos="19.50" mode="compliant">
+	<Joint name="l_antenna" pos="140.32" mode="compliant">
+	<Joint name="r_antenna" pos="79.03" mode="compliant">
+	<Joint name="neck_disk_top" pos="-21.58" mode="compliant">
+	<Joint name="neck_disk_middle" pos="-79.71" mode="compliant">
+	<Joint name="neck_disk_bottom" pos="-59.27" mode="compliant">
+>
 ```
 
 ### reachy.l_arm
 
-```python
+[Arm object](https://pollen-robotics.github.io/reachy-sdk/api/arm.html) containing every joint in the left arm along with its kinematics methods.
 
->>>
+```python
+reachy.l_arm
+>>> <Arm side="left" joints=<Holder
+	<Joint name="l_shoulder_pitch" pos="-0.86" mode="compliant">
+	<Joint name="l_shoulder_roll" pos="-0.38" mode="compliant">
+	<Joint name="l_arm_yaw" pos="-81.45" mode="compliant">
+	<Joint name="l_elbow_pitch" pos="-51.38" mode="compliant">
+	<Joint name="l_forearm_yaw" pos="-16.28" mode="compliant">
+	<Joint name="l_wrist_pitch" pos="-41.10" mode="compliant">
+	<Joint name="l_wrist_roll" pos="-21.26" mode="compliant">
+	<Joint name="l_gripper" pos="-3.08" mode="compliant">
+>>
 ```
 
 ### reachy.left_camera
 
-```python
+[Camera object](https://pollen-robotics.github.io/reachy-sdk/api/camera.html). It is used to recover the last image captured by the left camera and also to control the motorized zoom attached to the camera.
 
->>>
+```python
+reachy.left_camera
+>>> <Camera side="left" resolution=(720, 1280, 3)>
 ```
 
 ### reachy.r_arm
 
-```python
+[Arm object](https://pollen-robotics.github.io/reachy-sdk/api/arm.html) containing every joint in the right arm along with its kinematics methods.
 
->>>
+```python
+reachy.r_arm
+>>> <Arm side="right" joints=<Holder
+	<Joint name="r_shoulder_pitch" pos="29.65" mode="compliant">
+	<Joint name="r_shoulder_roll" pos="-0.94" mode="compliant">
+	<Joint name="r_arm_yaw" pos="-7.60" mode="compliant">
+	<Joint name="r_elbow_pitch" pos="-71.78" mode="compliant">
+	<Joint name="r_forearm_yaw" pos="-0.73" mode="compliant">
+	<Joint name="r_wrist_pitch" pos="-43.03" mode="compliant">
+	<Joint name="r_wrist_roll" pos="-37.10" mode="compliant">
+	<Joint name="r_gripper" pos="19.50" mode="compliant">
+>>
 ```
 
 ### reachy.right_camera
 
-```python
+[Camera object](https://pollen-robotics.github.io/reachy-sdk/api/camera.html). It is used to recover the last image captured by the right camera and also to control the motorized zoom attached to the camera.
 
->>>
+```python
+reachy.right_camera
+>>> <Camera side="right" resolution=(720, 1280, 3)>
 ```
 
 ### reachy.turn_on()
