@@ -7,7 +7,7 @@ lastmod: 2020-10-06T08:48:57+00:00
 draft: false
 images: []
 menu:
-  docs:
+  advanced:
     parent: "services"
 weight: 1020
 toc: true
