@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-description: ""
+description: "Quick overview of the Python SDK and of the other options available to control the robot."
 date: 2021-03-30T09:54:59+02:00
 lastmod: 2021-03-30T09:54:59+02:00
 draft: false

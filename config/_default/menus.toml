@@ -41,10 +41,10 @@
   url = "/SDK/getting-started/"
 
 [[sdk]]
-  name = "How to make it move?"
+  name = "First moves"
   weight = 20
-  identifier = "how-to-move"
-  url = "/SDK/how-to-move/"
+  identifier = "first-moves"
+  url = "/SDK/first-moves/"
 
 [[advanced]]
   name = "ROS2 Packages"
