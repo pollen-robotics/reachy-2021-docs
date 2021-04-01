@@ -58,24 +58,6 @@
   identifier = "first-moves"
   url = "/SDK/first-moves/"
 
-[[sdk]]
-  name = "Quick applications"
-  weight = 30
-  identifier = "quick-app"
-  url = "/SDK/quick-app/"
-
-[[sdk]]
-  name = "AI/TPU"
-  weight = 40
-  identifier = "ai-tpu"
-  url = "/SDK/ai-tpu/"
-
-[[sdk]]
-  name = "Play TicTacToe"
-  weight = 40
-  identifier = "tictactoe"
-  url = "/SDK/tictactoe/"
-
 [[main]]
   name = "Setup Reachy"
   url = "/docs/overview/full-kit/"
