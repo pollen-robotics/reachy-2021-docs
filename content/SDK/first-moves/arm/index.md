@@ -31,11 +31,14 @@ The arm's mechanical specifications are given [here](http://localhost:1313/reach
 
 Each joint has a unique name and uid. To access a specific joint, you can either use *reachy.joints* which has each joint in the robot as attribute or *reachy.l_arm*/*reachy.r_arm* depending on wich arm the joint belongs to of course.
 
-```python
-reachy.joints.r_shoulder_pitch
->>> <Joint name="r_shoulder_pitch" pos="27.98" mode="compliant">
+First, connect to your Reachy.
 
-reachy.r_arm.r_shoulder_pitch
+```python
+from reachy_sdk import ReachySDK
+
+reachy = ReachySDK(host='192.168.0.42')  # Replace with the actual IP
+
+reachy.joints.r_shoulder_pitch
 >>> <Joint name="r_shoulder_pitch" pos="27.98" mode="compliant">
 ```
 The name and the id are attributes of the returned Joint object.

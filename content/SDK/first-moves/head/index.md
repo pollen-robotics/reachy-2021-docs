@@ -1,5 +1,5 @@
 ---
-title: "Control the head"
+title: "Controling the head"
 description: "Control the head"
 lead: "Control the head"
 date: 2020-10-06T08:48:57+00:00
@@ -12,3 +12,5 @@ menu:
 weight: 170
 toc: true
 ---
+
+Make sure you checked the [safety section](http://localhost:1313/reachy-2021-docs/sdk/first-moves/safety/) before controling the head.

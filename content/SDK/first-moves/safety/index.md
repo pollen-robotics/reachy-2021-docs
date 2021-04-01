@@ -13,13 +13,9 @@ weight: 150
 toc: true
 ---
 
-First, check that Reachy is correctly attached to its metal support and that the support is well fixed to its table.
+First, make sure that you followed the instructions from the section detailing [how to attach your robot](http://localhost:1313/reachy-2021-docs/docs/getting-started/attach/).
 
-The four screws shown below must be well tightened.
-
-<p align="center">
-  <img src="reachy_back.jpeg" alt="drawing" width="300"/>
-</p>
+Especially, the screws in the Reachy's back and the ones fixatings its metal support should be well tightened.
 
 ## Turning on/off the motors
 
