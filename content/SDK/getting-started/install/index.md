@@ -1,6 +1,6 @@
 ---
 title: "Installation"
-description: "Installation"
+description: "How to install the Python SDK, either from PyPi or directly from sources."
 lead: ""
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
