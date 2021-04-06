@@ -123,5 +123,128 @@ R_{31} & R_{32} & R_{33} & T_z\\\\\\
 0 & 0 & 0 & 1
 \end{bmatrix}$$
 
+The instruction
+
+```python
+reachy.r_arm.forward_kinematics()
+```
+
+returns the current pose of the right end-effector, based on the present position of every joint in the right arm.
+
+You can also compute the pose for a given joints position, to do that just pass the list of position as argument of forward_kinematics. Be careful to respect the order of the position you give and to give all the joints in the arm kinematic chain (i.e. from *shoulder_pitch* to *wrist_roll*).
+
+For example, we can compute the forward kinematics for the right-angle position we defined earlier.
+
+```python
+reachy.r_arm.forward_kinematics(right_angle_position.values())
+>>> array([[ 0.    ,  0.    , -1.    ,  0.3675],
+       [ 0.    ,  1.    ,  0.    , -0.202 ],
+       [ 1.    ,  0.    ,  0.    , -0.28  ],
+       [ 0.    ,  0.    ,  0.    ,  1.    ]])
+```
+
+With this result, we can tell that when the right arm is in the right angle position, the right end-effector is 37cm in front of the origin, 20cm to the left and 28cm below the origin.
+
+As of the rotation matrix, the identity matrix corresponds to the zero position of the robot which is when the hand is facing toward the bottom.
+
+Here we obtained the rotation matrix
+
+$$\begin{bmatrix}
+0 & 0 & -1\\\\\\
+0 & 1 & 0 \\\\\\
+1 & 0 & 0
+\end{bmatrix}$$
+
+We can use scipy to understand what this matrix represents.
+
+```python
+from scipy.spatial.transform import Rotation as R
+import numpy as np
+
+R.from_matrix([
+    [0, 0, -1],
+    [0, 1, 0],
+    [1, 0, 0],
+]).as_euler('xyz', degrees=True)
+>>> array([  0.        , -89.99999879,   0.        ])
+```
+So scipy tells us that a rotation of -90° along the y axis has been made to get this matrix, which is coherent with the result because having the hand facing forward corresponds to this rotation according to Reachy's xyz axis that we saw above.
 
 ## Inverse kinematics
+
+Knowing where you arm is located in the 3D space can be useful but most of the time what you want is to move the arm in cartesian coordinates. You want to have the possibility to say: “move your hand to [x, y, z] with a 90° rotation around the Y axis”.
+
+This is what inverse kinematics does. We have provided a method to help you with that. You need to give it a 4x4 target pose, like the one given by the forward kinematics, and an initial joint state.
+
+To make this more concrete, let's first try with a simple example. We will make the hand of the robot going from a point A to a point B in 3D space. You always have to provide poses to the inverse kinematics that are actually reachable by the robot.
+
+For our starting point, let's imagine a point in front of the robot right shoulder and slightly below. With Reachy coordinate system, we can define such a point with the following coordinates:
+
+$$A = \begin{pmatrix}0.3 & -0.2 & -0.3\end{pmatrix}$$
+
+For our end point we will stay in a parallel plan in front of the robot (we keep the same x) and move to the upper left (20cm up and 20cm left). This gives us a B point such that:
+
+$$B = \begin{pmatrix}0.3 & 0.0 & -0.1\end{pmatrix}$$
+
+But having the 3D position is not enough to design a pose. You also need to provide the 3D orientation via a rotation matrix. The rotation matrix is often the tricky part when building a target pose matrix.
+
+Keep in mind that the identity rotation matrix corresponds to the zero position of the robot which is when the hand is facing toward the bottom. So if we want the hand facing forward when going from A to B, we need to rotate it from -90° around the y axis, as we saw in the forward kinematics part.
+
+We know from before which rotation matrix corresponds to this rotation, but we can use scipy again to generate the rotation matrix for given rotations.
+
+```python
+print(np.around(R.from_euler('y', np.deg2rad(-90)).as_matrix(), 3))
+>>> [[ 0. -0. -1.]
+ [ 0.  1. -0.]
+ [ 1.  0.  0.]]
+```
+
+We got the rotation matrix that we expected!
+
+As mentionned, building the pose matrix can be hard, so don't hesitate to use scipy to build your rotation matrix. You can also move the arm with your hand where you want it to be and use the forward kinematics to get an approximation of the target pose matrix you would give to the inverse kinematics.
+
+Here, having the rotation matrix and the 3D positions for our points A and B, we can build both target pose matrices.
+
+```python
+A = np.array([
+  [0, 0, -1, 0.3],
+  [0, 1, 0, -0.2],  
+  [1, 0, 0, -0.3],
+  [0, 0, 0, 1],  
+])
+
+B = np.array([
+  [0, 0, -1, 0.3],
+  [0, 1, 0, -0.2],  
+  [1, 0, 0, -0.1],
+  [0, 0, 0, 1],  
+])
+```
+
+*inverse_kinematics()* takes one optional argument, *q0*, which is the starting point of the inverse kinematics computation. If no *q0* is given, *q0* is considered to be equal to the present joints position.
+
+Inverse kinematics is a really powerful way to define motions in coordinate systems that fits better with the defintion of many tasks (grasp the bottle in (x, y, z) for instance). Yet, this approach has also some important limitations.
+
+It's important to understand that while the forward kinematics has a unique and well defined solution, the inverse kinematics is a much harder and ill defined problem. A Right Arm with a Gripper has 8 Degrees Of Freedom meaning that you may have multiple solutions to reach the same 3D point in space.
+
+Because the inverse kinematics algorithm used is based on optimisation techniques, giving a starting point *q0* may have a tremendous influence on the final result.
+
+Now let's use the inverse kinematics to move between our two points A and B! We will consider that the starting point is the right angled position that we used before, then the arm will go to A and finish at B.
+
+```python
+joint_pos_A = reachy.r_arm.inverse_kinematics(A, q0=np.deg2rad(list(right_angle_position.values())))
+joint_pos_B = reachy.r_arm.inverse_kinematics(B, q0=joint_pos_A)
+
+# put the joints in stiff mode
+reachy.turn_on('r_arm')
+
+# use the goto function
+goto({joint: pos for joint,pos in zip(reachy.r_arm.joints.values(), joint_pos_A)}, duration=2.0)
+
+goto({joint: pos for joint,pos in zip(reachy.r_arm.joints.values(), joint_pos_B)}, duration=2.0)
+
+# put the joints back to compliant mode
+# don't forget to put your hand below the arm to prevent it from falling hard!
+reachy.turn_off('r_arm')
+```
+
