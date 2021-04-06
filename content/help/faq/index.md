@@ -14,7 +14,7 @@ toc: true
 ---
 
 {{% expand "> How to find the IP of my robot?" %}}
-Check the [Find my IP section]({{< ref "sdk/getting-started/finding-ip" >}}).
+Check the [Find my IP section]({{< ref "advanced/system/find-my-ip" >}}).
 {{% /expand %}}
 
 {{% expand "> The SDK server is not starting." %}}
