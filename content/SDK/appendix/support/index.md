@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   SDK:
-    parent: debug
+    parent: appendix
 weight: 9999
 toc: true
 ---
