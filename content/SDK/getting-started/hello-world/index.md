@@ -27,7 +27,7 @@ Before diving into the next chapters that will guide you in the depth of what yo
 
 To make sure everything is working fine, let's check the position of its joints. We won't go into details here as we will detail everything later.
 
-To get the state of a joint, you can access the *joints* attributes that contains all joints and iterate over its content:
+To get the state of a joint, you can access the *joints* attribute that contains all joints and iterate over its content:
 
 ```python
 for name, joint in reachy.joints.items(): 
@@ -59,7 +59,7 @@ Joint "neck_disk_middle" is at pos -44.1 degree.
 Joint "neck_disk_bottom" is at pos -48.0 degree.
 ```
 
-Note that we have accessed the attribute *present_position* to get the joint actual position. You can access the position of a specific joint by using its full name (meaning the part its attached to plus its name). For instance, to get the position of the 'left shoulder pitch':
+Note that we have accessed the attribute *present_position* to get the joint actual position. You can access the position of a specific joint by using its full name (meaning the part it is attached to plus its name). For instance, to get the position of the 'left shoulder pitch':
 
 ```python
 >>> print(reachy.l_arm.l_shoulder_pitch.present_position)

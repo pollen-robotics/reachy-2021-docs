@@ -1,15 +1,15 @@
 ---
-title: "Installed packages"
-description: "One page summary of how to start a new Doks project."
+title: "Reachy packages"
+description: "Which packages are available and where they are stored."
 lead: "Which packages are available and where they are stored."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false
 images: []
 menu:
-  docs:
-    parent: "running"
-weight: 710
+  advanced:
+    parent: "ros2"
+weight: 720
 toc: true
 ---
 
@@ -33,6 +33,3 @@ This folder contains all the packages used with Reachy that are not based on ROS
 
 
 ***To learn more on the packages content and usage, please refer to README.md files of each directory.***
-
-
-{{< alert icon="💡" text="Reachy’s services communicate on port <b>50050 to 50060</b>." >}}

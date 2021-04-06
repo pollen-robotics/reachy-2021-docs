@@ -24,11 +24,11 @@ from reachy_sdk import ReachySDK
 reachy = ReachySDK(host='127.0.0.1')
 ```
 
-Using the SDK locally also avoids network potential latency or bandwidth issue. Yet, it may not be as conveninent as working directly from your usual laptop. You need to plug a screen, keyboard and mouse directly on Reachy's computer.
+Using the SDK locally also avoids network potential latency or bandwidth issue. Yet, it may not be as convenient as working directly from your usual laptop. You need to plug a screen, keyboard and mouse directly on Reachy's computer.
 
 ## Via the network
 
-First, you need to make sure that both Reachy and the computer you want to use for the SDK, are on the same network. We recommend using an ethernet connection to make sure the latency is as small as possible. It also works on WiFi but for precise and high-frequency control, you should privilege wired option.
+First, you need to make sure that both Reachy and the computer you want to use for the SDK are on the same network. We recommend using an ethernet connection to make sure the latency is as small as possible. It also works on WiFi but for precise and high-frequency control, you should privilege wired option.
 
 We assume you've already configured the network on Reachy as described in the [Setup Reachy]({{< relref "/docs/overview/full-kit" >}}) section. What you need now is to find Reachy's IP on your network.
 

@@ -16,29 +16,17 @@
   identifier = "getting-started"
   url = "/docs/getting-started/"
 
-[[docs]]
-  name = "What is running/What can I run on my robot"
-  weight = 40
-  identifier = "running"
-  url = "/docs/running/"
+# [[docs]]
+#  name = "Using VR teleoperation"
+#  weight = 50
+#  identifier = "teleoperation"
+#  url = "/docs/teleoperation/"
 
 [[docs]]
-  name = "Using VR teleoperation"
-  weight = 50
-  identifier = "teleoperation"
-  url = "/docs/teleoperation/"
-
-[[docs]]
-  name = "Quick debug"
-  weight = 60
+  name = "I have a problem!"
+  weight = 90
   identifier = "debug"
   url = "/docs/debug/"
-
-[[docs]]
-  name = "Using services"
-  weight = 70
-  identifier = "services"
-  url = "/docs/services/"
 
 [[docs]]
   name = "Mechanical specifications"
@@ -72,9 +60,21 @@
 
 [[sdk]]
   name = "Play TicTacToe"
-  weight = 40
+  weight = 50
   identifier = "tictactoe"
   url = "/SDK/tictactoe/"
+
+[[advanced]]
+  name = "ROS2 Packages"
+  weight = 10
+  identifier = "ros2"
+  url = "/advanced/ros2/"
+
+[[advanced]]
+  name = "System services"
+  weight = 70
+  identifier = "services"
+  url = "/advanced/services/"
 
 [[main]]
   name = "Setup Reachy"
@@ -90,6 +90,11 @@
   name = "Python SDK"
   weight = 20
   url = "/SDK/getting-started/introduction/"
+
+[[main]]
+  name = "Advanced"
+  weight = 30
+  url = "/advanced/ros2/introduction"
 
 [[social]]
   name = "Twitter"

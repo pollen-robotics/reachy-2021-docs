@@ -22,14 +22,14 @@ We recommend to use [virtual environment](https://docs.python.org/3/tutorial/ven
 ### From PyPi
 
 ```bash
-pip install reachy-sdk
+pip3 install reachy-sdk
 ```
 
 ### From the source
 
 ```bash
 git clone https://github.com/pollen-robotics/reachy-sdk
-pip install -e reachy-sdk
+pip3 install -e reachy-sdk
 ```
 
 ## Dependencies

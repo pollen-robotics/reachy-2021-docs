@@ -19,10 +19,10 @@ The [Python SDK](https://github.com/pollen-robotics/reachy-sdk) lets you easily 
 It is designed to:
 
 * let you start controlling your robot in a few lines of codes,
-* allow to focus to your application and not on hardware synchronisation issues,
+* allow to focus on your application and not on hardware synchronisation issues,
 * facilitate fast prototyping and iteration.
 
-Connecting to your robot and getting the up-to-date position of all joints is as simply as:
+Connecting to your robot and getting the up-to-date position of all joints is as simple as:
 ```python
 from reachy_sdk import ReachySDK
 
@@ -36,12 +36,12 @@ You can use it directly on Reachy's computer or work remotely on another compute
 
 ## Is it the good option for me?
 
-The Python SDK is only one way to control Reachy. There is other options that have different pros and cons. 
+The Python SDK is only one way to control Reachy. There are other options that have different pros and cons. 
 
 To know if the SDK is the right option, the TL;DR here would be something like:
 
 * You want to **focus on creating an application or behavior on Reachy**.
-* You **don't want to dig into the details** on how it can be controled or run very time constrained code (eg. need more than 100Hz control).
+* You **don't want to dig into the details** on how it can be controlled or run very time constrained code (eg. need more than 100Hz control).
 * You have **basic knowledge of Python** (no advanced knowledge is required).
 * You do not already have an important code base running on ROS2.
 
@@ -49,7 +49,7 @@ To know if the SDK is the right option, the TL;DR here would be something like:
 
 ### Unity VR App
 
-If you are interested in tele-operatation and want to control Reachy via VR controller, you can directly use our Unity VR App. More information on the [dedicated section](TODO).
+If you are interested in tele-operation and want to control Reachy via VR controllers, you can directly use our Unity VR App. More information on the [dedicated section](TODO).
 
 ### ROS2 Foxy packages
 

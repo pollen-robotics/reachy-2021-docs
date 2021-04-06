@@ -1,6 +1,6 @@
 ---
-title : "Teleoperate Reachy with VR application"
-description: "A quick overview of Reachy."
+title : "Activate or deactivate services"
+description: "Use systend services with Reachy."
 lead: ""
 date: 2020-10-06T08:48:45+00:00
 lastmod: 2020-10-06T08:48:45+00:00
