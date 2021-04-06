@@ -13,6 +13,10 @@ weight: 950
 toc: true
 ---
 
+## FAQ
+
+Check if your question is part of our [FAQ]({{< ref "help/faq" >}}).
+
 ## Forum
 
 Visit **[our forum](https://forum.pollen-robotics.com/)** if you have any questions, maybe someone has already asked the same question or other people could benefit from the answer!

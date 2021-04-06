@@ -47,7 +47,7 @@
   url = "/SDK/first-moves/"
 
 [[advanced]]
-  name = "ROS2 Packages"
+  name = "ROS2 Foxy driver"
   weight = 10
   identifier = "ros2"
   url = "/advanced/ros2/"
