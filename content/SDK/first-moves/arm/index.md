@@ -21,7 +21,7 @@ This section assumes that you went through the [Hello World](http://localhost:13
 
 Reachy's arm offers 7 degrees of freedom + 1 provided by the gripper and is composed of 8 joints.
 
-The arm's mechanical specifications are given [here](http://localhost:1313/reachy-2021-docs/docs/specifications/arm-specs/) but as a reminder, the arm scematic is given below:
+The arm's mechanical specifications are given [here](http://localhost:1313/reachy-2021-docs/docs/specifications/arm-specs/) but as a reminder, the arm schematic is given below:
 
 <p align="center">
   <img src="arm_schematic.png" alt="drawing" width="400"/>
