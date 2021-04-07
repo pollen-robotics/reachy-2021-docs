@@ -1,5 +1,5 @@
 ---
-title: "Controling the fans"
+title: "Controlling the fans"
 description: "How to control the fans inside Reachy's arms and head."
 lead: ""
 date: 2020-10-06T08:48:57+00:00

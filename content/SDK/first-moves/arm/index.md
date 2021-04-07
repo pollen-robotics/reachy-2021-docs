@@ -1,5 +1,5 @@
 ---
-title: "Controling the arm"
+title: "Controlling the arm"
 description: "What are the joints in Reachy's arms, what information are available and how to control them."
 lead: "Learn how to control Reachy's amrs and and what information you can get from its sensors."
 date: 2020-10-06T08:48:57+00:00
