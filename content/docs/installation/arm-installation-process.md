@@ -128,7 +128,7 @@ nano ~/.bashrc
 And add an environment variable REACHY_MODEL that designates your model.  
 For example, to configure only a right arm:
 ```bash
-export REACHY_MODEL=”reachy_right_arm”
+export REACHY_MODEL="robotic_arm_right"
 ```
 
 Make sure to source your bashrc file to take the modification into account:
