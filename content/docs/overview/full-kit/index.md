@@ -42,7 +42,7 @@ toc: true
 {{< img alt="Reachy ports on the back" src="torso-back.png" width="600px" >}}
 
 
-(10) : Hardware interface (see image x.x for details)  
+(10) : Hardware interface (see image below for details)  
 (11) : Fixations interface  
 (12) : Coral cooling/airing grid  
 

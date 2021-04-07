@@ -1,0 +1,13 @@
+{{ $uid := substr (md5 .Inner) 0 16 }}
+{{ $id := printf "collapse-%s" $uid }}
+
+<p>
+  <a class="" data-bs-toggle="collapse" href="#{{ $id }}" role="button" aria-expanded="false" aria-controls="{{ $id }}">
+    {{ .Get 0 }}
+  </a>
+</p>
+<div class="collapse" id="{{ $id }}">
+  <div class="card card-body">
+    {{ .Inner }}
+</div>
+</div>

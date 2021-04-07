@@ -65,16 +65,22 @@
   url = "/SDK/tictactoe/"
 
 [[advanced]]
-  name = "ROS2 Packages"
+  name = "ROS2 Foxy driver"
   weight = 10
   identifier = "ros2"
   url = "/advanced/ros2/"
 
 [[advanced]]
-  name = "System services"
+  name = "Services"
   weight = 70
   identifier = "services"
   url = "/advanced/services/"
+
+[[advanced]]
+  name = "System"
+  weight = 20
+  identifier = "system"
+  url = "/advanced/system/"
 
 [[main]]
   name = "Setup Reachy"

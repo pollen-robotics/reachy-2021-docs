@@ -1,21 +1,17 @@
 ---
-title: "Support"
+title : "Support"
 description: "Support."
 lead: "Can't solve your problem? Ask for help!"
-date: 2020-10-06T08:48:57+00:00
-lastmod: 2020-10-06T08:48:57+00:00
+date: 2020-10-06T08:48:23+00:00
+lastmod: 2020-10-06T08:48:23+00:00
 draft: false
 images: []
 menu:
-  docs:
-    parent: "debug"
-weight: 950
+  help:
+    parent: help
+weight: 9999
 toc: true
 ---
-
-## FAQ
-
-Check if your question is part of our [FAQ]({{< ref "help/faq" >}}).
 
 ## Forum
 
