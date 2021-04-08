@@ -34,7 +34,7 @@ for name, joint in reachy.joints.items():
 
 You can use it directly on Reachy's computer or work remotely on another computer, as long as you are connected on the same network. The SDK works on Windows/Mac/Linux and requires Python >= 3.6. It is entirely open-source and released under an [Apache 2.0 License](https://github.com/pollen-robotics/reachy-sdk/blob/main/LICENSE).
 
-## Is it the good option for me?
+## Is this the right option for me?
 
 The Python SDK is only one way to control Reachy. There are other options that have different pros and cons. 
 
