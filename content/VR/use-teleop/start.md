@@ -1,7 +1,7 @@
 ---
-title: "Getting started"
+title: "Teleoperate Reachy"
 description: ""
-lead: ""
+lead: "How to use the VR teleoperation application"
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -12,35 +12,58 @@ menu:
 weight: 30
 toc: true
 ---
-## Prepare your robot for teleoperation
 
-### If you want to teleoperate Reachy from the same network
-If the computer used for the teleoperation app is connected to the same network as your robot, you only need to know your robot IP address.  
-*Don't know the IP address? [Find out Reachy's IP]().*  
+## In brief
 
-### If you want to teleoperate Reachy remotely
+### Start teleoperating Reachy
 
+1. Make sure the robot is turned on, connected to the network and that all the robot's services are running before launching the teleoperation application.
 
-## How to start your application
-Prepare your VR equipment to be VR ready: turn on all VR device, make sure they are correctly detected by SteamVR
+2. Enter your robot's IP address **on the computer** at the launch of the app.
 
-For Oculus Quest users:
-You need to launch the Oculus application before starting the teleoperation application. 
+3. Turn the motors **stiff** in the menu for the robot to be able to move.
 
-Launch the application .exe file
+4. After having clicked "Validate my choices", **look straight ahead, with your body in the same orientation as your head while pressing A.** *The initial head position is used to determine the coordinate system giving your VR controllers position.* 
 
-On your computer:
-Connect to your Reachy IP: you need to add or select an IP address to connect to your Reachy robot directly on your computer
+{{< alert icon="👉" text="<b>Warning:</b> you <b>cannot move</b> anymore after this step. The position of your VR controllers to master the robot arms are calculated depending on the position you had while pressing A." >}}
+<br></br>
+5. Come back any time to menu by pressing A. Teleoperation of the robot is automatically paused if the menu is open. You can move to another place in menu.
 
-Equip yourself with your headset, make sure you can see both controllers and that the scene is moving correctly in accordance with your head movements.
+### Stop teleoperation
 
-Press A to enter the Menu
-Choose the mode and view you want
+1. Come back to the **menu** to pause the teleoperation.  
+2. Leave the app by clicking "**Quit**".  
 
-Turn the motors stiff, then click “Validate my choices”
+You can switch the motors into compliant mode before turning the app off. If you do so, make sure the arm are close enough to the lowest position they can reach to avoid them falling or hitting something.  
 
-Choose the place you want to teleoperate Reachy from, position your hand in the posture you want to begin with.
-Look straight ahead, with your body in the same orientation as your head. The initial head position is used to determine the coordinate system giving your VR controllers position.
+In case you need an immediate and definitive stop with more control on the options for the arms release, use the [emergency stop option]({{< ref "stop" >}}).
 
+## Step-by-step starting
+1. Prepare your VR equipment to be VR ready: turn on all VR device, make sure they are correctly detected by SteamVR.  
 
-Warning: you cannot move anymore after this step. The position of your VR controllers to master the robot arms are calculated depending on the position you had while clicking A.
+  *For Oculus Quest users:*
+  You need to launch the Oculus application before starting the teleoperation application.  
+
+2. Make sure the robot is turned on, connected to the network and that all the robot services are running. *By default, if you haven't modified anything, all services should be automatically launched on start of the **full/starter kit** robots.*
+
+3. Launch the application .exe file
+
+4. **On your computer:**
+Connect to your Reachy IP: you need to add or select an IP address to connect to your Reachy robot
+
+5. Equip yourself with your headset, make sure you can see both controllers and that the scene is moving correctly in accordance with your head movements.
+
+6. Press A to enter the Menu
+
+7. Make sure the connection status in the top right of the menu is indicating "Connected".
+
+8. Choose the mode and view you want. 
+
+9. Turn the motors **stiff**, then click “Validate my choices”
+
+10. Choose the place you want to teleoperate Reachy from, position your hand in the posture you want to begin with.
+**Look straight ahead, with your body in the same orientation as your head while pressing A.** The initial head position is used to determine the coordinate system giving your VR controllers position.  
+
+{{< alert icon="👉" text="<b>Warning:</b> you <b>cannot move</b> anymore after this step. The position of your VR controllers to master the robot arms are calculated depending on the position you had while pressing A." >}}
+<br></br>
+11. Come back any time to menu by pressing A. Teleoperation of the robot is automatically paused if the menu is open. You can move to another place in menu.

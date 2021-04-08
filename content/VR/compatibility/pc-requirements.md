@@ -13,12 +13,11 @@ weight: 10
 toc: true
 ---
 
-In order to use the teleoperation application, your PC needs to support SteamVR and Virtual Reality.  
+In order to use the teleoperation application, your PC needs to support Virtual Reality and SteamVR. It is required for the computer to run on Windows, to be powerful enough and equipped with a graphic card.  
 
-The computer needs:  
-* to run on Windows (10 ?)
-* to be powerful and equipped with a graphic card  
-  Recommendations:
-  * graphic card NVIDIA GTX 970, equivalent or upper
-  * Processor Intel i5 4590, equivalent or upper
-  * 8Go RAM minimum
+The computer minimum requirements are the following:  
+* **Operating System:** Windows 10 (or Windows 7 SP1)
+* **Processor:** Intel Core i5-4590/AMD FX 8350 equivalent or better
+* **Memory:** 8GB RAM
+* **Graphic card:** NVIDIA GeForce GTX 970, AMD Radeon R9 290 equivalent or better
+* **Network:** Broadband Internet connection. It is highly recommended for your PC to be **hard-wired** into your router using an **ethernet cable**.

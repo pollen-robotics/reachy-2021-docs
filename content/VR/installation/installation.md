@@ -19,18 +19,18 @@ Reachy 2021 is already fully compatible with the teleoperation application. You 
 
 ## On the Windows computer
 
+*Make sure your PC answers the [minimum requirements]({{< ref "pc-requirements" >}}).*
+
 **SteamVR:**  
 You have to install SteamVR.
-To do so, install Steam on your computer if it isn’t already installed.
-[https://store.steampowered.com/about/](https://store.steampowered.com/about/)
+To do so, install Steam on your computer if it isn’t already installed. It can be installed following this link: [https://store.steampowered.com/about/](https://store.steampowered.com/about/).  
 
-From Steam, install Steam VR.
-
-More information on SteamVR installation following this link:  
+Then from Steam, install SteamVR.  
 
 **Teleoperation application:**  
-Then install the teleoperation application.
+Install the teleoperation application.
 
+<br></br>
 ***For Oculus Quest users only:***  
 You need to install the Oculus application on your computer as well.  
 Download it directly from the Oculus website at [https://www.oculus.com/setup/](https://www.oculus.com/setup/).

@@ -18,4 +18,4 @@ The VR teleoperation application is compatible with the following device:
 * HTC Vive
 * Oculus Rift
 
-It is also compatible with Oculus Quest 1 & 2 if you use an Oculus Link cable to connect it to your computer.
+It is also compatible with Oculus Quest 1 & 2 using an Oculus Link cable to connect it to your computer.
