@@ -41,15 +41,19 @@ toc: true
 * not visible if you see Reachy's view (2D or 3D View)  
 
 **Be reachy:** set 3D-robot model as your own body  
+{{< img alt="Be Reachy" src="be-reachy.PNG" width="600px" >}}
 
 **Use no headset:** deactivate the headset tracking so that Reachy’s head won’t follow your head movements  
 
 ### View
 **2D View:** display Reachy’s left camera on a screen in the headset  
 
+{{< img alt="Be Reachy" src="image-emoji.PNG" width="600px" >}}
+
 **3D View (experimental):** display Reachy’s stereoscopic view in the headset
 
 **Mirror view:** display mirrors in front of the 3D-robot model  
+{{< img alt="Be Reachy" src="mirror.PNG" width="600px" >}}
 
 **Scene only:** basic scene (by default)
 
@@ -60,4 +64,4 @@ toc: true
 
 {{< alert icon="👉" text="Motors need to be in <b>stiff</b> mode to teleoperate Reachy." >}}
 
-### Haptics on/off
+### Haptics on/off (experimental)
