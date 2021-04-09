@@ -61,6 +61,7 @@ Connect to your Reachy IP: you need to add or select an IP address to connect to
 8. Choose the mode and view you want. 
 
 9. Turn the motors **stiff**, then click “Validate my choices”
+{{< img alt="Stiff mode" src="stiff-mode.PNG" width="600px" >}}
 
 10. Choose the place you want to teleoperate Reachy from, position your hand in the posture you want to begin with.
 **Look straight ahead, with your body in the same orientation as your head while pressing A.** The initial head position is used to determine the coordinate system giving your VR controllers position.  

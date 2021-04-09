@@ -37,6 +37,7 @@ See previous section if you are not connected to the robot.
 **Check you turned the motors into stiff mode**  
 You cannot teleoperate the robot if the motors are compliant.  
 Make sure you have correctly turned the motors stiff in the menu.  
+{{< img alt="Stiff mode" src="stiff-mode.PNG" width="600px" >}}
 
 ## The robot doesn't move properly
 **Reachy movements are shifted from my real movements**
@@ -45,3 +46,6 @@ Come back to menu and validate your choices again to be able to fix a new positi
 
 **Reachy movements are jerky**  
 The connection is not fast enough between the robot and your computer.
+
+## I have no image in 2D or 3D view
+The camera services may not be working on the robot. Launch the corresponding services on the robot side.

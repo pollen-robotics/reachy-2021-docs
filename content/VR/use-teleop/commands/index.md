@@ -40,6 +40,8 @@ toc: true
 * fixed in a immovable position on its support in the basic scene
 * not visible if you see Reachy's view (2D or 3D View)  
 
+{{< img alt="See Reachy" src="view-scene-only.PNG" width="600px" >}}
+
 **Be reachy:** set 3D-robot model as your own body  
 {{< img alt="Be Reachy" src="be-reachy.PNG" width="600px" >}}
 
