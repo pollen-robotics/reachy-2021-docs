@@ -27,11 +27,13 @@ toc: true
 
 {{< alert icon="👉" text="<b>Warning:</b> you <b>cannot move</b> anymore after this step. The position of your VR controllers to master the robot arms are calculated depending on the position you had while pressing A." >}}
 <br></br>
+
 5. Come back any time to menu by pressing A. Teleoperation of the robot is automatically paused if the menu is open. You can move to another place in menu.
 
 ### Stop teleoperation
 
 1. Come back to the **menu** to pause the teleoperation.  
+
 2. Leave the app by clicking "**Quit**".  
 
 You can switch the motors into compliant mode before turning the app off. If you do so, make sure the arm are close enough to the lowest position they can reach to avoid them falling or hitting something.  
@@ -66,4 +68,10 @@ Connect to your Reachy IP: you need to add or select an IP address to connect to
 
 {{< alert icon="👉" text="<b>Warning:</b> you <b>cannot move</b> anymore after this step. The position of your VR controllers to master the robot arms are calculated depending on the position you had while pressing A." >}}
 <br></br>
+
 11. Come back any time to menu by pressing A. Teleoperation of the robot is automatically paused if the menu is open. You can move to another place in menu.
+
+
+|Enter IP address|Enter teleop app|Turn motors stiff and choose mode and view|Choose position and start|
+|----------------|----------------|------------------------------------------|-------------------------|
+|{{< img alt="Select IP" src="select-ip.PNG" width="600px" >}}|{{< img alt="Enter app" src="enter-teleop.PNG" width="600px" >}}|{{< img alt="Menu" src="menu-connected.PNG" width="600px" >}}|{{< img alt="Start robot" src="start-robot.PNG" width="600px" >}}|

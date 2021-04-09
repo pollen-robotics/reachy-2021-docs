@@ -9,7 +9,7 @@ images: []
 menu:
   VR:
     parent: "use-teleop"
-weight: 40
+weight: 10
 toc: true
 ---
 
@@ -32,6 +32,8 @@ toc: true
 * Reachy's cameras zoom/dezoom *(only in 2D and 3D Views)*
 
 ## Menu options
+
+{{< img alt="App menu" src="menu-connected.png" width="600px" >}}
 
 ### Mode
 **See Reachy:** The 3D-robot model is either:  

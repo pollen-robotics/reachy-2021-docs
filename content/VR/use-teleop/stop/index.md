@@ -23,3 +23,6 @@ The following options are available:
 * **Open grippers:** immediately open the gripper as much as possible to enable the release of any object.
 * **Reduce torque:** reduce the resistance of the arms motors. The arms will slighty fall down.
 * **Set motors compliant:** switch all arms and neck motors into compliant mode.
+* **Restart application:** come back to the very beginning of the application (select IP from interface)
+
+{{< img alt="Emergence stop menu" src="security-stop.PNG" width="600px" >}}

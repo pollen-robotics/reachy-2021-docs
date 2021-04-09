@@ -30,8 +30,10 @@ Then from Steam, install SteamVR.
 **Teleoperation application:**  
 Install the teleoperation application.
 
+{{< alert icon="👉" text="Before trying to use the application, make sure your VR device is correctly detected by SteamVR." >}}
+
 <br></br>
 ***For Oculus Quest users only:***  
 You need to install the Oculus application on your computer as well.  
+It has to be started before SteamVR.  
 Download it directly from the Oculus website at [https://www.oculus.com/setup/](https://www.oculus.com/setup/).
-

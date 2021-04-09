@@ -14,8 +14,8 @@ toc: true
 ---
 
 The VR teleoperation application is compatible with the following device:  
-* Valve Index
-* HTC Vive
-* Oculus Rift
+* **Valve Index**
+* **HTC Vive**
+* **Oculus Rift**
 
-It is also compatible with Oculus Quest 1 & 2 using an Oculus Link cable to connect it to your computer.
+It is also compatible with **Oculus Quest 1 & 2** using an **Oculus Link** cable to connect it to your computer.
