@@ -86,11 +86,23 @@ reachy.head.joints
 
 ### Orbita: look_at method
 
-Each motor in Orbita can be controlled individually but having the head doing the movements you desire will be very hard as it involves mathematical transformation with the use of quaternions.
+Each motor in Orbita can be controlled individually but having the head doing the movements you desire using this will be very hard as it involves mathematical transformation with the use of quaternions.
 
 To make things simpler, we implemented the *look_at* method which hides all the maths.
 
-With this, instead of piloting each disk individually you can specify a point in the space which will drive the head.
+With this, instead of piloting each disk individually you can specify a point in the space at which the head will look.
+
+For example, consider that the following situation. Reachy is looking straight forward and you want it to look at the TicTacToe board. To do that, Reachy will have to put its head down. 
+So you can picture a point in Reachy's workspace and tell it: "Look at this point".
+
+**TODO: photo situation**
+
+To know the point coordinates you should send, you need to know Reachy's coordinates system. It it the same as the one used in [Reachy's kinematics model](http://localhost:1313/reachy-2021-docs/sdk/first-moves/kinematics/#kinematic-model).
+
+The *look_at* method can be used to achieve this. 
+
+
+
 
 
 
