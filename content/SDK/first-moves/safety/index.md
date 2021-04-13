@@ -13,7 +13,7 @@ weight: 150
 toc: true
 ---
 
-First, make sure that you followed the instructions from the section detailing [how to attach your robot](http://localhost:1313/reachy-2021-docs/docs/getting-started/attach/).
+First, make sure that you followed the instructions from the section detailing [how to attach your robot](https://pollen-robotics.github.io/reachy-2021-docs/docs/getting-started/attach/).
 
 Especially, the screws in the Reachy's back and the ones fixatings its metal support should be well tightened.
 
@@ -39,7 +39,7 @@ There are a few things you need to know to make sure that your Reachy doesn't ge
 
 ### Don't stay in stiff mode if you're not moving the robot
 
-Each Reachy's motor can be in one of two compliance mode:
+Each Reachy's motor can be in one of two compliance modes:
 * **compliant**: the motor is soft and can be freely turned by hand. It cannot be controlled, setting a new target position will have no effect. Yet you can still read the motor position.
 * **stiff**: the motor is hard and cannot be moved by hand. It can be controlled by setting new target position. In this mode, the motor use its maximum torque to maintain its present position until a target position is sent.
 
@@ -66,16 +66,16 @@ reachy.turn_off('r_arm')
 ```
 
 > #### What you need to keep in mind
-> You must be careful not to let the joints in stiff mode when you're not using the robot. This mode > can be really demanding for a motor.
+> You must be careful not to let the joints in stiff mode when you're not using the robot. This mode can be really demanding for a motor.
 >
-> If an arm is lifted or if the neck is lowered, maintaining the position in stiff mode will be  exhausting because the motors would have to compensate the gravity and they could get damaged.
-> You can make the analogy with a human. If we ask you to keep stretched out arms, after a certain  time it will be painful. So is the case for the joints of the robot.
+> If an arm is lifted or if the neck is lowered, maintaining the position in stiff mode will be exhausting because the motors would have to compensate the gravity and they could get damaged.
+> You can make the analogy with a human. If we ask you to keep stretched out arms, after a certain time it will be painful. So is the case for the joints of the robot.
 
 ### Be aware of obstacles
 
 When you are sending movements instructions to Reachy, be careful to obstacles that you could block Reachy during its movements.
 
-For example, when you are asking to an arm to go between two positions, it will try to do it as hard as it can, whether or not there is something is on its way. Also when you are moving both arms simultaneously, there are no safety measures implemented to prevent them from hitting each other.
+For example, when you are asking to an arm to go between two positions, it will try to do it as hard as it can, whether or not there is something on its way. Also when you are moving both arms simultaneously, there are no safety measures implemented to prevent them from hitting each other.
 Nothing will also prevent Reachy's arms from hitting its chest if you ask them to.
 If situations like these happen, don't hesitate to turn off the motors so that Reachy's motors will stop trying to reach a position they can't get.
 
@@ -84,6 +84,6 @@ If situations like these happen, don't hesitate to turn off the motors so that R
 Reachy's motors will heat when you are using its joints so you should manage the motors temperatures.
 The temperatures of each motor can be accessed using ReachySDK.
 
-There are two important temperatures constants you need to know, their values depend on Reachy's part:
+There are two important temperature constants you need to know, their values depend on Reachy's part:
 * **fan trigger temperature**: temperature at which the motor will start to get hot and the matching fan will be turned on. The fans allow to work longer with hot joints but enventually the temperature will keep rising if the joints keep being sollicitated. On Reachy's arms: 45°C, on Reachy's neck: 35°C.
 * **shutdown temperature**: when this temperature is reached, the motor will normally shutdown and stop working until it has cooled down. This is a precaution measure to protect the motor. On Reachy's arms: 55°C, on Reachy's neck: 50°C.
