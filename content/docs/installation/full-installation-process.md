@@ -13,11 +13,11 @@ weight: 500
 toc: true
 ---
 
-You decided to buy a **Full/Starter kit**, congratulations! You won a lot of time ;)
+You decided to buy a **Full/Starter kit**, congratulations! You just saved a lot of time ;)
 
 Everything you need is already installed on your robot.
 
-Of course you may want to know what you have on your robot. Please refer to section [What is running/What can I run on my robot]({{< ref "ROS2" >}}) for more information.  
+Of course you may want to know what's included in it. Please refer to section [What is running/What can I run on my robot]({{< ref "ROS2" >}}) for more information.  
   
 <br/><br/>
 

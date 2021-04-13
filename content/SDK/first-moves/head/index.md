@@ -13,7 +13,7 @@ weight: 170
 toc: true
 ---
 
-Make sure you checked the [safety page](http://localhost:1313/reachy-2021-docs/sdk/first-moves/safety/) before controling the arm.
+Make sure you checked the [safety page](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/safety/) before controling the arm.
 
 This section assumes that you went through the [Hello World](http://localhost:1313/reachy-2021-docs/sdk/getting-started/hello-world/) so that you know how to connect to the robot.
 

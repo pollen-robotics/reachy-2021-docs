@@ -13,7 +13,7 @@ weight: 180
 toc: true
 ---
 
-This section assumes that you went through the [Hello World](http://localhost:1313/reachy-2021-docs/sdk/getting-started/hello-world/) so that you know how to connect to the robot.
+This section assumes that you went through the [Hello World](https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/hello-world/) so that you know how to connect to the robot.
 
 Reachy 2021 has [two high quality cameras](https://www.kurokesu.com/shop/featured/CAMERA_C1_PRO) which can deliver up to 1080p at 30 fps. Each camera is equipped with a motorized zoom allowing to adapt the zoom level to the situation you're working on.
 
@@ -86,14 +86,14 @@ You should hear the Reachy's zooms motors moving.
 
 Getting the last frame from each camera, you should see the different zoom levels have been applied.
 
-If when using the zooms you get images blurrier that what they are supposed to be, use the *homing* command.
-Each zoom level sends positions instructions relatively to a base position and it can happen that the base positions get a bit drifted. The homing instruction bring the zoom motors to their limit and re set the base positions from it.
+If when using the zooms you get images blurrier than what they are supposed to be, use the *homing* command.
+Each zoom level sends positions instructions relatively to a base position and it may happen that the base positions get a bit drifted. The homing instruction bring the zoom motors to their limit and reset the base positions from it.
 
 ```python
 reachy.right_camera.zoom_homing()
 ```
 
-Once the homing executed, you can re set a zoom position.
+Once the homing executed, you can reset a zoom position.
 
 ```python
 reachy.left_camera.zoom_level = ZoomLevel.INTER
@@ -103,7 +103,7 @@ reachy.left_camera.zoom_level = ZoomLevel.INTER
 
 The speed of the zoom motors can also be changed along with the level.
 
-The value of the speed is an int between 4000 and 40000, by default the value is at 10000 but you can chage it easily.
+The value of the speed is an int between 4000 and 40000, by default the value is at 10000 but you can change it easily.
 
 ```python
 reachy.left_camera.zoom_speed
