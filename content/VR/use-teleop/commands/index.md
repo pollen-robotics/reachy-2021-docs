@@ -27,9 +27,17 @@ toc: true
 |A button (press)|Menu button (press)|A/X button (press)|**Click when required by the interface**|
 |Both A buttons (press)|Both menu buttons (press)|Both A/X buttons (press)|**Emergency stop**|
 
-**Thumb stick available commands type:**
-* antennas emotion control (by default)
-* Reachy's cameras zoom/dezoom *(only in 2D and 3D Views)*
+**Thumb stick available command types:**
+* antennas emotion using the emoji panel control (by default)
+* cameras zoom/dezoom using zoom panel control *(only in 2D and 3D Views)*
+
+|Direction|Emoji panel control|Zoom panel control|
+|:--------|:-----------------:|:----------------:|
+||{{< img alt="App menu" src="emoji.JPG" width="600px" >}}|{{< img alt="App menu" src="zoom.JPG" width="600px" >}}|
+|**Up**|Happy|Zoom|
+|**Right**|Thinking|/|
+|**Down**|Sad|Dezoom|
+|**Left**|Angry|/|
 
 ## Menu options
 
