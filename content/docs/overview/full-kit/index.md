@@ -64,3 +64,11 @@ toc: true
 
 
 ## Reachy's head
+
+{{< img alt="Reachy's head front view" src="head-front.jpg" width="600px" >}}
+
+{{< img alt="Reachy's head back view" src="head-back.jpg" width="600px" >}}
+
+(13) : Right and left high quality motorized cameras and lenses  
+(14) : Antennas' motorized fixations  
+(15) : Head cables routing hole  
