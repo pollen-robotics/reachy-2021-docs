@@ -46,6 +46,30 @@
   identifier = "first-moves"
   url = "/SDK/first-moves/"
 
+[[vr]]
+  name = "Introduction"
+  weight = 10
+  identifier = "introduction"
+  url = "/VR/introduction/"
+
+[[vr]]
+  name = "Compatibility"
+  weight = 20
+  identifier = "compatibility"
+  url = "/VR/compatibility/"
+
+[[vr]]
+  name = "Installation"
+  weight = 30
+  identifier = "installation"
+  url = "/VR/installation/"
+
+[[vr]]
+  name = "Using the app"
+  weight = 40
+  identifier = "use-teleop"
+  url = "/VR/use-teleop/"
+
 [[advanced]]
   name = "ROS2 Foxy driver"
   weight = 10
@@ -83,6 +107,11 @@
   name = "Advanced"
   weight = 30
   url = "/advanced/ros2/introduction"
+
+[[main]]
+  name = "VR"
+  weight = 40
+  url = "/VR/compatibility/pc-requirements"
 
 [[social]]
   name = "Twitter"

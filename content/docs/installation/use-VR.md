@@ -17,3 +17,6 @@ toc: true
 
 Please refer to the **teleoperation application documentation** for the installation details on the remote computer *(not available yet)*.
 
+{{< my-button-new-page link="https://pollen-robotics.github.io/reachy-2021-docs/vr/compatibility/pc-requirements/" label="Getting started with Reachy VR teleoperation app" >}}
+
+

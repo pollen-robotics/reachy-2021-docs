@@ -1,5 +1,5 @@
 ---
-title : "VR teleoperation"
+title : "VR app compatibility"
 description: "Use systend services with Reachy."
 lead: ""
 date: 2020-10-06T08:48:45+00:00
