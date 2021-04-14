@@ -9,7 +9,7 @@ images: []
 menu:
   VR:
     parent: "use-teleop"
-weight: 10
+weight: 640
 toc: true
 ---
 

@@ -9,7 +9,7 @@ images: []
 menu:
   VR:
     parent: "installation"
-weight: 30
+weight: 630
 toc: true
 ---
 
