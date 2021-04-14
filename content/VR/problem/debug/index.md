@@ -14,7 +14,7 @@ toc: true
 ---
 
 ## The app doesn't connect to the robot
-
+{{< img alt="App menu" src="menu-not-connected.PNG" width="600px" >}}
 If you are not connected to the robot, the reason can be one of the following:
 * you are not connected to the right IP address
 * the robot is not connected to the network
@@ -23,11 +23,11 @@ If you are not connected to the robot, the reason can be one of the following:
 * the connection is not stable enough for the app to stay connected to the robot
 
 ## The robot doesn't move at all
-**Check you are connected to the robot**  
+**Check if the app is connected to the robot**  
 First of all, check that the application managed to connect to the robot.  
 The connection status with the robot is indicated at the top of the menu.
 Functionalities are disabled on the interface.  
-See previous section if you are not connected to the robot.  
+See [previous section](http://localhost:1313/reachy-2021-docs/vr/problem/debug/#the-app-doesnt-connect-to-the-robot) if you are not connected to the robot.  
 
 |Connected to the robot|Unable to connect to the robot|
 |----------------------|------------------------------|
@@ -40,8 +40,8 @@ Make sure you have correctly turned the motors stiff in the menu.
 {{< img alt="Stiff mode" src="stiff-mode.PNG" width="600px" >}}
 
 ## The robot doesn't move properly
-**Reachy movements are shifted from my real movements**
-You head was probably not correctly aligned with your body when you fixed your position, or you moved since the validation step.  
+**Reachy movements are shifted from my real movements**  
+Your head was probably not correctly aligned with your body when you fixed your position, or you moved since the validation step.  
 Come back to menu and validate your choices again to be able to fix a new position.  
 
 **Reachy movements are jerky**  
