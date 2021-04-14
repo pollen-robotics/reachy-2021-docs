@@ -255,7 +255,7 @@ You will use the *goto()* to place the right arm at a right-angled position. Fir
 The setup should look like this: 
 
 <p align="center">
-  <img src="right_arm_base_pos.jpg" alt="drawing" width="250"/>
+  <img src="base_pos.jpg" alt="drawing" width="400"/>
 </p>
 
 Import everything needed to execute the *goto()*:
@@ -297,7 +297,9 @@ goto(
 
 The result should look like this:
 
-**TODO: SHOW GIF**
+<p align="center">
+  <img src="goto.mp4" alt="drawing" width="500"/>
+</p>
 
 Don't forget to put the right arm's joints back to the compliant mode. Place your hand below the right arm's gripper to prevent the arm from falling hard on the table.
 
