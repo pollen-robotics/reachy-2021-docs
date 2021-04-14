@@ -99,10 +99,10 @@ We consider the end-effector to be in a virtual joint located in the gripper and
 
 The red dot corresponds to the *'right_tip'*.
 
-You can see the right and left end-effectors animated in the gif below.
+You can see the right and left end-effectors animated below.
 
 <p align="center">
-  <img src="reachy_eef.gif" alt="drawing" width="300"/>
+  <img src="eef.mp4" alt="drawing" width="300"/>
 </p>
 
 Each arm has a *forward_kinematics* method. To use it, you first need to connect to your Reachy.
