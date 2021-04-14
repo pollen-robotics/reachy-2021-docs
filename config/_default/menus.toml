@@ -47,20 +47,26 @@
   url = "/SDK/first-moves/"
 
 [[vr]]
-  name = "Compatibility"
+  name = "Introduction"
   weight = 10
+  identifier = "introduction"
+  url = "/VR/introduction/"
+
+[[vr]]
+  name = "Compatibility"
+  weight = 20
   identifier = "compatibility"
   url = "/VR/compatibility/"
 
 [[vr]]
   name = "Installation"
-  weight = 20
+  weight = 30
   identifier = "installation"
   url = "/VR/installation/"
 
 [[vr]]
   name = "Using the app"
-  weight = 30
+  weight = 40
   identifier = "use-teleop"
   url = "/VR/use-teleop/"
 
