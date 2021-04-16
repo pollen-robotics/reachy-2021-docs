@@ -26,48 +26,64 @@ The low-level software used to control the robot has been developed to work on *
 Reachy runs on **ROS 2 Foxy**. So first of all, you need to install it.  
 For more information on ROS2 and how to install it, please refer to the official documentation: [https://index.ros.org/doc/ros2/Installation/Foxy/Linux-Install-Debians/](https://index.ros.org/doc/ros2/Installation/Foxy/Linux-Install-Debians/)
 
+You will also need to install *colcon* the build tool from ROS2.
+
+```bash
+sudo apt install python3-colcon-common-extensions
+```
+
 ## Create a ROS workspace for Reachy
 *Note:* If you are familiar with ROS2, please feel free to use your custom installation.  
 
-Now that you have installed ROS, you need a ROS workspace to install the specific ROS packages for Reachy.
+Now that you have installed ROS, you need to [create a ROS workspace](https://docs.ros.org/en/foxy/Tutorials/Workspace/Creating-A-Workspace.html) to install the specific ROS packages for Reachy.
+
 Create it in your $HOME folder:
 ```bash
 mkdir -p ~/reachy_ws/src
 ```
 
-Then, open .bashrc:
+Build your empty workspace once to set everything up.
 ```bash
-nano ~/.bashrc
+cd ~/reachy_ws
+source /opt/ros/foxy/setup.bash
+colcon build 
 ```
 
-And add the following lines:
+Once done, add commands to your *.bashrc* file so that you won't have to type them in each new terminal. 
+
 ```bash
-source /opt/ros/foxy/setup.bash
-source $HOME/reachy_ws/install/setup.bash
-``` 
-Finally, source your bashrc file:
+echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
+echo "source /home/reachy/reachy_ws/install/setup.bash" >> ~/.bashrc
+echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
+echo "export _colcon_cd_root=~/ros2_install" >> ~/.bashrc
+```
+
+Finally, source your *.bashrc* file:
 ```bash
 source ~/.bashrc
 ```
 
-
-To learn more on the creation of workspaces for ROS 2 Foxy:
-[https://docs.ros.org/en/foxy/Tutorials/Workspace/Creating-A-Workspace.html](https://docs.ros.org/en/foxy/Tutorials/Workspace/Creating-A-Workspace.html)
-
-
 ## Clone the requested ROS repositories from GitHub
 
-In `~/reachy_ws/src`, clone the following repositories (see [https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) if you are not familiar with git):
+In `~/reachy_ws/src`, clone the following repositories (check [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) if you are not familiar with git):
 
 To use Reachy directly with ROS:  
-* reachy_msgs: [https://github.com/pollen-robotics/reachy_msgs](https://github.com/pollen-robotics/reachy_msgs)  
-* reachy_controllers: [https://github.com/pollen-robotics/reachy_controllers](https://github.com/pollen-robotics/reachy_controllers)  
-* reachy_kinematics: [https://github.com/pollen-robotics/reachy_kinematics](https://github.com/pollen-robotics/reachy_kinematics)  
+* [reachy_msgs](https://github.com/pollen-robotics/reachy_msgs)  
+* [reachy_controllers](https://github.com/pollen-robotics/reachy_controllers)  
+* [reachy_kinematics](https://github.com/pollen-robotics/reachy_kinematics)  
 
 To use Reachy through the SDK:  
-* reachy_sdk_server: [https://github.com/pollen-robotics/reachy_sdk_server](https://github.com/pollen-robotics/reachy_sdk_server)
+* [reachy_sdk_server](https://github.com/pollen-robotics/reachy_sdk_server)
 
-When everything is cloned in your directory, build the packages:
+```bash
+cd ~/reachy_ws/src
+git clone https://github.com/pollen-robotics/reachy_msgs.git
+git clone https://github.com/pollen-robotics/reachy_controllers.git
+git clone https://github.com/pollen-robotics/reachy_kinematics.git
+git clone https://github.com/pollen-robotics/reachy_sdk_server.git
+```
+
+Once everything cloned in your ROS2 workspace, build the packages:
 ```bash
 cd ~/reachy_ws
 colcon build
@@ -81,20 +97,50 @@ sudo usermod -a -G dialout <usr_name>
 ```
 
 ## Clone the other requested repositories from Github
-Create another folder dev that will contain all the packages used with Reachy that are not based on ROS. In this folder, clone the following repositories:  
+
+Create another folder *dev* that will contain all the packages used with Reachy that are not based on ROS.
+
+```bash
+mkdir ~/dev
+```
+
+In this folder you will need the following repositories:  
 
 Requested in all cases:  
-* reachy_pyluos_hal: [https://github.com/pollen-robotics/reachy_pyluos_hal](https://github.com/pollen-robotics/reachy_pyluos_hal)  
+* [reachy_pyluos_hal](https://github.com/pollen-robotics/reachy_pyluos_hal)  
 
 To use Reachy through the SDK:  
-* reachy_sdk_api: [https://github.com/pollen-robotics/reachy-sdk-api](https://github.com/pollen-robotics/reachy-sdk-api)  
-  Then install the sdk-api:
-  ```bash
-  cd ~/dev/reachy-sdk-api
-  pip3 install -e python
-  ```
+* [reachy_sdk_api](https://github.com/pollen-robotics/reachy-sdk-api)  
 
-* reachy-sdk: [https://github.com/pollen-robotics/reachy-sdk](https://github.com/pollen-robotics/reachy-sdk)  
+* [reachy-sdk](https://github.com/pollen-robotics/reachy-sdk)  
+
+```bash
+cd ~/dev
+git clone https://github.com/pollen-robotics/reachy_pyluos_hal.git
+git clone https://github.com/pollen-robotics/reachy-sdk-api.git
+```
+
+Then install them
+```bash
+cd ~/dev/reachy_pyluos_hal
+pip3 install -e .
+
+cd ~/dev/reachy-sdk-api
+pip3 install -e python
+```
+
+*reachy-sdk* can either be installed from source or using pip.
+* from source
+```bash
+cd ~/dev
+git clone https://github.com/pollen-robotics/reachy-sdk.git
+cd ~/dev/reachy-sdk
+pip3 install -e .
+```
+* using pip
+```bash
+pip3 install reachy-sdk
+```
 
 ***To learn more on the repositories content and usage, please refer to README.md files in each repository.***
 
@@ -113,6 +159,12 @@ pip3 install zoom_kurokesu
 * Using apt install:
 ```bash
 sudo apt install python3-pykdl
+```
+
+We also recommend you to install the *jupyter* and *matplotlib* libraries.
+```bash
+pip3 install jupyter
+pip3 install matplotlib
 ```
 
 ## Set the correct configuration file
