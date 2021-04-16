@@ -111,7 +111,7 @@
 [[main]]
   name = "VR"
   weight = 40
-  url = "/VR/compatibility/pc-requirements"
+  url = "/VR/introduction/introduction"
 
 [[social]]
   name = "Twitter"
