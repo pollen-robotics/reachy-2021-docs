@@ -133,6 +133,31 @@ And don't forget to put the head back to compliant mode to protect the motors, o
 reachy.turn_off('head')
 ```
 
+Another cool thing is that we can combine Reachy's kinematics with the *look_at* so that Reachy's head follows its hand!
+
+<p align="center">
+  <img src="look_at_hand.mp4" alt="drawing" width="500"/>
+</p>
+
+```python
+reachy.turn_on('head')
+
+x, y, z = reachy.r_arm.forward_kinematics()[:3,-1] # We want the translation part of Reachy's pose matrix
+reachy.head.look_at(x=x, y=y, z=z-0.05, duration=1.0) # There is a 5cm offset on the z axis
+
+time.sleep(0.5)
+
+while True:
+    x, y, z = reachy.r_arm.forward_kinematics()[:3,-1]
+    gp_dic = reachy.head._look_at(x, y, z - 0.05)
+    reachy.head.neck_disk_bottom.goal_position = gp_dic[reachy.head.neck_disk_bottom]
+    reachy.head.neck_disk_middle.goal_position = gp_dic[reachy.head.neck_disk_middle]
+    reachy.head.neck_disk_top.goal_position = gp_dic[reachy.head.neck_disk_top]
+    time.sleep(0.01)
+```
+
+What the code says is that we compute the [forward kinematics of Reachy's right arm](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/kinematics/#forward-kinematics), and the x, y, z of Reachy's right end-effector in the Reachy's coordinates system will be the coordinates of the point used by the *loo_at*.
+
 ### Cameras
 
 The dedicated page on Reachy's cameras can be found [here](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/cameras/).
