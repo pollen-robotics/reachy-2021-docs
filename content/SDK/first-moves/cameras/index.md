@@ -33,7 +33,7 @@ reachy.left_camera
 The left and right sides are considered from Reachy point of view.
 
 <p align="center">
-  <img src="cameras.jpeg" alt="drawing" width="300"/>
+  <img src="head.jpg" alt="drawing" width="500"/>
 </p>
 
 ## Get the images

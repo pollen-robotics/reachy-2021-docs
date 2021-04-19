@@ -151,6 +151,22 @@ Once you're done using the arm, don't forget to turn it back to compliant mode.
 reachy.turn_off('r_arm')
 ```
 
+> Switching from stiff to compliant for a joint can present a risk of harming Reachy because if the arm was stiff and in the air, it will just fall on what is below him. For example if you have Reachy above a table, place its arm in stiff mode and then in compliant mode, the arm will fall quite hard on the table unless you place your hand below to support the fall.
+
+That is why we also implemented the **turn_off_smoothly** method. With this, we first reduce the torque limit of the joint and then turn it to compliant mode. This result in a smoother transition between the two states.
+
+See the difference below where both Reachy's arms are up and in stiff mode. To put them in compliant mode, we use *turn_off* on the left arm and *turn_off_smoothly* for the right arm.
+
+<p align="center">
+  <img src="compliant.mp4" alt="drawing" width="500"/>
+</p>
+
+```python
+reachy.turn_on('reachy')
+reachy.turn_off('l_arm')
+reachy.turn_off_smoothly('r_arm')
+```
+
 #### goal_position
 
 The *goal_position* attribute of a joint is what is used to set a new joint's target position to make it move. However, we recommend using the [**goto() function**](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/arm/#goto-function) to move the motors which provides better control on the joint's trajectories.
@@ -255,7 +271,7 @@ You will use the *goto()* to place the right arm at a right-angled position. Fir
 The setup should look like this: 
 
 <p align="center">
-  <img src="right_arm_base_pos.jpg" alt="drawing" width="250"/>
+  <img src="base_pos.jpg" alt="drawing" width="400"/>
 </p>
 
 Import everything needed to execute the *goto()*:
@@ -297,7 +313,9 @@ goto(
 
 The result should look like this:
 
-**TODO: SHOW GIF**
+<p align="center">
+  <img src="goto.mp4" alt="drawing" width="500"/>
+</p>
 
 Don't forget to put the right arm's joints back to the compliant mode. Place your hand below the right arm's gripper to prevent the arm from falling hard on the table.
 
