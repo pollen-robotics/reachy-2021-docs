@@ -218,7 +218,7 @@ bash generate-service-file.bash
 
 This command should have created a file called *reachy_sdk_server.service*. To activate this service, you need to copy it to `systemd`:
 ```bash
-sudo scp reachy_sdk_server.service /etc/systemd/system
+sudo cp reachy_sdk_server.service /etc/systemd/system
 ```
 
 Enable it for the service to be launched automatically when you restart your computer:
