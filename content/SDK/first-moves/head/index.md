@@ -24,7 +24,7 @@ Reachy's head is composed of three parts:
 * a back side equiped with two antennas to convey emotions along with two fans in the inner part to cool down the components inside the head,
 * a neck ball joint, thanks to our Orbita actuator.  
 
-<video controls="controls" loop="true">
+<video controls="controls" width="75%" loop="true">
   <source type="video/mp4" src="orbita.mp4"></source>
   <source type="video/webm" src="orbita.webm"></source>
   <p>Your browser does not support the video element.</p>
@@ -37,7 +37,7 @@ The complete head's specifications are given [here](https://pollen-robotics.gith
 Below you can see Reachy's head front and back supported by the Orbita actuator.
 
 <p align="center">
-  <img src="head_front_back.png" alt="drawing" width="600"/>
+  <img src="head_front_back.png" alt="drawing" width="75%"/>
 </p>
 
 ### Reachy's neck: Orbita actuator
@@ -47,7 +47,7 @@ The Orbita actuator is a unique technology developed by Pollen Robotics’ R&D t
 Orbita is composed of three disks named *top*, *middle* and *bottom* which can be piloted individually.
 
 <p align="center">
-  <img src="orbita_schematic.png" alt="drawing" width="400"/>
+  <img src="orbita_schematic.png" alt="drawing" width="60%"/>
 </p>
 
 We wrote a [Medium article on Orbita](https://medium.com/pollen-robotics/orbita-is-turning-heads-literally-d10d378550e2) to explain how it works and what inspired us to create it. If you have 10 minutes, go check it out!
@@ -85,7 +85,7 @@ reachy.head.joints
 ```
 
 <p align="center">
-  <img src="head_attributes.png" alt="drawing" width="400"/>
+  <img src="head_attributes.png" alt="drawing" width="75%"/>
 </p>
 
 ### Orbita: look_at method
@@ -109,7 +109,7 @@ reachy.head.look_at(x=0.5, y=0, z=0, duration=1.0)
 
 You can use multiple *look_at* to chain head movements.
 
-<video controls="controls" loop="true">
+<video controls="controls" width="75%" loop="true">
   <source type="video/mp4" src="look.mp4"></source>
   <source type="video/webm" src="look.webm"></source>
   <p>Your browser does not support the video element.</p>
@@ -139,7 +139,7 @@ reachy.turn_off('head')
 
 Another cool thing is that we can combine Reachy's kinematics with the *look_at* so that Reachy's head follows its hand!
 
-<video controls="controls" loop="true">
+<video controls="controls" width="75%" loop="true">
   <source type="video/mp4" src="look_at_hand.mp4"></source>
   <source type="video/webm" src="look_at_hand.webm"></source>
   <p>Your browser does not support the video element.</p>
@@ -212,7 +212,7 @@ sad_antennas()
 
 The result should look like the following.
 
-<video controls="controls" loop="true">
+<video controls="controls" width="75%" loop="true">
   <source type="video/mp4" src="antennas.mp4"></source>
   <source type="video/webm" src="antennas.webm"></source>
   <p>Your browser does not support the video element.</p>
@@ -226,7 +226,7 @@ sad_antennas()
 reachy.head.look_at(0.5, 0, -0.0, 1.0)
 ```
 
-<video controls="controls" loop="true">
+<video controls="controls" width="75%" loop="true">
   <source type="video/mp4" src="sad.mp4"></source>
   <source type="video/webm" src="sad.webm"></source>
   <p>Your browser does not support the video element.</p>
