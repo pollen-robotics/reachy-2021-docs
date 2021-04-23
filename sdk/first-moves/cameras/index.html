@@ -7,7 +7,7 @@ reachy = ReachySDK(host='192.168.0.42')  # Replace with the actual IP
 
 reachy.left_camera
 &gt;&gt;&gt; &lt;Camera side=&quot;left&quot; resolution=(720, 1280, 3)&gt;
-</code></pre><p>The left and right sides are considered from Reachy point of view.</p><p align=center><img src=head.jpg alt=drawing width=500></p><h2 id=get-the-images>Get the images<a href=#get-the-images class=anchor aria-hidden=true>#</a></h2><p>The last image captured by each camera can be obtained with the <em>.last_frame</em> attribute.</p><pre><code class=language-python>import cv2 as cv
+</code></pre><p>The left and right sides are considered from Reachy point of view.</p><p align=center><img src=head.jpg alt=drawing width=60%></p><h2 id=get-the-images>Get the images<a href=#get-the-images class=anchor aria-hidden=true>#</a></h2><p>The last image captured by each camera can be obtained with the <em>.last_frame</em> attribute.</p><pre><code class=language-python>import cv2 as cv
 
 img = reachy.right_camera.last_frame
 
