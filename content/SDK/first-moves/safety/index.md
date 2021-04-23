@@ -22,7 +22,7 @@ Especially, the screws in the Reachy's back and the ones fixatings its metal sup
 If at anytime when you're working with Reachy you feel that you're losing control of the robot's movements, don't hesitate to turn the motors off. Use the switch button placed in its back. 
 
 <p align="center">
-  <img src="power_button.jpeg" alt="drawing" width="300"/>
+  <img src="power_button.jpeg" alt="drawing" width="50%"/>
 </p>
 
 Also, don't forget to turn the motors off when you're done working with the robot.
