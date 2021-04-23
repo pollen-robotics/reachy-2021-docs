@@ -157,7 +157,7 @@ That is why we also implemented the **turn_off_smoothly** method. With this, we 
 
 See the difference below where both Reachy's arms are up and in stiff mode. To put them in compliant mode, we use *turn_off* on the left arm and *turn_off_smoothly* for the right arm.
 
-<video controls="controls" width="75%" loop="true">
+<video controls="controls" width="75%" autoplay loop>
   <source type="video/mp4" src="compliant.mp4"></source>
   <source type="video/webm" src="orbita.webm"></source>
   <p>Your browser does not support the video element.</p>
@@ -315,7 +315,7 @@ goto(
 
 The result should look like this:
 
-<video controls="controls" width="75%" loop="true">
+<video controls="controls" width="75%" autoplay loop>
   <source type="video/mp4" src="goto.mp4"></source>
   <source type="video/webm" src="orbita.webm"></source>
   <p>Your browser does not support the video element.</p>

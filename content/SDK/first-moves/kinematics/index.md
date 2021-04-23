@@ -101,7 +101,7 @@ The red dot corresponds to the *'right_tip'*.
 
 You can see the right and left end-effectors animated below.
 
-<video controls="controls" width="50%" loop="true">
+<video controls="controls" width="50%" autoplay loop>
   <source type="video/mp4" src="eef.mp4"></source>
   <source type="video/webm" src="orbita.webm"></source>
   <p>Your browser does not support the video element.</p>
@@ -308,7 +308,7 @@ reachy.turn_off_smoothly('r_arm')
 
 The result should look like this:
 
-<video controls="controls" width="75%" loop="true">
+<video controls="controls" width="75%" autoplay loop>
   <source type="video/mp4" src="goto_ik.mp4"></source>
   <source type="video/webm" src="orbita.webm"></source>
   <p>Your browser does not support the video element.</p>
