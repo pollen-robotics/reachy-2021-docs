@@ -59,7 +59,7 @@
   url = "/VR/compatibility/"
 
 [[vr]]
-  name = "Installation"
+  name = "VR Installation"
   weight = 30
   identifier = "installation"
   url = "/VR/installation/"
