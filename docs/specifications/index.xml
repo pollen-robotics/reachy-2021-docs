@@ -18,8 +18,11 @@ Weight: 0.3Kg</description></item><item><title>Head specifications</title><link>
 Power consumption: 15W.
 Dimensions: 175x253x108mm.
 Weight: 0.675Kg.
-Reachy’s head features two motorized high quality wide angle cameras, to observe its environment as well as being able to focus on the task of manipulating. The head is animated by Orbita, a unique technology developed by Pollen Robotics’ R&amp;amp;D team. This ball joint actuator allows unpreceded dynamic and multi-directional movement. With animated antennas, Reachy can convey many emotions to his audience.</description></item><item><title>Torso specifications</title><link>https://pollen-robotics.github.io/reachy-2021-docs/docs/specifications/torso-specs/</link><pubDate>Tue, 06 Oct 2020 08:48:57 +0000</pubDate><guid>https://pollen-robotics.github.io/reachy-2021-docs/docs/specifications/torso-specs/</guid><description>Reachy&amp;rsquo;s torso area includes the following elements:
+Reachy’s head features two motorized high quality wide angle cameras, to observe its environment as well as being able to focus on the task of manipulating. The head is animated by Orbita, a unique technology developed by Pollen Robotics’ R&amp;amp;D team. This ball joint actuator allows unpreceded dynamic and multi-directional movement. With animated antennas, Reachy can convey many emotions to his audience.</description></item><item><title>Torso specifications</title><link>https://pollen-robotics.github.io/reachy-2021-docs/docs/specifications/torso-specs/</link><pubDate>Tue, 06 Oct 2020 08:48:57 +0000</pubDate><guid>https://pollen-robotics.github.io/reachy-2021-docs/docs/specifications/torso-specs/</guid><description>Construction: 3D printed MJF Painted - Aluminium
+Power consumption: 36W
+Dimensions: 300x350x150mm
+Weight: 1.7Kg
+Reachy&amp;rsquo;s torso area includes the following elements:
 Computer Powerful internal computer NUC intel i3 dual-core 2.1Ghz with 8Go DDR4 and 256Go SSD (NUC8i3PN)
 With computer boost option: intel i7 quad core, 16 Go DDR4, 512 go SSD
-Microphone Seeed Studio - ReSpeaker Mic Array v2.0: Microphone array for NLU (ReSpeaker) and a 3.5mm jack audio output
-TPU Embedded TPU Google Coral G950-01456-01 for running ML models inference at high speed locally</description></item></channel></rss>
+Microphone Seeed Studio - ReSpeaker Mic Array v2.0: Microphone array for NLU (ReSpeaker) and a 3.5mm jack audio output</description></item></channel></rss>
