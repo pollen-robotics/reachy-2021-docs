@@ -19,4 +19,5 @@ Includes a **micro load cell** 0.78 Kg
 **Construction:** 3D printed MJF Painted - Flexible PU molded  
 **Power consumption:** 5.3W  
 **Dimensions:** 117.3x84x51.4mm  
+**Weight:** 0.3Kg  
 
