@@ -13,6 +13,11 @@ weight: 740
 toc: true
 ---
 
+**Construction:** 3D printed MJF Painted - Aluminium  
+**Power consumption:** 36W  
+**Dimensions:** 300x350x150mm  
+**Weight:** 1.7Kg  
+
 Reachy's torso area includes the following elements:
 
 ## Computer
