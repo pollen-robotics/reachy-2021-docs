@@ -24,7 +24,7 @@ Reachy's head is composed of three parts:
 * a back side equiped with two antennas to convey emotions along with two fans in the inner part to cool down the components inside the head,
 * a neck ball joint, thanks to our Orbita actuator.  
 
-<video controls="controls" width="75%" autoplay loop">
+<video controls="controls" width="75%" autoplay loop>
   <source type="video/mp4" src="orbita.mp4"></source>
   <source type="video/webm" src="orbita.webm"></source>
   <p>Your browser does not support the video element.</p>
