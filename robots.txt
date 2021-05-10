@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pollen-robotics.github.io/reachy-2021-docs/sitemap.xml
+Sitemap: https://docs.pollen-robotics.com/sitemap.xml
