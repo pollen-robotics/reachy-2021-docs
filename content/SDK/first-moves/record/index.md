@@ -28,13 +28,13 @@ To record a trajectory, we will simply get the current position of individual mo
 # reachy = ReachySDK(host='192.168.0.42') 
 
 recorded_joints = [
-    reachy.r_shoulder_pitch,
-    reachy.r_shoulder_roll,
-    reachy.r_arm_yaw,
-    reachy.r_elbow_pitch,
-    reachy.r_forearm_yaw,
-    reachy.r_wrist_pitch,
-    reachy.r_wrist_roll,
+    reachy.r_arm.r_shoulder_pitch,
+    reachy.r_arm.r_shoulder_roll,
+    reachy.r_arm.r_arm_yaw,
+    reachy.r_arm.r_elbow_pitch,
+    reachy.r_arm.r_forearm_yaw,
+    reachy.r_arm.r_wrist_pitch,
+    reachy.r_arm.r_wrist_roll,
 ]
 ```
 
@@ -106,7 +106,7 @@ for joint in recorded_joints:
 first_point = dict(zip(recorded_joints, trajectories[0]))
 
 # Goes to the start of the trajectory in 3s
-reachy.goto(first_point, duration=3.0)
+goto(first_point, duration=3.0)
 ```
 
 Now that we are in position, we can actually play the trajectory. To do that, we simply loop over our recordings and set the goal position of each joints at the same frequency:
@@ -114,7 +114,7 @@ Now that we are in position, we can actually play the trajectory. To do that, we
 ```python
 import time
 
-for joints_position in trajectories:
+for joints_positions in trajectories:
     for joint, pos in zip(recorded_joints, joints_positions):
         joint.goal_position = pos
 
