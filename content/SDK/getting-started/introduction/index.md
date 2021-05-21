@@ -49,7 +49,7 @@ To know if the SDK is the right option, the TL;DR here would be something like:
 
 ### Unity VR App
 
-If you are interested in tele-operation and want to control Reachy via VR controllers, you can directly use our Unity VR App. More information on the [dedicated section](TODO).
+If you are interested in tele-operation and want to control Reachy via VR controllers, you can directly use our Unity VR App. More information on the [dedicated section]({{< ref "VR/introduction/introduction" >}}).
 
 ### ROS2 Foxy packages
 
