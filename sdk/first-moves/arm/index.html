@@ -76,7 +76,7 @@ from reachy_sdk.trajectory.interpolation import InterpolationMode
     reachy.r_arm.r_wrist_pitch: 0,
     reachy.r_arm.r_wrist_roll: 0,
 }
-</code></pre><p>For the <em>goto()</em> to work, the right arm&rsquo;s joints need to be in stiff mode.</p><pre><code class=language-python>reachy.r_arm.turn_on('r_arm')
+</code></pre><p>For the <em>goto()</em> to work, the right arm&rsquo;s joints need to be in stiff mode.</p><pre><code class=language-python>reachy.turn_on('r_arm')
 </code></pre><p>Then the <em>goto()</em>, here we use a duration of 1 second with the minimum jerk as interpolation mode but feel free to change it.</p><pre><code class=language-python>goto(
 	goal_positions=right_angled_position,
 	duration=1.0,
