@@ -300,7 +300,7 @@ right_angled_position = {
 For the *goto()* to work, the right arm's joints need to be in stiff mode.
 
 ```python
-reachy.r_arm.turn_on('r_arm')
+reachy.turn_on('r_arm')
 ```
 
 Then the *goto()*, here we use a duration of 1 second with the minimum jerk as interpolation mode but feel free to change it.
