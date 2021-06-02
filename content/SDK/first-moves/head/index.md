@@ -162,7 +162,7 @@ while True:
     time.sleep(0.01)
 ```
 
-What the code says is that we compute the [forward kinematics of Reachy's right arm](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/kinematics/#forward-kinematics), and the x, y, z of Reachy's right end-effector in the Reachy's coordinates system will be the coordinates of the point used by the *loo_at*.
+What the code says is that we compute the [forward kinematics of Reachy's right arm](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/kinematics/#forward-kinematics), and the x, y, z of Reachy's right end-effector in the Reachy's coordinates system will be the coordinates of the point used by the *look_at*.
 
 ### Cameras
 
