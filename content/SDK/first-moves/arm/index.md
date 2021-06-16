@@ -324,5 +324,5 @@ The result should look like this:
 Don't forget to put the right arm's joints back to the compliant mode. Place your hand below the right arm's gripper to prevent the arm from falling hard on the table.
 
 ```python
-reachy.r_arm.turn_off('r_arm')
+reachy.turn_off('r_arm')
 ```
