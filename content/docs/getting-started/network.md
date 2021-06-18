@@ -23,4 +23,7 @@ The computer inside Reachy is configured to use DHCP. It should thus be directly
 
 ## WiFi
 
-Coming soon.
+**For Full/Starter kit only:**
+
+Reachy is equipped with a Wi-Fi module! You can then directly connect Reachy to your network wirelessly.  
+*Note: if you are connected to Reachy remotely and depending on your use, we advise to favor an ethernet connection to benefit from a more stable connection.*
