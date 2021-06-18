@@ -5,7 +5,9 @@ You have two buttons behind the robot:
 (a) : turn on/off Reachy’s embedded computer (h) : turn on/off alimentation of Reachy’s motors Turn on button (h) before starting the robot using button (a).</description></item><item><title>Connect your robot to the network</title><link>https://docs.pollen-robotics.com/docs/getting-started/network/</link><pubDate>Tue, 13 Oct 2020 15:21:01 +0200</pubDate><guid>https://docs.pollen-robotics.com/docs/getting-started/network/</guid><description>Hard-wired connection For Full/Starter kit only:
 Use an ethernet cable to connect your robot to the network. The ethernet plug is available at position (b) on Reachy’s hardware interface.
 The computer inside Reachy is configured to use DHCP. It should thus be directly accessible on your network.
-WiFi Coming soon.</description></item><item><title>Connect to your robot</title><link>https://docs.pollen-robotics.com/docs/getting-started/connect/</link><pubDate>Tue, 06 Oct 2020 08:48:57 +0000</pubDate><guid>https://docs.pollen-robotics.com/docs/getting-started/connect/</guid><description>Connect to the embedded computer For Full/Starter kit only:
+WiFi For Full/Starter kit only:
+Reachy is equipped with a Wi-Fi module! You can then directly connect Reachy to your network wirelessly.
+Note: if you are connected to Reachy remotely and depending on your use, we advise to favor an ethernet connection to benefit from a more stable connection.</description></item><item><title>Connect to your robot</title><link>https://docs.pollen-robotics.com/docs/getting-started/connect/</link><pubDate>Tue, 06 Oct 2020 08:48:57 +0000</pubDate><guid>https://docs.pollen-robotics.com/docs/getting-started/connect/</guid><description>Connect to the embedded computer For Full/Starter kit only:
 Connect a screen, a mouse and a keyboard to Reachy.
 👉 Password: reachy You can also access it via ssh. You will first need to know Reachy’s IP on your network. Then, using your own reachy-ip you can access it via:
 ssh reachy@&amp;lt;reachy-ip&amp;gt; Don&amp;rsquo;t know what is your reachy-ip? Check out how to find the Reachy&amp;rsquo;s IP.
