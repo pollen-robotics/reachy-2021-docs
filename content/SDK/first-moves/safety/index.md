@@ -66,7 +66,7 @@ reachy.turn_off('r_arm')
 ```
 
 > #### What you need to keep in mind
-> You must be careful not to let the joints in stiff mode when you're not using the robot. This mode can be really demanding for a motor.
+> **You must be careful not to let the joints in stiff mode when you're not using the robot**. This mode can be really demanding for a motor, letting a motor in stiff mode will damage it after some time.
 >
 > If an arm is lifted or if the neck is lowered, maintaining the position in stiff mode will be exhausting because the motors would have to compensate the gravity and they could get damaged.
 > You can make the analogy with a human. If we ask you to keep stretched out arms, after a certain time it will be painful. So is the case for the joints of the robot.
