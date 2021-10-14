@@ -13,7 +13,7 @@ weight: 9999
 toc: true
 ---
 
-## Forum
+## Discord
 
 Join **[our discord](https://discord.gg/Kg3mZHTKgs)** if you have any questions or simply want to join the discussion!
 
