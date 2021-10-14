@@ -6,9 +6,9 @@ lastmod: 2021-03-30T13:05:22+02:00
 draft: false
 images: []
 menu:
-  advanced:
+  help:
     parent: "system"
-weight: 800
+weight: 200
 toc: true
 ---
 
@@ -22,7 +22,7 @@ You can run the SDK directly on Reachy's computer. In this case, the IP is the *
 
 First, you need to make sure that both Reachy and the computer you want to use for the SDK are on the same network. We recommend using an ethernet connection to make sure the latency is as small as possible. It also works on WiFi but for precise and high-frequency control, you should privilege wired option.
 
-We assume you've already configured the network on Reachy as described in the [Setup Reachy]({{< relref "/docs/overview/full-kit" >}}) section. What you need now is to find Reachy's IP on your network.
+We assume you've already configured the network on Reachy as described in the [Setup Reachy]({{< relref "/docs/getting-started/attach" >}}) section. What you need now is to find Reachy's IP on your network.
 
 ### ifconfig
 

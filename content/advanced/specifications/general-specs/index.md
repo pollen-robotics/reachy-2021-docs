@@ -7,9 +7,9 @@ lastmod: 2021-04-06T08:48:57+00:00
 draft: false
 images: []
 menu:
-  docs:
+  advanced:
     parent: "specifications"
-weight: 700
+weight: 200
 toc: true
 ---
 

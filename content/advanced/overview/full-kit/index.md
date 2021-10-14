@@ -7,9 +7,9 @@ lastmod: 2020-10-13T15:21:01+02:00
 draft: false
 images: ["torso-front.png"]
 menu: 
-  docs:
+  advanced:
     parent: "overview"
-weight: 410
+weight: 100
 toc: true
 ---
 

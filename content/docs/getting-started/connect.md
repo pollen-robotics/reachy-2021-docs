@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "getting-started"
-weight: 640
+weight: 220
 toc: true
 ---
 
@@ -27,7 +27,7 @@ Then, using your own *reachy-ip* you can access it via:
 ssh reachy@<reachy-ip>
 ```
 
-*Don't know what is your reachy-ip? Check out [how to find the Reachy's IP]({{< ref "advanced/system/find-my-ip" >}}).*  
+*Don't know what is your reachy-ip? Check out [how to find the Reachy's IP]({{< ref "help/system/find-my-ip" >}}).*  
 
 
 ## Check ROS is providing access to the topics

@@ -18,7 +18,7 @@
       {{ end -}}
     </ul>
     <div class="collapse navbar-collapse order-4 order-md-1">
-      <ul class="navbar-nav main-nav me-auto order-5 order-md-2">
+      <ul class="navbar-nav main-nav me-auto order-5 order-md-2" style="width: 75%;">
         {{- $current := . -}}
         {{ range .Site.Menus.main -}}
           {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
@@ -34,9 +34,9 @@
           </li>
         {{ end -}}
       </ul>
-      <div class="break order-6 d-md-none"></div>
+      
       {{ if .Site.Params.options.flexSearch -}}
-      <form class="navbar-form flex-grow-1 order-7 order-md-3">
+      <form class="navbar-form flex-grow-1 order-7 order-md-3" style="width: 25%; margin-left: 0rem;">
         <input id="userinput" class="form-control is-search" type="search" placeholder="Search docs..." aria-label="Search docs..." autocomplete="off">
         <div id="suggestions" class="shadow bg-white rounded"></div>
       </form>

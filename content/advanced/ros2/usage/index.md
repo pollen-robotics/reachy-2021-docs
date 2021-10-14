@@ -9,7 +9,7 @@ images: []
 menu:
   advanced:
     parent: "ros2"
-weight: 730
+weight: 320
 toc: true
 ---
 
@@ -68,10 +68,15 @@ To launch the **camera zoom** node ROS services:
 ros2 launch reachy_controllers camera_zoom_service.launch.py
 ```
 
-To launch **all** nodes related to the **cameras** ROS services:
+To launch **all reachy_controllers** nodes related to the **cameras** ROS services:
 ```bash
 ros2 launch reachy_controllers camera_controller.launch.py
 ```
+
+*In latest versions:*  
+To launch the **camera focus** node ROS services:
+```bash
+ros2 launch reachy_focus camera_focus.launch.py
 
 ### Joints nodes
 To launch the node related to the **motors** and **fans** ROS services:

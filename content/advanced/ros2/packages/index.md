@@ -9,7 +9,7 @@ images: []
 menu:
   advanced:
     parent: "ros2"
-weight: 720
+weight: 310
 toc: true
 ---
 
@@ -24,6 +24,10 @@ This folder contains all the ROS packages used with Reachy:
 * reachy_controllers: [https://github.com/pollen-robotics/reachy_controllers](https://github.com/pollen-robotics/reachy_controllers)  
 * reachy_kinematics: [https://github.com/pollen-robotics/reachy_kinematics](https://github.com/pollen-robotics/reachy_kinematics)  
 
+*Added in latest versions:*
+* reachy_description: [https://github.com/pollen-robotics/reachy_description](https://github.com/pollen-robotics/reachy_description)
+* reachy_focus: [https://github.com/pollen-robotics/reachy_focus](https://github.com/pollen-robotics/reachy_focus)  
+
 ## *dev* folder
 This folder contains all the packages used with Reachy that are not based on ROS:  
 * reachy_pyluos_hal: [https://github.com/pollen-robotics/reachy_pyluos_hal](https://github.com/pollen-robotics/reachy_pyluos_hal)  
@@ -32,4 +36,10 @@ This folder contains all the packages used with Reachy that are not based on ROS
 * zoom_kurokesu *(full/starter kit only)*: [https://github.com/pollen-robotics/zoom_kurokesu](https://github.com/pollen-robotics/zoom_kurokesu)  
 
 
-***To learn more on the packages content and usage, please refer to README.md files of each directory.***
+***To learn more on the packages content and usage, please refer to README.md files of each directory.***  
+
+{{< alert icon="👉" text="Want to get the latest software updates?</br><b><a href=\"https://pollen-robotics.github.io/reachy-2021-docs/docs/update/\" target=\"_blank\" rel=\"noopener noreferrer\">Check how to do it here!</a></b>" >}}
+
+## Packages interactions
+
+{{< img alt="Packages interactions" src="Diagramme Reachy.jpg" >}}

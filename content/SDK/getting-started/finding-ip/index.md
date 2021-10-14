@@ -12,7 +12,7 @@ weight: 120
 toc: true
 ---
 
-The last required step before actually programing your Reachy is to find its IP address. A dedicated [Find my IP section]({{< ref "advanced/system/find-my-ip" >}}) will give you more details on how to do that.
+The last required step before actually programing your Reachy is to find its IP address. A dedicated [Find my IP section]({{< ref "help/system/find-my-ip" >}}) will give you more details on how to do that.
 
 > Note: Using the SDK locally also avoids network potential latency or bandwidth issue. Yet, it may not be as convenient as working directly from your usual laptop. You need to plug a screen, keyboard and mouse directly on Reachy's computer.
 

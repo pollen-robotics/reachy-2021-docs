@@ -1,18 +1,36 @@
-[[docs]]
+[[advanced]]
   name = "Overview"
   weight = 10
   identifier = "overview"
-  url = "/docs/overview/"
+  url = "/advanced/overview/"
+
+[[advanced]]
+  name = "Mechanical specifications"
+  weight = 20
+  identifier = "specifications"
+  url = "/advanced/specifications/"
+
+[[advanced]]
+  name = "ROS2 Foxy driver"
+  weight = 30
+  identifier = "ros2"
+  url = "/advanced/ros2/"
+
+[[advanced]]
+  name = "Services"
+  weight = 40
+  identifier = "services"
+  url = "/advanced/services/"
 
 [[docs]]
   name = "What needs to be installed"
-  weight = 20
+  weight = 10
   identifier = "installation"
   url = "/docs/installation/"
 
 [[docs]]
   name = "Getting started"
-  weight = 30
+  weight = 20
   identifier = "getting-started"
   url = "/docs/getting-started/"
 
@@ -23,16 +41,16 @@
 #  url = "/docs/teleoperation/"
 
 [[docs]]
-  name = "I have a problem!"
-  weight = 90
-  identifier = "debug"
-  url = "/docs/debug/"
+  name = "Update Reachy"
+  weight = 30
+  identifier = "update"
+  url = "/docs/update/"
 
 [[docs]]
-  name = "Mechanical specifications"
-  weight = 80
-  identifier = "specifications"
-  url = "/docs/specifications/"
+  name = "I have a problem!"
+  weight = 40
+  identifier = "debug"
+  url = "/docs/debug/"
 
 [[sdk]]
   name = "Getting Started"
@@ -70,28 +88,27 @@
   identifier = "use-teleop"
   url = "/VR/use-teleop/"
 
-[[advanced]]
-  name = "ROS2 Foxy driver"
+[[help]]
+  name = "Help"
   weight = 10
-  identifier = "ros2"
-  url = "/advanced/ros2/"
+  identifier = "help"
+  url = "/help/debug/"
 
-[[advanced]]
-  name = "Services"
-  weight = 70
-  identifier = "services"
-  url = "/advanced/services/"
-
-[[advanced]]
+[[help]]
   name = "System"
   weight = 20
   identifier = "system"
-  url = "/advanced/system/"
+  url = "/help/system/"
+
+[[main]]
+  name = "Description"
+  weight = 10
+  url = "/advanced/overview/full-kit"
 
 [[main]]
   name = "Setup Reachy"
-  url = "/docs/overview/full-kit/"
-  weight = 10
+  url = "/docs/installation/full-installation-process/"
+  weight = 20
 
 # [[main]]
 #   name = "Blog"
@@ -100,18 +117,18 @@
 
 [[main]]
   name = "Python SDK"
-  weight = 20
-  url = "/SDK/getting-started/introduction/"
-
-[[main]]
-  name = "Advanced"
   weight = 30
-  url = "/advanced/ros2/introduction"
+  url = "/SDK/getting-started/introduction/"
 
 [[main]]
   name = "VR"
   weight = 40
   url = "/VR/introduction/introduction"
+
+[[main]]
+  name = "Help"
+  weight = 50
+  url = "/help/debug"
 
 [[social]]
   name = "Twitter"

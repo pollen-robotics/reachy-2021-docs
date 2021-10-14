@@ -9,12 +9,12 @@ images: []
 menu:
   help:
     parent: help
-weight: 1
+weight: 110
 toc: true
 ---
 
 {{% expand "> How to find the IP of my robot?" %}}
-Check the [Find my IP section]({{< ref "advanced/system/find-my-ip" >}}).
+Check the [Find my IP section]({{< ref "help/system/find-my-ip" >}}).
 {{% /expand %}}
 
 {{% expand "> The SDK server is not starting." %}}
