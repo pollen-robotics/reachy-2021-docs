@@ -116,7 +116,7 @@ In case an element which should appear is missing, it is very likely you got a w
 
 3. If you managed to plug back an element you found unplugged, relaunch the discovery described in point 2 to check it is correctly detected now.
 
-4. Restart the sevice:
+4. Restart the service:
 ```bash
 sudo systemctl start reachy_sdk_service.service
 ```

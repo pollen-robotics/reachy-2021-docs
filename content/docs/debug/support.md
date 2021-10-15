@@ -17,11 +17,11 @@ toc: true
 
 Check if your question is part of our [FAQ]({{< ref "help/faq" >}}).
 
-## Forum
+## Discord
 
-Visit **[our forum](https://forum.pollen-robotics.com/)** if you have any questions, maybe someone has already asked the same question or other people could benefit from the answer!
+Join **[our Discord](https://discord.gg/Kg3mZHTKgs)** if you have any questions, maybe someone has already asked the same question or other people could benefit from the answer!
 
-{{< alert icon="👉" text="Any questions relative to your development with Reachy?</br><b>Go to <a href=\"https://forum.pollen-robotics.com/\" target=\"_blank\" rel=\"noopener noreferrer\">forum.pollen-robotics.com</a></b>" >}}
+{{< alert icon="👉" text="Any questions relative to your development with Reachy?</br><b>Join the <a href=\"https://discord.gg/Kg3mZHTKgs\" target=\"_blank\" rel=\"noopener noreferrer\">Pollen Community on Discord</a></b>" >}}
 
 
 ## Pollen Robotics support

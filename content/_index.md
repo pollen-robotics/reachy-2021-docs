@@ -7,4 +7,9 @@ lastmod: 2021-03-31T14:44:05+02:00
 draft: false
 images: ["reachy.png"]
 ---
+
+{{< my-button-new-page link="https://discord.gg/Kg3mZHTKgs" label="Join Pollen Community on Discord!" >}}  
+
+<br />  
+
 :warning: This documentation is for the version 2021 of Reachy. If you have a Reachy-2019, you can visit the [documentation of the 2019 version](https://pollen-robotics.github.io/reachy-2019-docs/).
