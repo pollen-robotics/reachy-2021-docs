@@ -11,14 +11,20 @@
   url = "/advanced/specifications/"
 
 [[advanced]]
-  name = "ROS2 Foxy driver"
+  name = "Safety First"
   weight = 30
+  identifier = "safety"
+  url = "/safety/correct-use/"
+
+[[advanced]]
+  name = "ROS2 Foxy driver"
+  weight = 40
   identifier = "ros2"
   url = "/advanced/ros2/"
 
 [[advanced]]
   name = "Services"
-  weight = 40
+  weight = 50
   identifier = "services"
   url = "/advanced/services/"
 
