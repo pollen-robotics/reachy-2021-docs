@@ -13,7 +13,13 @@ weight: 320
 toc: true
 ---
 
-If you have a **Full kit**, `reachy_sdk_server.service` is enabled by default, which means that all Reachy ROS2 packages are automatically launched when you start the robot (see section [Using services]({{< ref "services" >}}) for more information on the services).
+## Levels of control
+Reachy offers 3 different levels of services/control:
+* **ROS2 Foxy services**, for the lower control. It requires the ROS2 nodes to be launched.
+* **gRPC services, for Reachy SDK API**. It requires the ROS nodes to be launched, as well as a server node that handle the gRPC services.
+* the **Python SDK**, for higher control. It requires both the ROS nodes and the gRPC server node to be launched, as it is based on the the gRPC communication interface.
+
+If you have a **Full kit**, `reachy_sdk_server.service` is enabled by default, which means that all Reachy ROS2 packages are automatically launched when you start the robot, along with the gRPC server node (see section [Using services]({{< ref "services" >}}) for more information on the services).
 
 ## What is running?
 You can check all ROS2 topics/services running on Reachy with:
