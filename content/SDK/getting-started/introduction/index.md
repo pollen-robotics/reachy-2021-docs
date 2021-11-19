@@ -61,7 +61,7 @@ The embedded NUC computer comes with ROS2 and Reachy specific packages already i
 - subscribe to various sensor topic (camera, force sensor, etc)
 - access client for IK/FK
 
-For more information, please refer to the [dedicated section]({{< ref "advanced/ros2/introduction" >}}).
+For more information, please refer to the [dedicated section]({{< ref "advanced/software/introduction" >}}).
 
 ### Custom gRPC client
 

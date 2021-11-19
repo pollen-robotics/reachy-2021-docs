@@ -45,4 +45,4 @@ This service launch the following nodes:
 Activating `reachy_kinematics.service` will launch the nodes from *reachy_kinematics*.
 Activating `reachy_controllers.service` will launch the nodes from *reachy_controllers*.  
 
-For more information on the nodes, please refer to section [What is running/What can I run on my robot]({{< ref "ROS2" >}}).
+For more information on the nodes, please refer to section [What is running/What can I run on my robot]({{< ref "software" >}}).
