@@ -15,7 +15,7 @@ toc: true
 
 This section assumes that you went through the [Hello World](https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/hello-world/) so that you know how to connect to the robot.
 
-Reachy 2021 has [two high quality cameras](https://www.kurokesu.com/shop/featured/CAMERA_C1_PRO) which can deliver up to 1080p at 30 fps. Each camera is equipped with a motorized zoom allowing to adapt the zoom level to the situation you're working on.
+Reachy 2021 has [two high quality cameras](https://www.kurokesu.com/shop/featured/CAMERA_C1_PRO) which can deliver up to 1080p at 30 fps. Each camera is equipped with a motorized zoom allowing to adapt the zoom and focus levels to the situation you're working on.
 
 Each camera can be accessed separately with *reachy.left_camera* and *reachy.right_camera*.
 
@@ -50,9 +50,31 @@ cv.waitKey(0)
 cv.destroyAllWindows()
 ```
 
+## Video stream
+
+You can visualize the video feed from both cameras easily with a [python script](https://github.com/pollen-robotics/reachy_controllers/blob/master/examples/view_cam.py) made for that.
+
+If reachy_sdk_server, the ROS2 server for Reachy SDK, is running.
+
+In a terminal:
+```bash
+$ python3 ~/reachy_ws/src/reachy_controllers/examples/view_cam.py "camera_you_want" ros
+```
+For example, if you want to visualize the left camera:
+```bash
+$ python3 ~/reachy_ws/src/reachy_controllers/examples/view_cam.py left ros
+```
+
+If reachy_sdk_server is not running, you can work with opencv.
+```bash
+$ python3 ~/reachy_ws/src/reachy_controllers/examples/view_cam.py left opencv
+```
+
+> NOTE: This will only work if you are working directly on the robot with a computer screen plugged to it and not remotely.
+
 ## Control the motorized zoom
 
-The piloting of Reachy's zooms is working with, *zoom_kurokesu*, a custom [python library](https://github.com/pollen-robotics/zoom_kurokesu).
+The piloting of Reachy's zooms is using *zoom_kurokesu*, a custom [python library](https://github.com/pollen-robotics/zoom_kurokesu).
 
 ### Zoom level
 
@@ -84,9 +106,6 @@ reachy.right_camera.zoom_level = ZoomLevel.IN
 
 You should hear the Reachy's zooms motors moving.
 
-Getting the last frame from each camera, you should see the different zoom levels have been applied.
-
-If when using the zooms you get images blurrier than what they are supposed to be, use the *homing* command.
 Each zoom level sends positions instructions relatively to a base position and it may happen that the base positions get a bit drifted. The homing instruction bring the zoom motors to their limit and reset the base positions from it.
 
 ```python
@@ -98,6 +117,17 @@ Once the homing executed, you can reset a zoom position.
 ```python
 reachy.left_camera.zoom_level = ZoomLevel.INTER
 ```
+
+### Autofocus
+
+Changing the zoom level does not adapt the focus directly. However, autofocus is available!
+To use it: 
+```python
+reachy.left_camera.start_autofocus()
+```
+
+>NOTE: the autofocus algorithm will not focus on one specific area of the image, it will try to give the clearest image overall.
+
 
 ### Zoom speed
 
