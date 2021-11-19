@@ -12,6 +12,10 @@ menu:
 weight: 110
 toc: true
 ---
+Non exhaustive list of common questions from Reachy's users. 
+If you don't see yours in it, don't hesitate to drop a message on our support channel on [Discord](https://discord.gg/Kg3mZHTKgs)!
+
+<br/>
 
 {{% expand "> How to find the IP of my robot?" %}}
 Check the [Find my IP section]({{< ref "help/system/find-my-ip" >}}).
