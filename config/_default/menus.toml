@@ -17,10 +17,10 @@
   url = "/safety/correct-use/"
 
 [[advanced]]
-  name = "ROS2 Foxy driver"
+  name = "Reachy's software"
   weight = 40
-  identifier = "ros2"
-  url = "/advanced/ros2/"
+  identifier = "software"
+  url = "/advanced/software/"
 
 [[advanced]]
   name = "Services"

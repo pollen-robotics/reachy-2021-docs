@@ -1,19 +1,19 @@
 ---
 title: "Working with ROS2 Foxy"
 description: "Using ROS2 Foxy for low-level control."
-lead: "Using ROS2 Foxy for low-level control."
+lead: ""
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false
 images: []
 menu:
   advanced:
-    parent: "ros2"
+    parent: "software"
 weight: 300
 toc: true
 ---
 
-Reachy runs natively on [ROS2 Foxy](https://docs.ros.org/en/foxy/index.html). ROS is a Robotic Operating System, it offers a huge variety of compatible algorithms and hardware drivers.
+Reachy runs natively on [ROS2 Foxy](https://docs.ros.org/en/foxy/index.html). ROS stands for Robotic Operating System, it offers a huge variety of compatible algorithms and hardware drivers.
 
 The embedded NUC computer comes with ROS2 and Reachy specific packages already installed and running. They provide full access to Reachy. You can:
 - get the */joint_state* and publish joint goals

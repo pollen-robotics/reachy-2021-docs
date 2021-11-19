@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   advanced:
-    parent: "ros2"
+    parent: "software"
 weight: 310
 toc: true
 ---

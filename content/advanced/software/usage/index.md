@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   advanced:
-    parent: "ros2"
+    parent: "software"
 weight: 320
 toc: true
 ---
@@ -19,7 +19,7 @@ Reachy offers 3 different levels of services/control:
 * **gRPC services, for Reachy SDK API**. It requires the ROS nodes to be launched, as well as a server node that handle the gRPC services.
 * the **Python SDK**, for higher control. It requires both the ROS nodes and the gRPC server node to be launched, as it is based on the the gRPC communication interface.
 
-If you have a **Full kit**, `reachy_sdk_server.service` is enabled by default, which means that all Reachy ROS2 packages are automatically launched when you start the robot, along with the gRPC server node (see section [Using services]({{< ref "services" >}}) for more information on the services).
+If you have a **Full kit** or a **Starter kit**, `reachy_sdk_server.service` is enabled by default, meaninig that all Reachy ROS2 packages are automatically launched when you start the robot, along with the gRPC server node (see section [Using services]({{< ref "services" >}}) for more information on the services).
 
 ## What is running?
 You can check all ROS2 topics/services running on Reachy with:
@@ -31,11 +31,11 @@ and
 ros2 service list
 ```  
 
-If you want finer control of which packages should run on your Reachy, see the section [Using services]({{< ref "services" >}}).
+If you want finer control of which packages should run on your Reachy automatically as services, see the section [Using services]({{< ref "services" >}}).
 
 ## Launch kinematics services
 
-Kinematics services are available to provide inverse and forward kinematics services for the arms, as well as inverse kinematics for Orbita.  
+Kinematics services are available to provide inverse and forward kinematics services for the arms, as well as inverse kinematics for Orbita, the spherical joint used in Reachy's neck.  
 
 Launch files are available to start the ROS services you need:  
 
