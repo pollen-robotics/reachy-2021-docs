@@ -30,13 +30,13 @@
 
 [[docs]]
   name = "What needs to be installed"
-  weight = 10
+  weight = 20
   identifier = "installation"
   url = "/docs/installation/"
 
 [[docs]]
   name = "Getting started"
-  weight = 20
+  weight = 10
   identifier = "getting-started"
   url = "/docs/getting-started/"
 
