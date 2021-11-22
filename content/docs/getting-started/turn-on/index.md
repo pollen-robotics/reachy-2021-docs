@@ -23,7 +23,7 @@ You have two buttons behind the robot:
 - (a) : turn on/off Reachy’s embedded computer
 - (h) : turn on/off alimentation of Reachy’s motors
 
-Turn on button (h) before starting the robot using button (a).
+{{< alert icon="👉" text="Turn on the motors with button (h) before starting the robot using button (a)." >}}
 
 | 1. Position the head so that Reachy looks straight ahead | 2. Switch on the motors | 3. Turn on the robot |
 | -------|-------------|----------|
