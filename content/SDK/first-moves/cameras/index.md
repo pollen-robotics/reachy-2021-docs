@@ -52,6 +52,8 @@ cv.destroyAllWindows()
 
 ## Video stream
 
+### If you are directly working on Reachy
+
 You can visualize the video feed from both cameras easily with a [python script](https://github.com/pollen-robotics/reachy_controllers/blob/master/examples/view_cam.py) made for that.
 
 If reachy_sdk_server, the ROS2 server for Reachy SDK, is running.
@@ -71,6 +73,16 @@ $ python3 ~/reachy_ws/src/reachy_controllers/examples/view_cam.py left opencv
 ```
 
 > NOTE: This will only work if you are working directly on the robot with a computer screen plugged to it and not remotely.
+
+### If you are working remotely
+
+You can also visualize the video feed from any computer, considering it is on the same network as Reachy and that you know Reachy's IP address.
+
+To view the left camera:
+```bash
+cd ~/reachy-sdk/reachy_sdk/examples
+python3 view_cam_sdk.py left --ip_address '192.168.0.42'  # Replace with the actual IP
+```
 
 ## Control the motorized zoom
 
