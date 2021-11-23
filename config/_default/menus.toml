@@ -5,7 +5,7 @@
   url = "/advanced/overview/"
 
 [[advanced]]
-  name = "Mechanical specifications"
+  name = "Specifications"
   weight = 20
   identifier = "specifications"
   url = "/advanced/specifications/"
