@@ -34,7 +34,7 @@ This means the motor has overheat and needs to cooldown. Turn the robot off, wai
 {{% /expand %}}
 
 {{% expand "> One of Reachy's module blue led is blinking" %}}
-This means the module encounter an issue (safety shutdown, incorrect instruction, etc.). You need to turn the robot off and on again to restart the module. For more information on what the blue led means, check the dedicated [Notion page](https://pollen-robotics.notion.site/Orbita-blue-LED-8c0373d0c46f4d00bc42007f3cd85957). 
+This means the module encounter an issue (safety shutdown, incorrect instruction, etc.). You need to turn the robot off and on again to restart the module. For more information on what the blue led means, check the [dedicated page]({{< ref "help/system/orbita-blue-led" >}}). 
 {{% /expand %}}
 
 {{% expand "> Reachy's head doesn't look straight when asked." %}}
@@ -42,7 +42,7 @@ You need to start the robot with the head in a position close to straight when s
 {{% /expand %}}
 
 {{% expand "> Why can't Reachy's computer be turned on?" %}}
-Check the dedicated [Notion page](https://www.notion.so/70ebaaa10a0b4577a936fcd2e5488085) explaining why you couldn't have Reachy's computer on.
+Check the page [Reachy's computer is not running]({{< ref "help/system/computer-not-running" >}}) explaining why you couldn't have Reachy's computer on.
 {{% /expand %}}
 
 {{% expand "> How can I view the camera feed?" %}}
@@ -64,8 +64,7 @@ Orbita's fan is managed automatically based on temperatures limits set for Orbit
 {{% /expand %}}
 
 {{% expand "> I connected a computer screen to Reachy, but I can't see any image." %}}
-There is probably a problem with the HDMI connection. You can check the dedicated [Notion page](https://www.notion.so/70ebaaa10a0b4577a936fcd2e5488085).
-{{% /expand %}}
+There might be a problem with the HDMI connection or Reachy's computer is actually not turned on. You can check the page [Reachy's computer is not running]({{< ref "help/system/computer-not-running" >}}).
 
 {{% expand "> Where can I find examples on how to use the Edge TPU device? "%}}
 Edge TPU Coral device uses the [pycroal](https://github.com/google-coral/pycoral) python library. We use this device everytime we need AI in one of our applications, for example to [classify objects for TicTacToe](https://github.com/pollen-robotics/reachy-2019-tutorials/blob/master/custom_classifier/Tuto_classification.ipynb).

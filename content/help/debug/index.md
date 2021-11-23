@@ -90,12 +90,14 @@ If you're having trouble turning on Reachy's computer, you can check the Notion 
 If you work on Reachy remotely, you might have entered the wrong IP address when you were trying to connect to the robot using *ReachySDK(host='Reachy IP address').* Check the section on how to [find Reachy's IP address](http://docs.pollen-robotics.com/help/system/find-my-ip/).
 
 #### One motor is disconnected
-The cable of one of Reachy's motor might be disconnected. To check that, you can use the [discovery tool](https://www.notion.so/Check-which-motors-are-connected-e61d5916bb4941ad8ac8b173fa8c9a9d) to check if all the motors are detected.
+The cable of one of Reachy's motor might be disconnected. To check that, you can use the [discovery tool]({{< ref "help/system/discovery-tool" >}}) to check if all the motors are detected.
+
+If one motor is disconnected, check the page on [How to reconnect a motor]({{< ref "help/system/reconnect-motor" >}})
 
 #### Force sensor not detected
-Reachy is equipped with a force sensor in each gripper connected to Reachy's computer by an eight wires cable which may have been disconnected during manipulation or transportation. The [discovery tool](https://www.notion.so/Check-which-motors-are-connected-e61d5916bb4941ad8ac8b173fa8c9a9d) can also indicate if Reachy's software detects the force sensors.
+Reachy is equipped with a force sensor in each gripper connected to Reachy's computer by an eight wires cable which may have been disconnected during manipulation or transportation. The [discovery tool]({{< ref "help/system/discovery-tool" >}}) can also indicate if Reachy's software detects the force sensors.
     
-  If one force sensor is disconnected, check out the dedicated page on [how to reconnect a load sensor](https://www.notion.so/Disconnected-force-sensor-eb7c448d6a124cf19243084963c73c7a).
+  If one force sensor is disconnected, check the page on [how to reconnect a load sensor]({{< ref "help/system/reconnect-load-sensor" >}}).
     
 
 #### Camera opening failed
