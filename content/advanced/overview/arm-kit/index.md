@@ -16,11 +16,13 @@ toc: true
 
 | Arm kit |
 |---------|
-{{< img alt="Reachy ports on the back" src="Reachy_arm.png" width="600px" >}}
+{{< img alt="Reachy ports on the back" src="Reachy_arm.png" width="40%" >}}
 
 ## Reachy's arm
 
-{{< img alt="Reachy's arm" src="arm_photo.png" width="600px" >}}
+<p align="center">
+<img src="arm_photo.png" alt="drawing" width="70%"/>
+</p>
 
 (1) : 12V Power supply board (SMPS2Dynamixel)  
 (2) : Dynamixel control board  

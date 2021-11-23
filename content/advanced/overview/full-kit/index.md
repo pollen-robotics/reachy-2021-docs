@@ -17,14 +17,16 @@ toc: true
 
 | Starter kit | Full kit|
 |---------|------------|
-|{{< img alt="Reachy ports on the back" src="reachy-expressive-kit.png" width="600px" >}}|{{< img alt="Reachy ports on the back" src="reachy-advanced-kit.png" width="600px" >}}|
+|{{< img alt="Reachy ports on the back" src="reachy-expressive-kit.png" width="50%" >}}|{{< img alt="Reachy ports on the back" src="reachy-advanced-kit.png" width="50%" >}}|
 
 
 ## Reachy's torso
 
 ### Front
 
-{{< img alt="Reachy ports on the back" src="torso-front.png" width="600px" >}}
+<p align="center">
+<img src="torso-front.png" alt="drawing" width="60%"/>
+</p>
 
 (1) : Motors and fan’s housing for Orbita neck  
 (2) : Power board  
@@ -39,7 +41,9 @@ toc: true
 
 ### Back
 
-{{< img alt="Reachy ports on the back" src="torso-back.png" width="600px" >}}
+<p align="center">
+<img src="torso-back.png" alt="drawing" width="60%"/>
+</p>
 
 
 (10) : Hardware interface (see image below for details)  
@@ -49,9 +53,13 @@ toc: true
 
 ## Reachy's hardware interface
 
-{{< img alt="Reachy ports on the back" src="hardware-interface-onshape.png" width="100px" >}}
+<p align="center">
+<img src="hardware-interface-onshape.png" alt="drawing" width="70%"/>
+</p>
 
-{{< img alt="Reachy ports on the back" src="hardware-interface.png" width="600px" >}}
+<p align="center">
+<img src="hardware-interface.png" alt="drawing" width="90%"/>
+</p>
 
 (a) : Embedded computer on/off (NUC)  
 (b) : Ethernet port  
@@ -65,9 +73,13 @@ toc: true
 
 ## Reachy's head
 
-{{< img alt="Reachy's head front view" src="head-front.jpg" width="600px" >}}
+<p align="center">
+<img src="head-front.jpg" alt="drawing" width="75%"/>
+</p>
 
-{{< img alt="Reachy's head back view" src="head-back.jpg" width="600px" >}}
+<p align="center">
+<img src="head-back.jpg" alt="drawing" width="75%"/>
+</p>
 
 (13) : Right and left high quality motorized cameras and lenses  
 (14) : Antennas' motorized fixations  

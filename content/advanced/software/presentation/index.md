@@ -66,4 +66,6 @@ gRPC clients can be in different programming languages. Currently, two different
 
 The diagram below sums up what has been described in this page.
 
-{{< img alt="Packages interactions" src="Diagramme Reachy.jpg" >}}
+<p align="center">
+<img src="Diagramme_Reachy.jpg" alt="drawing" width="90%"/>
+</p>
