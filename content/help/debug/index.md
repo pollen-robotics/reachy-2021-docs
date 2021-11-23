@@ -71,20 +71,22 @@ If the service is not active, enable it and start it.
 sudo systemctl enable <name_of_the_service>.service
 sudo systemctl start <name_of_the_service>.service
 ```
-Get [more information on Reachy system.d services here](https://docs.pollen-robotics.com/advanced/services/)
+Get [more information on Reachy system.d services here](https://docs.pollen-robotics.com/advanced/services/available)
 
 ### Checking list
 
-If the service was actually running and the problems still persist, here is a liist of things you can look at.
+If the service was actually running and the problems still persist, here is a list of things you can look at.
 
 #### Motors off
 
-This is something we often forget, especially during the first uses of Reachy: forgetting to turn Reachy's motors on using the power switch in Reachy's back before turning on Reachy's computer.
+This is something we often forget, especially during the first uses of Reachy: turning Reachy's motors on using the power switch in Reachy's back before turning on Reachy's computer.
+
+Respecting this order of ignition is needed for the sdk server to start correctly.
 
 #### Reachy's computer is off
 If you work only remotely on Reachy, you may have forgotten to turn Reachy's computer on using the round button in the back. A round white led around the button should be on when the computer is on.
     
-If you're having trouble turning on Reachy's computer, you can check the Notion page on [why Reachy's computer is not running](https://www.notion.so/Reachy-s-computer-is-not-running-70ebaaa10a0b4577a936fcd2e5488085).
+If you're having trouble turning on Reachy's computer, you can check the page on [why Reachy's computer is not running]({{< ref "help/system/computer-not-running" >}}).
 
 #### Using an incorrect IP address
 If you work on Reachy remotely, you might have entered the wrong IP address when you were trying to connect to the robot using *ReachySDK(host='Reachy IP address').* Check the section on how to [find Reachy's IP address](http://docs.pollen-robotics.com/help/system/find-my-ip/).
@@ -92,7 +94,7 @@ If you work on Reachy remotely, you might have entered the wrong IP address when
 #### One motor is disconnected
 The cable of one of Reachy's motor might be disconnected. To check that, you can use the [discovery tool]({{< ref "help/system/discovery-tool" >}}) to check if all the motors are detected.
 
-If one motor is disconnected, check the page on [How to reconnect a motor]({{< ref "help/system/reconnect-motor" >}})
+If one motor is disconnected, check the page on [How to reconnect a motor]({{< ref "help/system/reconnect-motor" >}}).
 
 #### Force sensor not detected
 Reachy is equipped with a force sensor in each gripper connected to Reachy's computer by an eight wires cable which may have been disconnected during manipulation or transportation. The [discovery tool]({{< ref "help/system/discovery-tool" >}}) can also indicate if Reachy's software detects the force sensors.

@@ -15,7 +15,7 @@ toc: true
 
 ## Quick debug and FAQ
 
-Check the [Quick debug]({{< ref "help/debug" >}}) if you encounter an issue when trying to use Reachy or if you have a question, check if it part of our [FAQ]({{< ref "help/faq" >}}). 
+Check the [Quick debug]({{< ref "help/debug" >}}) if you encounter an issue when trying to use Reachy or if you have a question, check if it is part of our [FAQ]({{< ref "help/faq" >}}). 
 
 
 ## Discord
