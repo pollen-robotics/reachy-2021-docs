@@ -29,4 +29,19 @@ Weight: 1.7Kg
 Reachy&amp;rsquo;s torso area includes the following elements:
 Computer Powerful internal computer NUC intel i3 dual-core 2.1Ghz with 8Go DDR4 and 256Go SSD (NUC8i3PN)
 With computer boost option: intel i7 quad core, 16 Go DDR4, 512 go SSD
-Microphone Seeed Studio - ReSpeaker Mic Array v2.0: Microphone array for NLU (ReSpeaker) and a 3.5mm jack audio output</description></item></channel></rss>
+Microphone Seeed Studio - ReSpeaker Mic Array v2.0: Microphone array for NLU (ReSpeaker) and a 3.5mm jack audio output</description></item><item><title>Orbita specifications</title><link>https://docs.pollen-robotics.com/advanced/specifications/orbita-specs/</link><pubDate>Tue, 06 Oct 2020 08:48:57 +0000</pubDate><guid>https://docs.pollen-robotics.com/advanced/specifications/orbita-specs/</guid><description>Specifications Construction: 3D printed MJF Painted and Injected PU mechanical parts - Metal bearings and axes.
+Power consumption: 13W
+Voltage: 12V
+No-load speed: 130rpm
+Max Continous torque: 0.97Nm
+Gear reduction ratio: 2.16
+Diameter: 70mm height: 158mm Weight: 450g
+Motor + Gearbox specifications Power consumption: 4.22W
+Voltage: 12V
+No-load speed: 280 rpm
+Max Continous torque: 151 mNm
+Gear reduction ratio: 35:1
+Diameter: 16mm
+Height: 65mm
+Motor&amp;rsquo;s full specification here
+Degrees of freedom Orbita has 3 degrees of freedom actuated by three motors described above.</description></item></channel></rss>
