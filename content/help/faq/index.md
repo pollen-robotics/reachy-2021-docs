@@ -46,7 +46,7 @@ Check the page [Reachy's computer is not running]({{< ref "help/system/computer-
 {{% /expand %}}
 
 {{% expand "> How can I view the camera feed?" %}}
-- If the SDK server is running, check [Reachy's cameras](https://github.com/pollen-robotics/sdk/first-moves/cameras/#video-stream) from the Python SDK documentation.
+- If the SDK server is running, check [Reachy's cameras](https://docs.pollen-robotics.com/sdk/first-moves/cameras/#video-stream) from the Python SDK documentation.
 
 - If not, you will need to have a computer screen plugged to Reachy using an HDMI cable. 
 To view the left camera, in a terminal in Reachy's computer:
