@@ -65,6 +65,7 @@ Orbita's fan is managed automatically based on temperatures limits set for Orbit
 
 {{% expand "> I connected a computer screen to Reachy, but I can't see any image." %}}
 There might be a problem with the HDMI connection or Reachy's computer is actually not turned on. You can check the page [Reachy's computer is not running]({{< ref "help/system/computer-not-running" >}}).
+{{% /expand %}}
 
 {{% expand "> Where can I find examples on how to use the Edge TPU device? "%}}
 Edge TPU Coral device uses the [pycroal](https://github.com/google-coral/pycoral) python library. We use this device everytime we need AI in one of our applications, for example to [classify objects for TicTacToe](https://github.com/pollen-robotics/reachy-2019-tutorials/blob/master/custom_classifier/Tuto_classification.ipynb).
