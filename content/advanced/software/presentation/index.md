@@ -32,7 +32,7 @@ The packages developed for Reachy 2021 are divided into two categories: the ROS 
 - [**reachy_description**](https://github.com/pollen-robotics/reachy_description): publishes the robot's URDF, needed by the kinematics package and by the different ROS simulation tools (rviz, gazebo, ...)
 - [**reachy_kinematics**](https://github.com/pollen-robotics/reachy_kinematics): computes the forward / inverse kinematics of Reachy's arms and the inverse kinematics of Orbita
 - [**reachy_controllers**](https://github.com/pollen-robotics/reachy_controllers): communicates with the HAL, the cameras and the zooms
-- [**reachy_sdk_server**](https://github.com/pollen-robotics/reachy_sdk_server): creates two gRPC servers, *camera_server* to get the camera's images and control the motorised zooms and *reachy_sdk_server* for the joints, load sensors, fans et Orbita
+- [**reachy_sdk_server**](https://github.com/pollen-robotics/reachy_sdk_server): creates two gRPC servers, *camera_server* to get the camera's images and control the motorised zooms and *reachy_sdk_server* for the joints, load sensors, fans and Orbita
 - [**reachy_msgs:**](https://github.com/pollen-robotics/reachy_msgs): custom ROS messages for the different ROS services and topics
 - [**reachy_focus**](https://github.com/pollen-robotics/reachy_focus): communicates with *zoom_kurokesu* to perform autofocus
 
