@@ -1,6 +1,7 @@
 .alert {
   font-family: $font-family-monospace;
   font-size: $font-size-sm;
+  margin-bottom: 1em;
 }
 
 .alert-icon {
@@ -30,6 +31,11 @@
 
 .alert-warning {
   background: $beige;
+  color: $black;
+}
+
+.alert-danger {
+  background: #FFE4E1;
   color: $black;
 }
 
