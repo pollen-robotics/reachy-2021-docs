@@ -146,7 +146,7 @@ pip3 install reachy-sdk
 
 ## Install the dependencies
 Some Python dependencies need to be installed as extra.  
-**Dependencies:** numpy, scipy, pyquaternion, zoom_kurokesu, pykdl  
+**Dependencies:** numpy, scipy, pyquaternion, sklearn, pykdl  
 
 If one of them is missing:  
 * Using pip install:
@@ -154,7 +154,7 @@ If one of them is missing:
 pip3 install numpy
 pip3 install scipy
 pip3 install pyquaternion
-pip3 install zoom_kurokesu
+pip3 install sklearn
 ```
 * Using apt install:
 ```bash
