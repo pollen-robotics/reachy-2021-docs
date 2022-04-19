@@ -48,7 +48,7 @@ The *reachy.fans* object contains each fan. You can have access to each fan indi
 </p>
 
 ```python
-for fan in reachy.fans.values:
+for fan in reachy.fans.values():
   print(fan)
 >>> <Fan name="l_shoulder_fan" state="off">
 <Fan name="l_elbow_fan" state="off">
