@@ -18,7 +18,7 @@ reachy.fans
 	&lt;Fan name=&quot;r_antenna_fan&quot; state=&quot;off&quot;&gt;
 &gt;
 </code></pre><p>As explained in the <a href=https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/safety/#check-the-temperatures>safety page</a>, the temperature of each joint is controlled internally in Reachy and if it reaches a certain value, the corresponding fan turns on.
-However, you might want to turn them on sooner so that the joints work longer on a demanding task.</p><p>The <em>reachy.fans</em> object contains each fan. You can have access to each fan individually or to all at once.</p><p align=center><img src=fans_attributes.png alt=drawing width=75%></p><pre><code class=language-python>for fan in reachy.fans.values:
+However, you might want to turn them on sooner so that the joints work longer on a demanding task.</p><p>The <em>reachy.fans</em> object contains each fan. You can have access to each fan individually or to all at once.</p><p align=center><img src=fans_attributes.png alt=drawing width=75%></p><pre><code class=language-python>for fan in reachy.fans.values():
   print(fan)
 &gt;&gt;&gt; &lt;Fan name=&quot;l_shoulder_fan&quot; state=&quot;off&quot;&gt;
 &lt;Fan name=&quot;l_elbow_fan&quot; state=&quot;off&quot;&gt;
