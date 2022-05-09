@@ -14,17 +14,16 @@ toc: true
 
 {{< warning icon="👉🏾" text="This page contains really important information about the use of the teleoperation app. <b>Please make sure you read it carefully before teleoperating Reachy.</b>" >}}
 
-
-## Ideal use of teleoperation
 The teleoperation application use has nothing complicated, but you need to respect a few guidelines to avoid damaging the robot when using it. This page goes through the main elements you need to keep in mind while teleoperating Reachy. The guidelines are not exhaustive, but should help you start safely using teleoperation.  
 
-The ideal position to start teleoperation may depend on the surrounding of Reachy. Nevertheless, if the robot environment is compatible with, we advise to start with the elbows at 90 degrees, lightly away from the torso.
+## Ideal use of teleoperation
+
+The ideal position to start teleoperation may depend on the surrounding of Reachy. Nevertheless, if the robot environment is compatible with it, we advise to start with the elbows at 90 degrees, lightly away from the torso.
 
 <img src="idealPosFace.jpg" alt="ideal position face" width="40%"/>
 <img src="idealPosProf.jpg" alt="ideal position side" width="40%"/>
 
 <br />
-Follow all the below elements to teleoperate Reachy in the best conditions!  
 Here is a video of movements and positions that are visually suitable for teleoperation:
 
 <video controls="controls" width="80%" autoplay loop>
@@ -33,8 +32,11 @@ Here is a video of movements and positions that are visually suitable for teleop
   <p>Your browser does not support the video element.</p>
 </video>
 
+<br />
+Follow all the elements described in the next sections to teleoperate Reachy in the best conditions! 
+
 ## All guidelines in video
-Watch this quick video to have an overview if the main guidelines to use teleoperation:  
+Watch this quick video to have an overview of the main guidelines to use teleoperation:  
 
 <video controls="controls" width="80%" loop>
   <source type="video/mp4" src="AllGuidelines.mp4"></source>
@@ -43,12 +45,13 @@ Watch this quick video to have an overview if the main guidelines to use teleope
 </video>
 
 <br />
-The next sections explains the risks of not following the guidelines and the explanations behind them.
+The next sections explains the explanations behind these guidelines and the risks of not following them.
 
 ## Keep the right position 
-The mapping between your position and the robot is made when clicking on (A) to start teleoperation.
+The mapping between your position and the robot is made when clicking on (A) to start teleoperation. The position and rotation of your headset <b>at this moment</b> is used to create a static coordinate system in which the controllers positions and rotations and the headset rotation are calculated. If you move (change either your body position or orientation), the controllers positions will still be calculated in the previous static coordinate system, and Reachy movements won't look like like yours anymore.  
+For these reasons, you must:
 
-- You must not move when teleoperating Reachy: <b>your feet must stay static</b> on the floor.
+- <b>Not move your feet</b> when teleoperating Reachy: they must stay static on the floor.
 
 <video controls="controls" width="40%" loop>
   <source type="video/mp4" src="FeetOk.mp4"></source>
@@ -60,9 +63,9 @@ The mapping between your position and the robot is made when clicking on (A) to 
   <source type="video/mp4" src="FeetNotOk.mp4"></source>
   <source type="video/webm" src="FeetNotOk.webm"></source>
   <p>Your browser does not support the video element.</p>
-</video>
+</video>  
 
-- Another consequence of the mapping is that <b>you must not rotate your torso</b>.
+- <b>Not rotate your torso</b>.
 In fact, Reachy's torso won't move, only the arms will try to reach the positions, and this may lead to collision between the Reachy's arms and torso.
 
 <video controls="controls" width="40%" loop>
@@ -90,7 +93,7 @@ All this contribute to give movements that seem incontrollable, due to discontin
 **To avoid this situation:**
 
 - Avoid using extreme joints orientations while teleoperating Reachy
-- Avoid unusual arm positions, there are probably in Reachy's joints limits
+- Avoid unusual arm positions, there are probably above Reachy's joints limits
 
 <video controls="controls" width="40%" loop>
   <source type="video/mp4" src="MovementsOk.mp4"></source>
@@ -190,7 +193,7 @@ Hitting Reachy's arms on objects can damage the painting or even break 3D parts 
 </video>
 
 ## Use teleop safely
-- Check the environment around you before starting teleoperation!
+- Check the environment around you before starting teleoperation.
 
 <video controls="controls" width="40%" loop>
   <source type="video/mp4" src="CheckSpaceOk.mp4"></source>
