@@ -14,7 +14,7 @@ toc: true
 
 {{< warning icon="👉🏾" text="This page contains really important information about the use of the teleoperation app. <b>Please make sure you read it carefully before teleoperating Reachy.</b>" >}}
 
-The teleoperation application use has nothing complicated, but you need to respect a few guidelines to avoid damaging the robot when using it. This page goes through the main elements you need to keep in mind while teleoperating Reachy. The guidelines are not exhaustive, but should help you start safely using teleoperation.  
+The teleoperation application use has nothing complicated, but you need to respect a few guidelines to avoid damaging the robot when using it. This page goes through the main elements you need to keep in mind while teleoperating Reachy. The guidelines are not exhaustive, but should give you a good start on how to use the application safely.
 
 ## Ideal use of teleoperation
 
@@ -24,7 +24,10 @@ The ideal position to start teleoperation may depend on the surrounding of Reach
 <img src="idealPosProfReduced.jpg" alt="ideal position side" width="40%"/>
 
 <br />
+<br />
 Here is a video of movements and positions that are visually suitable for teleoperation:
+<br />
+<br />
 
 <video controls="controls" width="80%" autoplay loop>
   <source type="video/mp4" src="ChestOk.mp4"></source>
@@ -45,7 +48,7 @@ Watch this quick video to have an overview of the main guidelines to use teleope
 </video>
 
 <br />
-The next sections explains the explanations behind these guidelines and the risks of not following them.
+The next sections go deeper into each guideline presented in the video and the risks of not following them.
 
 ## Keep the right position 
 The mapping between your position and the robot is made when clicking on (A) to start teleoperation. The position and rotation of your headset <b>at this moment</b> is used to create a static coordinate system in which the controllers positions and rotations and the headset rotation are calculated. If you move (change either your body position or orientation), the controllers positions will still be calculated in the previous static coordinate system, and Reachy movements won't look like like yours anymore.  
@@ -126,7 +129,7 @@ All this contribute to give movements that seem incontrollable, due to discontin
 
 ## Avoid damaging motors
 Reachy's arms have been thought to manipulate object at a table level and nearby.
-Some positions away from this nominal area can require a lot of effort from the motors to be maintained, and cause fast overheating of them. Moreover, manipulating objects requires more effort from the motors.
+Some positions away from this nominal area can require a lot of effort from the motors to be maintained, and cause them to overheat fast. Moreover, manipulating objects requires more effort from the motors.
 
 **To avoid damaging motors:**
 
@@ -146,7 +149,7 @@ Some positions away from this nominal area can require a lot of effort from the 
 </video>
 
 - Do not let the motors in stiff mode when you are in the menu if you are not going to teleoperate the robot soon
-- Do not try to lift objects that are above Reachy's capabilities
+- Do not try to lift objects that are above Reachy's capabilities. If you try to lift an object and see that Reachy's arm can follow your movement or if you head some crackling noise coming from the motors, it probably means that the object is too heavy for Reachy's arm.
 
 <video controls="controls" width="40%" loop>
   <source type="video/mp4" src="WeightOk.mp4"></source>
@@ -223,7 +226,7 @@ Hitting Reachy's arms on objects can damage the painting or even break 3D parts 
 
 ## Familiarize yourself with the robot
 - Before trying to make application or to achieve anything using teleoperation with the robot, familiarize yourself with its movements, its workspace and its joints limits.
-- Stay near the robot for your first trials: listen to the motors sounds, be aware of your workspace and field of view in a environment you know, try to manipulate light objects
+- Stay near the robot for your first trials: listen to the motors sounds, be aware of your workspace and field of view in a environment you know, try to manipulate light objects.
 - Explore your own workspace with small and quite slow movements to see how the robot reacts and better understand the relation between your movements and its.
 
 
