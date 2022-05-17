@@ -19,7 +19,7 @@ Reachy's SDK Server might not work due to a motor that have been disconnected du
 First of all, you need to stop the service running. If you have not modified the default service, open a terminal and enter:
 
 ```bash
-sudo systemctl stop reachy_sdk_service.service
+sudo systemctl stop reachy_sdk_server.service
 ```
 
 ## Running the discovery
@@ -121,5 +121,5 @@ Doing a new discovery after each cable manipulation for missing motors or load s
 Once you have all the motors and load sensors you need in the discovery, you can restart Reachy's software.
 
 ```bash
-sudo systemctl start reachy_sdk_service.service
+sudo systemctl start reachy_sdk_server.service
 ```
