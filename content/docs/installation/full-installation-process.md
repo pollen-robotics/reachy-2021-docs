@@ -23,4 +23,4 @@ Of course you may want to know what's included in it. Please refer to section [W
 
 **For Arm kit only:**  
 
-{{< my-button link="https://pollen-robotics.github.io/reachy-2021-docs/docs/installation/arm-installation-process/" label="I have an Arm kit. What do I need to do?" >}}
+{{< my-button link="/docs/installation/arm-installation-process/" label="I have an Arm kit. What do I need to do?" >}}

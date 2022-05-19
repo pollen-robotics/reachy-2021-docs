@@ -15,7 +15,7 @@ toc: true
 
 ## Full/Starter kit
 
-Connect the power supply to the robot (g) placement on the [robot back interface]({{< ref "full-kit" >}}).  
+Connect the power supply to the robot (g) placement on the [robot back interface]({{< ref "full-kit#reachys-hardware-interface" >}}).  
 
 Orbita neck needs to start in a straight position for its initialization. To do so, position the head so that Reachy looks straight ahead. (Don’t worry, the position doesn’t need to be exact, it just has to be correctly oriented).  
 

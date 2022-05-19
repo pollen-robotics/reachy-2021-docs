@@ -13,15 +13,15 @@ weight: 161
 toc: true
 ---
 
-Make sure you checked the [safety page](http://localhost:1313/reachy-2021-docs/sdk/first-moves/safety/) before controling the arm.
+Make sure you checked the [safety page]({{< ref "sdk/first-moves/safety" >}}) before controling the arm.
 
-This page assumes that you went through the [Hello World](http://localhost:1313/reachy-2021-docs/sdk/getting-started/hello-world/) so that you know how to connect to the robot and that you also know how to use the *goto()* function presented in [Controling the arm](http://localhost:1313/reachy-2021-docs/sdk/first-moves/arm/).
+This page assumes that you went through the [Hello World]({{< ref "sdk/getting-started/hello-world" >}}) so that you know how to connect to the robot and that you also know how to use the *goto()* function presented in [Controling the arm]({{< ref "sdk/first-moves/arm" >}}).
 
 ## Arm coordinate system
 
 ### Joint coordinates
 
-If you remember the [*goto()* function](http://localhost:1313/reachy-2021-docs/sdk/first-moves/arm/#goto-function), to generate a trajectory for the requested joints you need to pass a dictionnary of joints with the requested position as the *goal_positions* argument.
+If you remember the [*goto()* function]({{< ref "sdk/first-moves/arm#goto-function" >}}), to generate a trajectory for the requested joints you need to pass a dictionnary of joints with the requested position as the *goal_positions* argument.
 
 For example, to place the right arm in a right angled position, we defined the *right_angled_position* dictionnary. 
 
@@ -101,8 +101,8 @@ The red dot corresponds to the *'right_tip'*.
 
 You can see the right and left end-effectors animated below.
 
-<video controls="controls" width="50%" autoplay loop>
-  <source type="video/mp4" src="eef.mp4"></source>
+<video controls="controls" width="50%" >
+  <source type="video/mp4" src="eef.gif"></source>
   <source type="video/webm" src="orbita.webm"></source>
   <p>Your browser does not support the video element.</p>
 </video>

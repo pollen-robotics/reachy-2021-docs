@@ -13,7 +13,7 @@ weight: 182
 toc: true
 ---
 
-This section assumes that you went through the [Hello World](https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/hello-world/) so that you know how to connect to the robot.
+This section assumes that you went through the [Hello World]({{< ref "sdk/getting-started/hello-world" >}}) so that you know how to connect to the robot.
 
 Reachy is equipped with fans to cooldown the joints when they are working. Each arm has three fans, two fans are in the head and one fan is placed below orbita (Reachy's neck).
 
@@ -38,7 +38,7 @@ reachy.fans
 >
 ```
 
-As explained in the [safety page](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/safety/#check-the-temperatures), the temperature of each joint is controlled internally in Reachy and if it reaches a certain value, the corresponding fan turns on. 
+As explained in the [safety page]({{< ref "sdk/first-moves/safety#check-the-temperatures" >}}), the temperature of each joint is controlled internally in Reachy and if it reaches a certain value, the corresponding fan turns on. 
 However, you might want to turn them on sooner so that the joints work longer on a demanding task.
 
 The *reachy.fans* object contains each fan. You can have access to each fan individually or to all at once.

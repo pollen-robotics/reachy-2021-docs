@@ -13,7 +13,7 @@ weight: 180
 toc: true
 ---
 
-This section assumes that you went through the [Hello World](https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/hello-world/) so that you know how to connect to the robot.
+This section assumes that you went through the [Hello World]({{< ref "sdk/getting-started/hello-world" >}}) so that you know how to connect to the robot.
 
 Reachy 2021 has [two high quality cameras](https://www.kurokesu.com/shop/featured/CAMERA_C1_PRO) which can deliver up to 1080p at 30 fps. Each camera is equipped with a motorized zoom allowing to adapt the zoom and focus levels to the situation you're working on.
 

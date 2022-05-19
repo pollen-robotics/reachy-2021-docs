@@ -27,7 +27,7 @@ If you are not connected to the robot, the reason can be one of the following:
 First of all, check that the application managed to connect to the robot.  
 The connection status with the robot is indicated at the top of the menu.
 Functionalities are disabled on the interface.  
-See [previous section](http://localhost:1313/reachy-2021-docs/vr/problem/debug/#the-app-doesnt-connect-to-the-robot) if you are not connected to the robot.  
+See [previous section]({{< ref "vr/problem/debug#the-app#doesnt-connect-to-the-robot" >}}) if you are not connected to the robot.  
 
 |Connected to the robot|Unable to connect to the robot|
 |----------------------|------------------------------|

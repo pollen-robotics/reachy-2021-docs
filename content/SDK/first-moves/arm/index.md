@@ -13,15 +13,15 @@ weight: 160
 toc: true
 ---
 
-Make sure you checked the [safety page](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/safety/) before controlling the arm.
+Make sure you checked the [safety page]({{< ref "sdk/first-moves/safety" >}}) before controlling the arm.
 
-This section assumes that you went through the [Hello World](https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/hello-world/) so that you know how to connect to the robot.
+This section assumes that you went through the [Hello World]({{< ref "sdk/getting-started/hello-world" >}}) so that you know how to connect to the robot.
 
 ## Arm presentation
 
 Reachy's arm offers 7 degrees of freedom + 1 provided by the gripper and is composed of 8 joints.
 
-The arm's mechanical specifications are given [here](https://pollen-robotics.github.io/reachy-2021-docs/docs/specifications/arm-specs/) but as a reminder, the arm schematic is given below:
+The arm's mechanical specifications are given [here]({{< ref "advanced/specifications/arm-specs" >}}) but as a reminder, the arm schematic is given below:
 
 <p align="center">
   <img src="arm_schematic.png" alt="drawing" width="50%"/>
@@ -50,7 +50,7 @@ reachy.r_arm.r_shoulder_pitch.uid
 >>> 8
 ```
 
-> The uid returned by the sdk is different from the id you may have seen in the mechanical specifications. The motor's id in the [mechanical specification](https://pollen-robotics.github.io/reachy-2021-docs/docs/specifications/arm-specs/) is the one used at lower level by the dxl bus to communicate with the motors whereas the uid that you see in the sdk is the one used by the different grpc services.
+> The uid returned by the sdk is different from the id you may have seen in the mechanical specifications. The motor's id in the [mechanical specification]({{< ref "advanced/specifications/arm-specs" >}}) is the one used at lower level by the dxl bus to communicate with the motors whereas the uid that you see in the sdk is the one used by the different grpc services.
 
 ## What information do you have access to?
 
@@ -109,7 +109,7 @@ Also if you want to teach movements to the robot with learning technics, storing
 
 You also have access to each motor temperature with the temperature attribute of each joint. This temperature should be checked to make sure that the robot can operate correctly. The temperature is also monitored internally in Reachy and fans are turned on when the joints are heating.
 
-Check the [safety page](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/safety/) before controlling the arm for more information.
+Check the [safety page]({{< ref "sdk/first-moves/safety" >}}) before controlling the arm for more information.
 
 ```python
 reachy.r_arm.r_shoulder_pitch.temperature
@@ -118,7 +118,7 @@ reachy.r_arm.r_shoulder_pitch.temperature
 
 #### compliant
 
-As explained in the [previous page](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/safety/#dont-stay-in-stiff-mode-if-youre-not-moving-the-robot), each motor in Reachy has two compliance modes: **compliant** where the motor is soft and can be freely turned by hand and **stiff** where the motor is hard and can only be moved by setting a target position.
+As explained in the [previous page]({{< ref "sdk/first-moves/safety#dont-stay-in-stiff-mode-if-youre-not-moving-the-robot" >}}), each motor in Reachy has two compliance modes: **compliant** where the motor is soft and can be freely turned by hand and **stiff** where the motor is hard and can only be moved by setting a target position.
 
 A joint's compliance mode can be easily changed by setting its *compliant* attribute. At startup by default, all joints are compliant.
 
@@ -171,7 +171,7 @@ reachy.turn_off_smoothly('r_arm')
 
 #### goal_position
 
-The *goal_position* attribute of a joint is what is used to set a new joint's target position to make it move. However, we recommend using the [**goto() function**](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/arm/#goto-function) to move the motors which provides better control on the joint's trajectories.
+The *goal_position* attribute of a joint is what is used to set a new joint's target position to make it move. However, we recommend using the [**goto() function**]({{< ref "sdk/first-moves/arm#goto-function" >}}) to move the motors which provides better control on the joint's trajectories.
 
 #### torque/speed_limit
 
@@ -198,7 +198,7 @@ reachy.r_arm.r_shoulder_pitch.speed_limit
 >>> 0.0
 ```
 
-> **IMPORTANT** We recommend you NOT to change these values. When you want to make movements with Reachy, it's better to replay recorded trajectories or to work with the [**goto() function**](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/arm/#goto-function).
+> **IMPORTANT** We recommend you NOT to change these values. When you want to make movements with Reachy, it's better to replay recorded trajectories or to work with the [**goto() function**]({{< ref "sdk/first-moves/arm#goto-function" >}}).
 
 #### pid
 

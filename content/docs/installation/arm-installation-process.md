@@ -1,7 +1,7 @@
 ---
-title: "Arm kit installation process"
-description: "Arm kit installation process."
-lead: "How to install your Arm kit."
+title: "Arm kit software installation"
+description: "Arm kit software installation"
+lead: "How to install Reachy's Arm kit software."
 date: 2021-03-16T08:43:34+01:00
 lastmod: 2021-03-16T08:43:34+01:00
 draft: false

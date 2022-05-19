@@ -20,7 +20,7 @@ Simply find it on Reachy's computer, select one by one the repositories and fetc
 
 The list of all Reachy's packages which may require updates is available here:  
 
-{{< my-button-new-page link="https://docs.pollen-robotics.com/advanced/software/presentation/#packages" label="Find Reachy packages list" >}}
+{{< my-button-new-page link="/advanced/software/presentation#packages" label="Find Reachy packages list" >}}
 
 {{< alert icon="👉" text="In case of <b>major Reachy updates</b>, it may happen some packages of the list are not cloned on your robot. Clone them from Github Desktop in the correct folder (<i>reachy_ws/src</i> or <i>dev</i> depending of the nature of the package).">}}
 

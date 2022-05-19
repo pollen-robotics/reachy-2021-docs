@@ -13,7 +13,7 @@ weight: 140
 toc: true
 ---
 
-If you followed the instructions from ["Finding Reachy's IP"](https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/finding-ip/), you know how to get Reachy's IP address and how to connect to the robot with the command: 
+If you followed the instructions from ["Finding Reachy's IP"]({{< ref "sdk/getting-started/finding-ip" >}}), you know how to get Reachy's IP address and how to connect to the robot with the command: 
 
 ```python
 from reachy_sdk import ReachySDK

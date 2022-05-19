@@ -21,6 +21,6 @@ from reachy_sdk import ReachySDK
 reachy = ReachySDK(host='reachy.IP.address')
 ```
 
-**Ready to start using the Python SDK? Check out the [Python SDK documentation](https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/introduction/)!**  
+**Ready to start using the Python SDK? Check out the [Python SDK documentation]({{< ref "sdk/getting-started/introduction" >}})!**  
 
-{{< my-button-new-page link="https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/introduction/" label="Getting started with Reachy Python SDK" >}}
+{{< my-button-new-page link="/sdk/getting-started/introduction" label="Getting started with Reachy Python SDK" >}}

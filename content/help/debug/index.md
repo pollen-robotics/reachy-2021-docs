@@ -15,7 +15,7 @@ toc: true
 
 #### Problem with Python SDK
 
-If you're using the [Python SDK](https://docs.pollen-robotics.com/sdk/getting-started/introduction/) you may encounter the following error when trying to connect to Reachy.
+If you're using the [Python SDK]({{< ref "sdk/getting-started/introduction" >}}) you may encounter the following error when trying to connect to Reachy.
 
 <p align="center">
   <img src="python_sdk_error.png" alt="drawing" width="90%"/>
@@ -23,7 +23,7 @@ If you're using the [Python SDK](https://docs.pollen-robotics.com/sdk/getting-st
 
 #### Problem with ROS2 control
 
-If you're [working directly at the ROS level](https://docs.pollen-robotics.com/advanced/software/ros2-level/), you might encounter issues of non-existing topics or services. 
+If you're [working directly at the ROS level]({{< ref "advanced/software/ros2-level" >}}), you might encounter issues of non-existing topics or services. 
 
 The list of topics should look like the following for a Full/Starter kit:
 
@@ -71,7 +71,7 @@ If the service is not active, enable it and start it.
 sudo systemctl enable <name_of_the_service>.service
 sudo systemctl start <name_of_the_service>.service
 ```
-Get [more information on Reachy system.d services here](https://docs.pollen-robotics.com/advanced/services/available)
+Get [more information on Reachy system.d services here]({{< ref "advanced/services/available" >}})
 
 ### Checking list
 
@@ -89,7 +89,7 @@ If you work only remotely on Reachy, you may have forgotten to turn Reachy's com
 If you're having trouble turning on Reachy's computer, you can check the page on [why Reachy's computer is not running]({{< ref "help/system/computer-not-running" >}}).
 
 #### Using an incorrect IP address
-If you work on Reachy remotely, you might have entered the wrong IP address when you were trying to connect to the robot using *ReachySDK(host='Reachy IP address').* Check the section on how to [find Reachy's IP address](http://docs.pollen-robotics.com/help/system/find-my-ip/).
+If you work on Reachy remotely, you might have entered the wrong IP address when you were trying to connect to the robot using *ReachySDK(host='Reachy IP address').* Check the section on how to [find Reachy's IP address]({{< ref "help/system/find-my-ip" >}}).
 
 #### One motor is disconnected
 The cable of one of Reachy's motor might be disconnected. To check that, you can use the [discovery tool]({{< ref "help/system/discovery-tool" >}}) to check if all the motors are detected.

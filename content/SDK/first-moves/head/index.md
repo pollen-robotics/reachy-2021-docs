@@ -13,9 +13,9 @@ weight: 170
 toc: true
 ---
 
-Make sure you checked the [safety page](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/safety/) before controling the arm.
+Make sure you checked the [safety page]({{< ref "sdk/first-moves/safety" >}}) before controling the arm.
 
-This section assumes that you went through the [Hello World](https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/hello-world/) so that you know how to connect to the robot.
+This section assumes that you went through the [Hello World]({{< ref "sdk/getting-started/hello-world" >}}) so that you know how to connect to the robot.
 
 ## Head presentation
 
@@ -30,7 +30,7 @@ Reachy's head is composed of three parts:
   <p>Your browser does not support the video element.</p>
 </video>
 
-The complete head's specifications are given [here](https://pollen-robotics.github.io/reachy-2021-docs/docs/specifications/head-specs/).
+The complete head's specifications are given [here]({{< ref "advanced/specifications/head-specs" >}}).
 
 ### Front and back
 
@@ -96,7 +96,7 @@ To make things simpler, we implemented the *look_at* method which hides all the 
 
 With this, instead of piloting each disk individually you can specify a point in the space at which the head will look.
 
-The coordinates of the specified point are expressed in Reachy's coordinates system, as presented in the [Kinematics page](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/kinematics/#kinematic-model). 
+The coordinates of the specified point are expressed in Reachy's coordinates system, as presented in the [Kinematics page]({{< ref "sdk/first-moves/kinematics#kinematic-model" >}}). 
 
 Fox example, if you want Reachy to look forward you can send it the following.
 
@@ -162,16 +162,16 @@ while True:
     time.sleep(0.01)
 ```
 
-What the code says is that we compute the [forward kinematics of Reachy's right arm](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/kinematics/#forward-kinematics), and the x, y, z of Reachy's right end-effector in the Reachy's coordinates system will be the coordinates of the point used by the *look_at*.
+What the code says is that we compute the [forward kinematics of Reachy's right arm]({{< ref "sdk/first-moves/kinematics#forward-kinematics" >}}), and the x, y, z of Reachy's right end-effector in the Reachy's coordinates system will be the coordinates of the point used by the *look_at*.
 
 ### Cameras
 
-The dedicated page on Reachy's cameras can be found [here](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/cameras/).
+The dedicated page on Reachy's cameras can be found [here]({{< ref "sdk/first-moves/cameras" >}}).
 
 ### Antennas
 
 The antennas can be controlled like any other joint in Reachy. You can turn the motors stiff/compliant, get the present position, the temperature, set a goal position, ... 
-For more details on the attributes of a Reachy's joint, go to the [joints section of 'Controling the arm'](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/arm/#from-the-joints) page. 
+For more details on the attributes of a Reachy's joint, go to the [joints section of 'Controling the arm']({{< ref "sdk/first-moves/arm#from-the-joints" >}}) page. 
 
 The antennas are a powerful tool to convey emotions to Reachy. For example just by moving the antennas, you can tell whether Reachy is happy or not.
 
@@ -236,4 +236,4 @@ Use your imagination to combine antennas and head movements and create new emoti
 
 ### Fans
 
-The two fans inside Reachy's head can also be controlled as any other fan in Reachy. The dedicated page on fan controling can be found [here](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/fans/).
+The two fans inside Reachy's head can also be controlled as any other fan in Reachy. The dedicated page on fan controling can be found [here]({{< ref "sdk/first-moves/fans" >}}).

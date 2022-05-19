@@ -13,7 +13,7 @@ weight: 150
 toc: true
 ---
 
-First, make sure that you followed the instructions from the section detailing [how to attach your robot](https://pollen-robotics.github.io/reachy-2021-docs/docs/getting-started/attach/).
+First, make sure that you followed the instructions from the section detailing [how to attach your robot]({{< ref "docs/getting-started/attach" >}}).
 
 Especially, the screws in the Reachy's back and the ones fixatings its metal support should be well tightened.
 

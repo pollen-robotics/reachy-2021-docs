@@ -60,7 +60,7 @@ gRPC clients can be in different programming languages. Currently, two different
 
 <br/>
 
-{{< alert icon="👉" text="Want to get the latest software updates?</br><b><a href=\"https://pollen-robotics.github.io/reachy-2021-docs/docs/update/\" target=\"_blank\" rel=\"noopener noreferrer\">Check how to do it here!</a></b>" >}}
+{{< alert icon="👉" text="Want to get the latest software updates?</br><b><a href=\"/docs/update\">Check how to do it here!</a></b>" >}}
 
 ## Sum up
 

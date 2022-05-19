@@ -15,8 +15,8 @@ toc: true
 
 **Reachy 2021** is fully compatible with the **VR teleoperation application**. You do not need to install anything else on your robot. 
 
-Please refer to the **teleoperation application documentation** for the [installation details](https://pollen-robotics.github.io/reachy-2021-docs/vr/installation/installation/) on the remote computer.
+Please refer to the **teleoperation application documentation** for the [installation details]({{< ref "vr/installation/installation" >}}) on the remote computer.
 
-{{< my-button-new-page link="https://pollen-robotics.github.io/reachy-2021-docs/vr/introduction/introduction/" label="Getting started with Reachy VR teleoperation app" >}}
+{{< my-button-new-page link="/vr/introduction/introduction/" label="Getting started with Reachy VR teleoperation app" >}}
 
 
