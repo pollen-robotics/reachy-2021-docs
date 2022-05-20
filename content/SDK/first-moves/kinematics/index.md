@@ -101,8 +101,8 @@ The red dot corresponds to the *'right_tip'*.
 
 You can see the right and left end-effectors animated below.
 
-<video controls="controls" width="50%" >
-  <source type="video/mp4" src="eef.gif"></source>
+<video controls="controls" width="50%" autoplay loop>
+  <source type="video/mp4" src="eef.mp4"></source>
   <source type="video/webm" src="orbita.webm"></source>
   <p>Your browser does not support the video element.</p>
 </video>
