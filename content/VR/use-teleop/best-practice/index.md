@@ -41,11 +41,7 @@ Follow all the elements described in the next sections to teleoperate Reachy in 
 ## All guidelines in video
 Watch this quick video to have an overview of the main guidelines to use teleoperation:  
 
-<video controls="controls" width="80%" loop>
-  <source type="video/mp4" src="AllGuidelines.mp4"></source>
-  <source type="video/webm" src="AllGuidelines.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< youtube bK7th6zY8Rg >}}  
 
 <br />
 The next sections go deeper into each guideline presented in the video and the risks of not following them.
