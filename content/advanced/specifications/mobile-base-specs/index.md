@@ -21,9 +21,11 @@ toc: true
 
 {{< img alt="mobile_base" src="mobile_base.png" width="600px" >}}
 
-**Dimension:** 50*25cm
-**Weight:** 25kg
-**Payload:** 80kg
+**Dimension:** 50*25cm  
+**Weight:** 25kg  
+**Payload:** 80kg  
+
+{{< img alt="mobile_base_drawing" src="mobile_base_drawing.png" width="600px" >}}
 
 **Sensors:** 
 - Hall Sensors and IMU on each wheel
