@@ -1,7 +1,7 @@
 ---
-title: "Commands"
+title: "Controllers inputs"
 description: ""
-lead: ""
+lead: "Mappings between the VR controllers and the app"
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -11,67 +11,54 @@ menu:
     parent: "use-teleop"
 weight: 640
 toc: true
+hidden: true
 ---
 
-## Controllers input
+## Oculus Quest
 
-|Input|  |  |Action|
-|-----------------|--|--|------|
-|**Valve Index**|**HTC Vive**|**Oculus Touch**||
-|Controllers positions|Controllers positions|Controllers positions|**Reachy's end effectors positions**|
-|Trigger (squeeze)|Trigger (squeeze)|Index Trigger (squeeze)|**Open/Close adaptative gripper**|
-|Trigger (press)|Trigger (press)|Trigger (press)|**Interact with UI**|
-|Grip (squeeze)| / |Hand Trigger (squeeze)|**Open/Close adaptative gripper**|
-|Right thumb stick (press)|Right trackpad (press)|Right thumb stick (press)|**Change commands type**|
-|Right thumb stick (direction)|Right trackpad (direction)|Right thumb stick (direction)|**Select corresponding command**|
-|A button (press)|Menu button (press)|A/X button (press)|**Click when required by the interface**|
-|Both A buttons (press)|Both menu buttons (press)|Both A/X buttons (press)|**Emergency stop**|
+{{< img alt="Oculus Quest controller mapping" src="oculus-mapping.png" width="600px" >}}
 
-**Thumb stick available command types:**
-* antennas emotion using the emoji panel control (by default)
-* cameras zoom/dezoom using zoom panel control *(only in 2D and 3D Views)*
+|Name|Feature description |
+|----|--------------------|
+|**(A)**|**At robot teleoperation start:** Validate position and start robot teleoperation|
+|       |**During teleoperation:** Return to menu|
+|**(B)**|**At robot teleoperation start:** Cancel and return to menu|
+|**(X)**|**At robot teleoperation start:** Validate position and start robot teleoperation|
+|       |**During teleoperation:** Return to menu|
+|**(Y)**|**At robot teleoperation start:** Cancel and return to menu|
+|       |**During teleoperation:** Show/Hide state panel (control of robot's temperature)|
+|**Joystick left**|**During teleoperation:** Control mobile base direction|
+|**Joystick right**|**During teleoperation:** Control antennas' emotion|
+|**Index Trigger left**|**In menu:** Select button|
+|                      |**During teleoperation:** Control left gripper|
+|**Index Trigger right**|**In menu:** Select button|
+|                       |**During teleoperation:** Control right gripper|
+|**Middle finger Trigger left**|**During teleoperation:** Use translation mode for mobility|
+|**Controller left position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
+|**Controller right position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
+|**Headset orientation**|**During teleoperation:** Reachy's head orientation|
 
-|Direction|Emoji panel control|Zoom panel control|
-|:--------|:-----------------:|:----------------:|
-||{{< img alt="App menu" src="emoji.JPG" width="600px" >}}|{{< img alt="App menu" src="zoom.JPG" width="600px" >}}|
-|**Up**|Happy|Zoom|
-|**Right**|Thinking|/|
-|**Down**|Sad|Dezoom|
-|**Left**|Angry|/|
 
-## Menu options
+## Valve Index
 
-{{< img alt="App menu" src="menu-connected.png" width="600px" >}}
+{{< img alt="Valve Index controller mapping" src="valve-mapping.png" width="600px" >}}
 
-### Mode
-**See Reachy:** The 3D-robot model is either:  
-* fixed in a immovable position on its support in the basic scene
-* not visible if you see Reachy's view (2D or 3D View)  
+|Name|Feature description |
+|----|--------------------|
+|**(A)**|**At robot teleoperation start:** Validate position and start robot teleoperation|
+|       |**During teleoperation:** Return to menu|
+|**(B)**|**At robot teleoperation start:** Cancel and return to menu|
+|*left (B) only*|**During teleoperation:** Show/Hide state panel (control of robot's temperature)|
+|**Joystick left**|**During teleoperation:** Control mobile base direction|
+|**Joystick right**|**During teleoperation:** Control antennas' emotion|
+|**Index Trigger left**|**In menu:** Select button|
+|                      |**During teleoperation:** Control left gripper|
+|**Index Trigger right**|**In menu:** Select button|
+|                       |**During teleoperation:** Control right gripper|
+|**Controller left position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
+|**Controller right position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
+|**Headset orientation**|**During teleoperation:** Reachy's head orientation|
 
-{{< img alt="See Reachy" src="view-scene-only.PNG" width="600px" >}}
 
-**Be reachy:** set 3D-robot model as your own body  
-{{< img alt="Be Reachy" src="be-reachy.PNG" width="600px" >}}
 
-**Use no headset:** deactivate the headset tracking so that Reachy’s head won’t follow your head movements  
-
-### View
-**2D View:** display Reachy’s left camera on a screen in the headset  
-
-{{< img alt="Be Reachy" src="image-emoji.PNG" width="600px" >}}
-
-**3D View (experimental):** display Reachy’s stereoscopic view in the headset
-
-**Mirror view:** display mirrors in front of the 3D-robot model  
-{{< img alt="Be Reachy" src="mirror.PNG" width="600px" >}}
-
-**Scene only:** basic scene (by default)
-
-### Motors compliance
-**Compliant:** set robot’s motors compliant, which means that they can be manually moved. **Warning:** you won’t be able to teleoperate Reachy with motors in compliant mode.  
-
-**Stiff:** set robot’s motors stiff, which means that they cannot be manually moved anymore. Motors need to be in stiff mode to teleoperate Reachy.  
-
-{{< alert icon="👉" text="Motors need to be in <b>stiff</b> mode to teleoperate Reachy." >}}
-
-### Haptics on/off (experimental)
+{{< my-button link="/vr/use-teleop/old-commands/" label="See legacy version" >}}
