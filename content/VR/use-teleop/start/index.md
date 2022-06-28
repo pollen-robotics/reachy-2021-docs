@@ -126,7 +126,10 @@ Click on the guide at the top right of the menu:
 {{% /expand %}}
 
 {{% expand "> Disable the use of mobility"%}}
-clacla
+Go to the help menu:
+{{< img alt="Access best practice" src="help-menu.png" width="600px" >}}
+Switch mobility to off on the button located at the bottom left  
+// TO DO: add image with selectable button
 {{% /expand %}}
 
 {{< my-button link="/vr/use-teleop/old-start/" label="See legacy version" >}}
