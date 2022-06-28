@@ -76,4 +76,41 @@ The motors are automatically turned into compliant mode when not teleoperated. P
 
 10. Come back any time to menu by **pressing A**. Teleoperation of the robot is automatically paused if the menu is open. You can move to another place until you validate a position.
 
+
+## Application features
+
+{{% expand "> Add a new robot" %}}
+Click on the robot to select to open the panel of all saved robots:
+{{< img alt="Select robot" src="choose-robot.png" width="600px" >}}
+Then click on "Add new robot +" at the bottom right of the page:
+{{< img alt="Add robot button" src="add-robot-button.png" width="600px" >}}
+Enter a robot name and the IP address of the robot:  
+*The IP address is mandatory. If no name is given to the new robot, it will be called @Reachy by default*
+{{< img alt="Add robot panel" src="add-robot-card.png" width="600px" >}}
+{{% /expand %}}
+
+{{% expand "> Modify an existing robot"%}}
+clacla
+{{% /expand %}}
+
+{{% expand "> Delete a saved robot"%}}
+clacla
+{{% /expand %}}
+
+{{% expand "> Change gRPC ports"%}}
+clacla
+{{% /expand %}}
+
+{{% expand "> Disable the automatic best practice display"%}}
+clacla
+{{% /expand %}}
+
+{{% expand "> Refer back to the best practice"%}}
+clacla
+{{% /expand %}}
+
+{{% expand "> Disable the use of mobility"%}}
+clacla
+{{% /expand %}}
+
 {{< my-button link="/vr/use-teleop/old-start/" label="See legacy version" >}}
