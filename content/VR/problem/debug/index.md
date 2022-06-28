@@ -13,6 +13,22 @@ weight: 650
 toc: true
 ---
 
+## Check the info on the app!
+Access the help menu to get more information on the connection status and the status of the robot.
+{{< img alt="Help menu button" src="help-menu.png" width="600px" >}}
+{{< img alt="Help menu" src="check-state.png" width="600px" >}}
+
+The connection status give you information about the communication with the robot. Existing connection status are the following:
+* You are connected to a remote Reachy
+* Connected to a remote Reachy. No restart available
+* Unable to connect to server
+
+You can also check which services are available:
+* Camera stream
+* Joints data stream
+* Mobility services
+* Restart service
+
 ## The app doesn't connect to the robot
 
 If you are not connected to the robot, the reason can be one of the following:
@@ -31,7 +47,7 @@ See  if you are not connected to the robot.
 
 |Connected to the robot|Unable to connect to the robot|
 |----------------------|------------------------------|
-|     |     |
+|{{< img alt="Robot connected" src="click-here-to-start.png" width="600px" >}}|{{< img alt="Unable to connect" src="unable-to-connect.png" width="600px" >}}|
 
 
 
