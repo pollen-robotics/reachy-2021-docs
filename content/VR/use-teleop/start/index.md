@@ -55,7 +55,8 @@ The motors are automatically turned into compliant mode when not teleoperated. P
 
 5. Choose the robot you want to connect to: you can select a robot with its IP address, or add a new one to the list of available robots.
 
-{{< img alt="Select robot to connect" src="choose-robot.png" width="600px" >}}
+{{< img alt="Change robot to connect" src="choose-robot.png" width="600px" >}}
+{{< img alt="Select robot to connect" src="select-robot.png" width="600px" >}}
 
 6. Press *Connect* to initiate the communication with the robot.
 
@@ -84,29 +85,44 @@ Click on the robot to select to open the panel of all saved robots:
 {{< img alt="Select robot" src="choose-robot.png" width="600px" >}}
 Then click on "Add new robot +" at the bottom right of the page:
 {{< img alt="Add robot button" src="add-robot-button.png" width="600px" >}}
-Enter a robot name and the IP address of the robot:  
+Enter a robot name and the IP address of the robot, and save your robot card:  
 *The IP address is mandatory. If no name is given to the new robot, it will be called @Reachy by default*
 {{< img alt="Add robot panel" src="add-robot-card.png" width="600px" >}}
 {{% /expand %}}
 
 {{% expand "> Modify an existing robot"%}}
-clacla
+Click on the robot to select to open the panel of all saved robots:
+{{< img alt="Select robot" src="choose-robot.png" width="600px" >}}
+Then click on the pencil icon of the robot you want to modify:
+{{< img alt="Modify robot button" src="modify-robot-button.png" width="600px" >}}
+Modify the info on the robot card and save the card:
+{{< img alt="Modify robot panel" src="modify-robot-panel.png" width="600px" >}}
 {{% /expand %}}
 
 {{% expand "> Delete a saved robot"%}}
-clacla
+Click on the robot to select to open the panel of all saved robots:
+{{< img alt="Select robot" src="choose-robot.png" width="600px" >}}
+Then click on the bin icon of the robot you want to delete:
+{{< img alt="Delete robot button" src="delete-robot-button.png" width="600px" >}}
+Validate the deletion:
+{{< img alt="Delete robot panel" src="delete-robot-panel.png" width="600px" >}}
 {{% /expand %}}
 
-{{% expand "> Change gRPC ports"%}}
-clacla
+{{% expand "> Check the gRPC ports"%}}
+Click on "Ports information" in the connection menu, below the Connect button.
+{{< img alt="Connect page" src="connect-page.png" width="600px" >}}
+Find there the info of all the gRPC ports used. You can also modify then if you made changed on your robot:
+{{< img alt="Check ports information" src="port-info.png" width="600px" >}}
 {{% /expand %}}
 
 {{% expand "> Disable the automatic best practice display"%}}
-clacla
+Disable the "Always show on start" toggle at the bottom of the best practice page:
+{{< img alt="Disable automatic best practice" src="best-practice.png" width="600px" >}}
 {{% /expand %}}
 
 {{% expand "> Refer back to the best practice"%}}
-clacla
+Click on the guide at the top right of the menu:
+{{< img alt="Access best practice" src="guide-button.png" width="600px" >}}
 {{% /expand %}}
 
 {{% expand "> Disable the use of mobility"%}}
