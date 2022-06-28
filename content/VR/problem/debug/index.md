@@ -19,15 +19,18 @@ Access the help menu to get more information on the connection status and the st
 {{< img alt="Help menu" src="check-state.png" width="600px" >}}
 
 The connection status give you information about the communication with the robot. Existing connection status are the following:
-* You are connected to a remote Reachy
-* Connected to a remote Reachy. No restart available
-* Unable to connect to server
+* **Connected to a remote Reachy** *(green)*: everything seems to be working fine
+* **Connected to a remote Reachy. No restart available** *(yellow)*: you do not have access to the restart service, but can use normally teleoperation
+* **Connected to a remote Reachy. Mobile base unavailable** *(purple)*: the configuration of your robot declares a mobile base, but no mobility service is available. You can still teleoperate the robot with no mobility.
+* **Trying to connect** *(blue)*: the app is looking for the connection with the robot
+* **Robot connection failed** *(orange)*: you are connected to a remote robot, but either the camera feed or the data stream failed. Teleoperation is not possible
+* **Unable to connect to remote server** *(red)*: no robot or service is detected after trying to connect
 
 You can also check which services are available:
-* Camera stream
-* Joints data stream
-* Mobility services
-* Restart service
+* **Camera stream**: camera service from the cameras. ***Mandatory for teleoperation***
+* **Joints data stream**: joints services for sending and receiving data from the robot's joints. ***Mandatory for teleoperation***
+* **Mobility services**: services to control the mobile base, available only on robots equipped with a mobile base
+* **Restart service**: service to ask for a restart of the camera and joints services on the robot
 
 ## The app doesn't connect to the robot
 
