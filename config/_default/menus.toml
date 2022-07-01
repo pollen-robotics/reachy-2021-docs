@@ -98,7 +98,7 @@
   name = "Help"
   weight = 10
   identifier = "help"
-  url = "/help/debug/"
+  url = "/help/check-dashboard/"
 
 [[help]]
   name = "System"
@@ -134,7 +134,7 @@
 [[main]]
   name = "Help"
   weight = 50
-  url = "/help/debug"
+  url = "/help/check-dashboard"
 
 [[social]]
   name = "Twitter"
