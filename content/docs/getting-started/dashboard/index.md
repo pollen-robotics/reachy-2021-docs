@@ -20,7 +20,7 @@ This tool has been thought to help you start easier with the robot and facilitat
 
 ## Access the dashboard
 
-**On the robot:**  
+**From the robot:**  
 Access the dashboard at `localhost:3972`
 
 **From any other device on the same network as the robot:**  

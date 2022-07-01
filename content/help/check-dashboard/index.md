@@ -12,3 +12,18 @@ menu:
 weight: 50
 toc: true
 ---
+
+## Access the dashboard
+
+**From the robot:**  
+Access the dashboard at `localhost:3972`
+
+**From any other device on the same network as the robot:**  
+Access the dashboard at `<robot-ip>:3972`
+
+
+## Problem using the Python SDK
+
+### Check the motors detected
+
+### Check if the services are running
