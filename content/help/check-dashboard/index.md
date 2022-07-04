@@ -16,7 +16,7 @@ toc: true
 ## Access the dashboard
 
 **From the robot:**  
-Access the dashboard at `localhost:3972`
+Access the dashboard at `127.0.0.1:3972`
 
 **From any other device on the same network as the robot:**  
 Access the dashboard at `<robot-ip>:3972`
@@ -26,4 +26,8 @@ Access the dashboard at `<robot-ip>:3972`
 
 ### Check the motors detected
 
+On the dashboard page, the state of each expected parts of the robot is described. In case on of them is missing, the corresponding block displays the missing motors or elements.
+
 ### Check if the services are running
+
+Go to the services page of the dashboard and check the status of the services.
