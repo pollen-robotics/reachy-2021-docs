@@ -27,7 +27,7 @@ The connection status give you information about the communication with the robo
 * **Unable to connect to remote server** *(red)*: no robot or service is detected after trying to connect
 
 You can also check which services are available:
-* **Camera stream**: camera service from the cameras. ***Mandatory for teleoperation***
+* **Camera stream**: camera service from the cameras. ***Mandatory for teleoperation (except for single arm configuration)***
 * **Joints data stream**: joints services for sending and receiving data from the robot's joints. ***Mandatory for teleoperation***
 * **Mobility services**: services to control the mobile base, available only on robots equipped with a mobile base
 * **Restart service**: service to ask for a restart of the camera and joints services on the robot
