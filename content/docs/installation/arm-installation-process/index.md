@@ -92,7 +92,7 @@ The packages are the following:
 * [reachy_controllers](https://github.com/pollen-robotics/reachy_controllers)  
 * [reachy_kinematics](https://github.com/pollen-robotics/reachy_kinematics)   
 * [reachy_sdk_server](https://github.com/pollen-robotics/reachy_sdk_server)
-* [reachy_descriiption](https://github.com/pollen-robotics/reachy_description)
+* [reachy_description](https://github.com/pollen-robotics/reachy_description)
 
 ```bash
 cd ~/reachy_ws/src
