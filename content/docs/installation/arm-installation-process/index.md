@@ -92,6 +92,7 @@ The packages are the following:
 * [reachy_controllers](https://github.com/pollen-robotics/reachy_controllers)  
 * [reachy_kinematics](https://github.com/pollen-robotics/reachy_kinematics)   
 * [reachy_sdk_server](https://github.com/pollen-robotics/reachy_sdk_server)
+* [reachy_descriiption](https://github.com/pollen-robotics/reachy_description)
 
 ```bash
 cd ~/reachy_ws/src
@@ -99,6 +100,7 @@ git clone https://github.com/pollen-robotics/reachy_msgs.git
 git clone https://github.com/pollen-robotics/reachy_controllers.git
 git clone https://github.com/pollen-robotics/reachy_kinematics.git
 git clone https://github.com/pollen-robotics/reachy_sdk_server.git
+git clone https://github.com/pollen-robotics/reachy_description.git
 ```
 
 Once everything cloned in your ROS2 workspace, build the packages:
