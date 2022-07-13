@@ -18,6 +18,6 @@ Reachy mobile is composed of two parts:
   <img src="reachy-mobile.png" alt="drawing" width="60%"/>
 </p>
 
-The mobile base is communicating with Reachy using an USB cable plugged in Reachy's back (id d in [Reachy's hardware interface]({{< ref "advanced/overview/full-kit#reachys-hardware-interface">}}))
+The mobile base communicates with Reachy using an USB cable plugged in Reachy's back (id 'd' in [Reachy's hardware interface]({{< ref "advanced/overview/full-kit#reachys-hardware-interface">}}))
 
-For more info on what is composing the mobile base, check the [mobile base specifications]({{< ref "advanced/specifications/mobile-base-specs">}}).
+For more info on what composes the mobile base, check the [mobile base specifications]({{< ref "advanced/specifications/mobile-base-specs">}}).

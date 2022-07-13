@@ -46,5 +46,5 @@ toc: true
 - Battery state indicator
 
 **Emergency Stop:** The emergency stop can be placed on the robot or in the users hands.
-The E-stop instantly shut the whole robot down.
+The E-stop instantly shuts down the entire robot.
 

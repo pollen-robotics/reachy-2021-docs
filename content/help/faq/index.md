@@ -74,3 +74,7 @@ Edge TPU Coral device uses the [pycroal](https://github.com/google-coral/pycoral
 {{% expand "> Can you explain a bit Reachy's software?" %}}
 Check the [Overall presentation]({{< ref "advanced/software/presentation" >}}) of the Software section.
 {{% /expand %}}
+
+{{% expand "> Does Reachy Mobile come with an autonomous navigation stack?" %}}
+The current release does not come with an autonomous navigation stack. However, we have an internal (experimental) version where [nav2](https://navigation.ros.org/) runs. If this is of interest to you, please let us know.
+{{% /expand %}}
