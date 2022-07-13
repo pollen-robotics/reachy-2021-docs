@@ -56,10 +56,10 @@ The packages developed for Reachy 2021 are divided into two categories: the ROS 
 
 As explained, the gRPC clients permits to communicate with the gRPC server without being physically connected on the robot. The gRPC clients can be installed on another machine and have few requisites, there is no need for the machine to have ROS installed on it.
 
-gRPC clients can be in different programming languages. Currently, three different clients have been developed:
+gRPC clients can be in different programming languages. Currently, two different clients have been developed:
 
-- [**reachy_sdk**](https://github.com/pollen-robotics/reachy-sdk): as described above, SDK Python to control Reachy. This is the library that we use when we want to develop an app on Reachy or test a new robot
-- **reachy_unity**: SDK C#. The teleoperation application has been developed using it.
+- [**reachy_sdk**](https://github.com/pollen-robotics/reachy-sdk): as described above, SDK Python to control Reachy. This is the library that we use when we want to develop an app on Reachy or test a new robot,
+- [**mobile_base_sdk**](https://github.com/pollen-robotics/mobile-base-sdk): SDK Python to control Reachy's mobile base without having Reachy's main code running. It is convenient to have it aside from *reachy_sdk* because sometimes you just want to work on the mobile base alone and with this, you don't have to worry about whether or not Reachy's motors are on or if Reachy's main service is running.
 
 <br/>
 
