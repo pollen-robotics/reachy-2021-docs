@@ -41,7 +41,7 @@ if not.
 
 The launch file will start each useful Reachy's ROS node like a node to handle the joints, one for the kinematics, another for the cameras (if Reachy's configuration has a head), ...
 
-For the complete list of the ros nodes launched by the service, check [run_everything.launch.py file](https://github.com/pollen-robotics/reachy_sdk_server/blob/master/launch/run_everything.launch.py) or [run_everything_no_head.launch.py](https://github.com/pollen-robotics/reachy_sdk_server/blob/master/launch/run_everything_no_head.launch.py).
+For the complete list of the ROS nodes launched by the service, check [run_everything.launch.py file](https://github.com/pollen-robotics/reachy_sdk_server/blob/master/launch/run_everything.launch.py) or [run_everything_no_head.launch.py](https://github.com/pollen-robotics/reachy_sdk_server/blob/master/launch/run_everything_no_head.launch.py).
 
 ### mobile_base_sdk_server.service
 
@@ -57,7 +57,7 @@ if a mobile base version is specified in Reachy's configuration file.
 
 The launch file launched will start the ROS nodes for the HAL of the mobile base and the node to start the gRPC SDK server to use the [mobile base Python SDK](https://github.com/pollen-robotics/mobile-base-sdk).
 
-For the complete list of the ros nodes launched by the service, check [run_mobile_base_sdk_server_and_hal.launch.py](https://github.com/pollen-robotics/mobile_base_sdk_server/blob/main/launch/run_mobile_base_sdk_server_and_hal.launch.py).
+For the complete list of the ROS nodes launched by the service, check [run_mobile_base_sdk_server_and_hal.launch.py](https://github.com/pollen-robotics/mobile_base_sdk_server/blob/main/launch/run_mobile_base_sdk_server_and_hal.launch.py).
 
 ## What if I don't want to use services
 If you don't want to use the default services, you can simply [disable them]({{< ref "advanced/services/manage-services#enable-or-disable-a-service" >}}) so that they won't start when booting the robot and launch [Reachy's ROS launch files]({{< ref "advanced/software/ros2-level" >}}) by hand.
