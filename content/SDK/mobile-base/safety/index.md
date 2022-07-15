@@ -35,18 +35,21 @@ The safety is active regardless of how you command the mobile base (teleop, cont
     <br>
 </p>
 
-{{< img alt="safety_drawing" src="safety_drawing1.png" >}}
-
 - If an obstacle is present inside of the critical distance boundary, then the speed of the mobile base is reduced in all directions, and nullified in the direction that would cause a collision. Rotations are slowed down but are still allowed. 
 - Otherwise, if an obstacle is present inside of the safety distance boundary, then the speed of the mobile base is reduced only in the directions that would eventually cause a collision. Rotations are unchanged.
-- Obstacles that are further than the safety distance do not trigger the safety in any way
+- Obstacles that are further away than the safety distance do not trigger the safety in any way
+  
+{{< img alt="safety_drawing" src="safety_drawing1.png" >}}
 
+:bulb: Reachy's design allows the LIDAR to see close to 360° around it, but not entirely because of the metal bar: this creates a small blind spot. Even if a collision would be very unlikely (you'd have to e.g. drive backwards onto a perfectly aligned pole), any speed command that could create an unseen collision are slowed down.
+
+:warning: Do not obstruct the LIDAR by placing an objet on top of the mobile base as it will be considered as an obstacle.
 
 :warning: If the LIDAR disconnects during usage or if its controller crashes, then the mobile base will stop and will reject commands.
 
 ## Advanced tuning
 
-The mobile base's Hardware Abstraction Layer always runs with the anti-collision behaviour active by default. Currently, disabling/enabling the safety is the only configuration you can make using the SDK. If you need to fine tune the behaviour, you'll have to interact with the world of ROS and change the [HAL parameters](https://github.com/pollen-robotics/zuuu_hal/blob/main/config/params.yaml).
+The mobile base's Hardware Abstraction Layer runs with the anti-collision behaviour active by default. Currently, disabling/enabling the safety is the only configuration you can make using the SDK. If you need to fine tune the behaviour, you'll have to interact with the world of ROS and change the [HAL parameters](https://github.com/pollen-robotics/zuuu_hal/blob/main/config/params.yaml) (you'll have to recompile the package for the changes to take effect).
 
 The code can be accessed [here.](https://github.com/pollen-robotics/zuuu_hal/blob/main/zuuu_hal/lidar_safety.py)
 
