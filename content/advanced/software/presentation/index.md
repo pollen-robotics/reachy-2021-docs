@@ -40,6 +40,9 @@ The packages developed for Reachy 2021 are divided into two categories: the ROS 
 - [**zuuu_hal**](https://github.com/pollen-robotics/zuuu_hal): HAL dedicated to the mobile base
 - [**zuuu_interfaces**](https://github.com/pollen-robotics/zuuu_interfaces): custom ROS services for the mobile base
 
+:bulb: **Zuuu** is the internal name of the mobile base. It's a french onomatopoeia that evokes swift mouvements :) 
+
+
 ### Non-ROS 
 
 (installed in ~/dev folder of Reachy's computer)
@@ -51,6 +54,7 @@ The packages developed for Reachy 2021 are divided into two categories: the ROS 
 
 [MOBILE BASE] - The following package is only needed if you have a Reachy with mobile base
 - [**mobile_base_sdk**](https://github.com/pollen-robotics/mobile-base-sdk): SDK Python to control Reachy's mobile base without necessarily having a Reachy robot connected. Controling the mobile base using [**reachy_sdk**](https://github.com/pollen-robotics/reachy-sdk) actually uses the [**mobile_base_sdk**](https://github.com/pollen-robotics/mobile-base-sdk) but hides it.
+
 
 ## gRPC clients
 
