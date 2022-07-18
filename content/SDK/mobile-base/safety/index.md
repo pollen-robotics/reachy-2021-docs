@@ -25,7 +25,7 @@ The safety is active regardless of how you command the mobile base (teleop, cont
 
 :warning: The safety only works with obstacles that can be seen by the LIDAR. Small obstacles that are below the LIDAR won't be seen. Similarly, the LIDAR will see the legs of a table, but not the table top. 
 
-:bulb: We recommend that you get a feel of how this safety works by moving around with the controller see [(getting started)]({{< ref "sdk/mobile-base/getting-started">}}). Drive slowly into a wall, the mobile base should slow down and then stop. The safety should prevent the collision even when driving into the wall at full speed, which we do not recommend though :).
+:bulb: We recommend that you get a feel of how this safety works by moving around with the controller see [(getting started)]({{< ref "sdk/mobile-base/getting-started#controlling-the-mobile-base-with-a-joystick">}}). Drive slowly into a wall, the mobile base should slow down and then stop. The safety should prevent the collision even when driving into the wall at full speed, which we do not recommend though :).
 
 ## Detailed behaviour
 <p align="center">
