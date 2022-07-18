@@ -43,11 +43,11 @@ The launch file will start each useful Reachy's ROS node like a node to handle t
 
 For the complete list of the ROS nodes launched by the service, check [run_everything.launch.py file](https://github.com/pollen-robotics/reachy_sdk_server/blob/master/launch/run_everything.launch.py) or [run_everything_no_head.launch.py](https://github.com/pollen-robotics/reachy_sdk_server/blob/master/launch/run_everything_no_head.launch.py).
 
-### mobile_base_sdk_server.service
+### reachy_mobile_base.service
 
-If your Reachy is equipped with a mobile base, the service `mobile_base_sdk_server.service` is also available and enabled by default. Having separate services for Reachy and the mobile base allows to work separately with the mobile base or Reachy when you have a Reachy Mobile.
+If your Reachy is equipped with a mobile base, the service `reachy_mobile_base.service` is also available and enabled by default. Having separate services for Reachy and the mobile base allows to work separately with the mobile base or Reachy when you have a Reachy Mobile.
 
-As `reachy_sdk_server.service`, `mobile_base_sdk_server.service` defined on [mobile_base_sdk_server repository](https://github.com/pollen-robotics/mobile_base_sdk_server/blob/main/genereate_service_file.bash) executes a bash file which itself executes the ROS command:
+As `reachy_sdk_server.service`, `reachy_mobile_base.service` defined on [mobile_base_sdk_server repository](https://github.com/pollen-robotics/mobile_base_sdk_server/blob/main/genereate_service_file.bash) executes a bash file which itself executes the ROS command:
 
 ```bash
 ros2 launch mobile_base_sdk_server run_mobile_base_sdk_server_and_hal.launch.py
