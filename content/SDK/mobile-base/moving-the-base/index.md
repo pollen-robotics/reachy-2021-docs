@@ -11,3 +11,18 @@ menu:
 weight: 310
 toc: true
 ---
+
+
+WIP
+goto
+set_speed
+odometric frame
+(add drawing)
+
+goto example : https://github.com/pollen-robotics/mobile-base-sdk/blob/main/mobile_base_sdk/examples/notebooks/goto.ipynb
+
+set_speed example : https://github.com/pollen-robotics/mobile-base-sdk/blob/main/mobile_base_sdk/examples/scripts/joy_controller.py
+
+
+
+advanced: the difference between cmd_vel (the HAL listens to a topic and applies the commands, with some smoothing) vs speed (the HAL controls the time during which the speed command is applyied)
