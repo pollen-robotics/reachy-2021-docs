@@ -60,16 +60,17 @@ The section [moving the mobile base]({{< ref "/sdk/mobile-base/moving-the-base" 
 You can move the base with just one line of code, using the goto method. For example, you can make a 90 degrees rotation:
 
 ```python
+reachy_mobile.mobile_base.reset_odometry()
 reachy_mobile.mobile_base.goto(x=0.0, y=0.0, theta=90.0)
 ```
 
-This is just a simple example, the section [moving the mobile base]({{< ref "/sdk/mobile-base/moving-the-base" >}}) is dedicated to explaining how to move the base using the Python SDK.
+Okay, that was 2 lines of code, but the first one is not needed and was added for safety. The section [moving the mobile base]({{< ref "/sdk/mobile-base/moving-the-base" >}}) is dedicated to explaining how to move the base using the Python SDK.
 
 Check the [getting-started notebook](https://github.com/pollen-robotics/reachy-sdk/blob/main/reachy_sdk/examples/mobile-base-getting-started.ipynb) for a detailed getting started example using the Python SDK.
 
 
 ### Using a joystick
-The best (and easiest) way to get a sense of how the mobile base is moving is by moving it yourself! It is easy to do that with the [joy_controller.py script](https://github.com/pollen-robotics/mobile-base-sdk/blob/main/mobile_base_sdk/examples/scripts/joy_controller.py) where you can fully control the mobile base using an Xbox or PlayStation joystick (a controller should be included with your Reachy mobile).
+The best (and easiest) way to get a sense of how the mobile base moves is by moving it yourself! It is easy to do that with the [joy_controller.py script](https://github.com/pollen-robotics/mobile-base-sdk/blob/main/mobile_base_sdk/examples/scripts/joy_controller.py) where you can fully control the mobile base using an Xbox or PlayStation joystick (a controller should be included with your Reachy mobile).
 
 To start controlling the base with *joy_controller.py*, just type:
 ```bash
@@ -86,3 +87,6 @@ The left joystick will be used for translation and the right one for rotation.
 </p>
 
 The script reads the controller and uses the *mobile-base-sdk* to send speed commands to the mobile base. Don't hesitate to take a look at the [code](https://github.com/pollen-robotics/mobile-base-sdk/blob/main/mobile_base_sdk/examples/scripts/joy_controller.py) to have an example of good practices for an app involving the base.
+
+## Hardware Abstraction Layer
+In this documentation, you'll find references to the Hardware Abstraction Layer (HAL). The HAL is the ROS2 middleware that interacts with the hardware while the SDK interacts with the HAL. This modular software architecture allows for more flexibility and a simple, high level interface. However, if you need more control or a feature that wasn't ported to the SDK, you can interact directly with the HAL. The philosophy behind this documentation is to give an easy access to the most common usages, and to give pointers that can be useful when pursuing a more advanced usage. The [HAL repository can be found here.](https://github.com/pollen-robotics/zuuu_hal)
