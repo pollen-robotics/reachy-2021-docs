@@ -62,4 +62,15 @@ Come back to menu and validate your choices again to be able to fix a new positi
 **Reachy movements are jerky**  
 The connection is not fast enough between the robot and your computer, or another program may be alterating the reactivity.  
 
+## The mobile base doesn't move
+Several elements can make the mobile base unreactive to your inputs.  
+* If you are too close to a wall or object, the lidar security unables the mobile base to go closer to the obstacle. The mobile base will therefore not move in this direction, but you can still go in other directions.
+* The mobility button has been disabled: to check the status of the mobility button, go in the help panel in the menu (welcome page). Set the mobility to ON.
+{{< img alt="Mobility button" src="mobility-button.png" width="600px" >}}
+* The mobility services are unavailable: check the status of the service in the help panel of the menu. The status of the mobility services is displayed in the Connection Status section. 
+* The configuration of your robot does not declare a mobile base, therefore the teleoperation application does not provide any mobility service. Check if a mobile base is expected in the Robot detected configuration section.
+|Mobile base is declared and mobility services are available|No mobile base is declared|
+|----------------------|------------------------------|
+|{{< img alt="Mobile base services on" src="mobile-base.png" width="600px" >}}|{{< img alt="No mobile base" src="check-state.png" width="600px" >}}|
+
 {{< my-button link="/vr/problem/old-debug/" label="See legacy debug section" >}}

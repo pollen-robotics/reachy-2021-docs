@@ -85,7 +85,7 @@ Click on the robot to select to open the panel of all saved robots:
 {{< img alt="Select robot" src="choose-robot.png" width="600px" >}}
 Then click on "Add new robot +" at the bottom right of the page:
 {{< img alt="Add robot button" src="add-robot-button.png" width="600px" >}}
-Enter a robot name and the IP address of the robot, and save your robot card:  
+Enter a robot name and the IP address of the robot (if the headset is connected on a computer, use the computer keyboard), and save your robot card:  
 *The IP address is mandatory. If no name is given to the new robot, it will be called @Reachy by default*
 {{< img alt="Add robot panel" src="add-robot-card.png" width="600px" >}}
 {{% /expand %}}
@@ -129,7 +129,7 @@ Click on the guide at the top right of the menu:
 Go to the help menu:
 {{< img alt="Access best practice" src="help-menu.png" width="600px" >}}
 Switch mobility to off on the button located at the bottom left  
-// TO DO: add image with selectable button
+{{< img alt="Mobility button" src="mobility-button.png" width="600px" >}}
 {{% /expand %}}
 
 {{< my-button link="/vr/use-teleop/old-start/" label="See legacy version" >}}
