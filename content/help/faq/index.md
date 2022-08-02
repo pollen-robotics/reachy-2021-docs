@@ -57,6 +57,12 @@ python3 python3 ~/reachy_ws/src/reachy_controllers/examples/view_cam.py left ope
 
 {{% expand "> The images from the cameras are blurry. "%}}
 You can use the autofocus available in reachy-sdk.
+For example, if you want to start the autofocus for the left camera, use:
+```python
+reachy.left_camera.start_autofocus()
+```
+
+If the autofocus did not work, you can learn how to perform the focus manually with [this page]({{< ref "help/system/manual-focus" >}}).
 {{% /expand %}}
 
 {{% expand "> Can I control Orbita's fan? "%}}
