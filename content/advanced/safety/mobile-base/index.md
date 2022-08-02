@@ -29,7 +29,7 @@ Then use the controller to move around the robot as explained in [Moving the mob
     <br>
 </p>
 
-## Common risks and advices
+## Common risks and advice
 Even though the mobile base is programmed to move relatively slowly, it is important to try to avoid any potential collisions. The mobile base is designed to be used indoors on a flat surface.
 
 :bulb: The arms and any grasped objects should ideally be in the vertical projection of the mobile base. The idea here is that the robot should always be able to rotate in place safely. Also, keeping the arms tugged in reduces the risk of tipping.
