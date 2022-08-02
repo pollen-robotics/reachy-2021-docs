@@ -10,7 +10,7 @@ menu:
 weight: 120
 toc: true
 ---
-Reachy mobile is composed of two parts:
+Reachy + mobile base is composed of two parts:
 * a full kit Reachy robot (i.e. with two arms, torso and a head),
 * an omnidirectional mobile base
 
