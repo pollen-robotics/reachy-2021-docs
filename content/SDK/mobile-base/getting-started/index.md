@@ -23,7 +23,7 @@ More detailed in the page [Using the mobile base without Reachy]({{< ref "/sdk/m
 ## Installation
 If you did not do it yet, follow the instructions from the [install page]({{< ref "/sdk/getting-started/install" >}}) to learn how to install Reachy's Python SDK on your computer. We recommend performing the installation in a virtual environment.
 
-> :bulb: You will need to make sure that you get a version of [reachy-sdk](https://github.com/pollen-robotics/reachy-sdk) > xx [TODO] to be able to connect to the mobile base.
+> :bulb: You will need to make sure that you get a version of [reachy-sdk](https://github.com/pollen-robotics/reachy-sdk) > 0.5.1 to be able to connect to the mobile base.
 
 Even though you used PyPi for the installation, we recommend cloning the [mobile-base-sdk repository](https://github.com/pollen-robotics/mobile-base-sdk) on your computer as it gives you access to many [examples](https://github.com/pollen-robotics/mobile-base-sdk/tree/main/mobile_base_sdk/examples) to learn how to use the mobile base.
 
