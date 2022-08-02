@@ -57,6 +57,12 @@ python3 python3 ~/reachy_ws/src/reachy_controllers/examples/view_cam.py left ope
 
 {{% expand "> The images from the cameras are blurry. "%}}
 You can use the autofocus available in reachy-sdk.
+For example, if you want to start the autofocus for the left camera, use:
+```python
+reachy.left_camera.start_autofocus()
+```
+
+If the autofocus did not work, you can learn how to perform the focus manually with [this page]({{< ref "help/system/manual-focus" >}}).
 {{% /expand %}}
 
 {{% expand "> Can I control Orbita's fan? "%}}
@@ -73,4 +79,8 @@ Edge TPU Coral device uses the [pycroal](https://github.com/google-coral/pycoral
 
 {{% expand "> Can you explain a bit Reachy's software?" %}}
 Check the [Overall presentation]({{< ref "advanced/software/presentation" >}}) of the Software section.
+{{% /expand %}}
+
+{{% expand "> Does Reachy Mobile come with an autonomous navigation stack?" %}}
+The current release does not come with an autonomous navigation stack. However, we have an internal (experimental) version where [nav2](https://navigation.ros.org/) runs. If this is of interest to you, please let us know.
 {{% /expand %}}

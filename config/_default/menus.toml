@@ -70,6 +70,12 @@
   identifier = "first-moves"
   url = "/SDK/first-moves/"
 
+[[sdk]]
+  name = "Mobile base"
+  weight = 30
+  identifier = "mobile-base"
+  url = "/SDK/mobile-base/"
+
 [[vr]]
   name = "Introduction"
   weight = 10
