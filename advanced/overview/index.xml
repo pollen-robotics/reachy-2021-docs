@@ -9,6 +9,6 @@
 (9) : Loudspeakers volume button</description></item><item><title>Arm kit</title><link>https://docs.pollen-robotics.com/advanced/overview/arm-kit/</link><pubDate>Tue, 13 Oct 2020 15:21:01 +0200</pubDate><guid>https://docs.pollen-robotics.com/advanced/overview/arm-kit/</guid><description>Product Arm kit Reachy&amp;rsquo;s arm (1) : 12V Power supply board (SMPS2Dynamixel)
 (2) : Dynamixel control board
 (3) : USB to serial board (Need to be connected to your computer)
-The arms specifications are available in section Arm mechanical specifications.</description></item><item><title>Reachy mobile</title><link>https://docs.pollen-robotics.com/advanced/overview/mobile-base/</link><pubDate>Tue, 13 Oct 2020 15:21:01 +0200</pubDate><guid>https://docs.pollen-robotics.com/advanced/overview/mobile-base/</guid><description>Reachy mobile is composed of two parts:
+The arms specifications are available in section Arm mechanical specifications.</description></item><item><title>Reachy + mobile base</title><link>https://docs.pollen-robotics.com/advanced/overview/mobile-base/</link><pubDate>Tue, 13 Oct 2020 15:21:01 +0200</pubDate><guid>https://docs.pollen-robotics.com/advanced/overview/mobile-base/</guid><description>Reachy mobile is composed of two parts:
 a full kit Reachy robot (i.e. with two arms, torso and a head), an omnidirectional mobile base The mobile base communicates with Reachy using an USB cable plugged in Reachy&amp;rsquo;s back (id &amp;rsquo;d' in Reachy&amp;rsquo;s hardware interface)
-For more info on what composes the mobile base, check the mobile base specifications.</description></item></channel></rss>
+For more info on what is included in the mobile base, check the mobile base specifications.</description></item></channel></rss>
