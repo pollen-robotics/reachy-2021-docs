@@ -1,7 +1,7 @@
 ---
-title: "Attach your robot"
+title: "Attach your robot without a mobile base"
 description: "Attach your robot correctly."
-lead: "How to attach your robot."
+lead: "How to attach your robot without using a mobile base"
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false
@@ -33,9 +33,9 @@ If you don't want to drill holes in your table, you can also use clamps between 
 </p>
 
 Then attach the robot to the metal support rod using the other metal fixation:
-|||
-|---|---|
-|{{< img alt="Reachy's back fixation onshape" src="reachy-back-fixation-onshape.png" width="50%" >}}|{{< img alt="Reachy's back fixation" src="reachy-back-fixation.jpg" width="50%" >}}| 
+|                                                                                                     |                                                                                     |
+| --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| {{< img alt="Reachy's back fixation onshape" src="reachy-back-fixation-onshape.png" width="50%" >}} | {{< img alt="Reachy's back fixation" src="reachy-back-fixation.jpg" width="50%" >}} |
 
 :point_right: A video showing how to install Reachy can be found [here](https://www.youtube.com/watch?v=5dqcilsQUjE). :point_left:
 
