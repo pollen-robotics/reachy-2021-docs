@@ -216,7 +216,7 @@ sudo systemctl start reachy_sdk_server.service
 ```
 *Note:* You need to connect the arm to your computer before starting a service. If you enabled the service, connect your arm to your computer before turning it on.  
 
-*For more information on the services, please refer to section [Using services]({{< ref "services" >}}).*
+*For more information on the services, please refer to section [Using services]({{< ref "/advanced/services" >}}).*
 
 
 ## If you want to work directly at the ROS level

@@ -100,6 +100,24 @@
   identifier = "use-teleop"
   url = "/VR/use-teleop/"
 
+[[dashboard]]
+  name = "Introduction"
+  weight = 10
+  identifier = "introduction"
+  url = "/dashboard/introduction"
+
+[[dashboard]]
+  name = "Content"
+  weight = 20
+  identifier = "content"
+  url = "/dashboard/content"
+
+[[dashboard]]
+  name = "Installation"
+  weight = 30
+  identifier = "installation"
+  url = "/dashboard/installation"
+
 [[help]]
   name = "Help"
   weight = 10
@@ -138,8 +156,13 @@
   url = "/VR/introduction/introduction"
 
 [[main]]
-  name = "Help"
+  name = "Dashboard"
   weight = 50
+  url = "/dashboard/introduction/introduction"
+
+[[main]]
+  name = "Help"
+  weight = 60
   url = "/help/check-dashboard"
 
 [[social]]
