@@ -32,7 +32,9 @@ For each part, the system will check at boot or when [*reachy_sdk_server.service
 
 For example, we disconnected on the right arm the cable between the elbow pitch and the forearm yaw joints, here is what the dashboard is indicating:
 
-TODO
+<p align="center">
+  <img src="debug_missing_motor.png" alt="Debug page with missing motors" width="100%"/>
+</p>
 
 As you can see, each motor after the elbow pitch joint is missing whereas only one cable was disconnected, this is because the motors are connected in serial in Reachy's arms, so disconnecting one motor will unpower the next ones in the arm chain.
 
