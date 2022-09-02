@@ -28,6 +28,7 @@
           {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
           {{- $active = or $active (and (eq .Name "SDK") (eq $current.Section "sdk")) -}}
           {{- $active = or $active (and (eq .Name "Advanced") (eq $current.Section "advanced")) -}}
+          {{- $active = or $active (and (eq .Name "Dashboard") (eq $current.Section "dashboard")) -}}
           {{- $active = or $active (and (eq .Name "VR") (eq $current.Section "VR")) -}}
           <li class="nav-item{{ if $active }} active{{ end }}">
             <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>

@@ -31,7 +31,7 @@ If you have a **Full kit** or a **Starter kit**, `reachy_sdk_server.service` is 
 
 If you have a **Reachy mobile**, `reachy_mobile_base.service` is enabled along with `reachy_sdk_server.service`. 
 
-See section [Using services]({{< ref "services" >}}) for more information on the services). 
+See section [Using services]({{< ref "/advanced/services" >}}) for more information on the services). 
 
 You can check all ROS2 topics/services running on Reachy with:
 ```bash

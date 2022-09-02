@@ -17,7 +17,7 @@ You decided to buy a **Full/Starter kit**, congratulations! You just saved a lot
 
 Everything you need is already installed on your robot.
 
-Of course you may want to know what's included in it. Please refer to section [What is running/What can I run on my robot]({{< ref "software" >}}) for more information.  
+Of course you may want to know what's included in it. Please refer to section [What is running/What can I run on my robot]({{< ref "/advanced/software/presentation" >}}) for more information.  
   
 <br/><br/>
 
