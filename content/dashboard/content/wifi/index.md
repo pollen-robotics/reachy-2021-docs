@@ -19,7 +19,7 @@ The wifi page of the dashboard lets you handle the network connection of the rob
 </p>
 
 There are four main elements on this page:
-1. **Connection card**: this card will display whether Reachy is connected to the Internet with an ethernet cable or a wifi network (in which cas it will tell you which wifi network) or if it is using its hotspot,
+1. **Connection card**: this card will display whether Reachy is connected to the Internet with an ethernet cable or a wifi network (in which case it will tell you which wifi network) or if it is using its hotspot,
 
 2. **Wifi adder card**: this card will help you connect Reachy to a wifi network. The dropdown will list each wifi network detected and you will be able to connect to the one you want by entering your wifi password in the corresponding box,
 
@@ -46,5 +46,5 @@ When you change the wifi network, the following message will appear:
 If you try to change the wifi network and fail to enter the correct password, Reachy will switch to hotspot mode and you will have to try again to update the wifi network by connecting to *Reachy-AP*.
 
 ## Notes
-:bulb: If you installed the dashboard your self, you will need to forget previsouly known wireless networks on Reachy and only use the dashboard when handling wireless networks.
+:bulb: If you installed the dashboard yourself, you will need to forget previsouly known wireless networks on Reachy and only use the dashboard when handling wireless networks.
 

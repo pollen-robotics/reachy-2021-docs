@@ -12,7 +12,7 @@ menu:
 weight: 230
 toc: true
 ---
-The page services is dedicated to the services set up for Reachy. Working with services has the advantage of having Reachy's code running automatically at boot whithout needing to open a terminal and start it yourself. However using the services can make debugging the robot more difficult because the code running for Reachy is "hidden", that is why we made this page.
+The page services is dedicated to the services setup for Reachy. Working with services has the advantage of having Reachy's code running automatically at boot whithout needing to open a terminal and start it yourself. However using the services can make debugging the robot more difficult because the code running for Reachy is "hidden", that is why we made this page.
 
 Having this page is useful when something is going wrong with Reachy. For example, if you went on the [debug page]({{< ref "/dashboard/content/debug" >}}) and you were told that a motor was disconnected, you can reconnect the motor indicated and restart Reachy's code using the button restart of reachy_sdk_server.service. This way you won't have to reboot Reachy's computer just to restart its code. Or if you forgot to turn on Reachy's motors before booting, you can just restart the service.
 

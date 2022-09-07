@@ -19,7 +19,7 @@ The debug page is the dashboard's home page. It will indicate you if one of Reac
 
 In this page, one card will be created per Reachy's part. We consider that each Reachy's arm represent a part and that the head is another part. So for example if you have a Full Kit Reachy, your robot will be composed of three parts: Left Arm, Right Arm and Head. If you are working with a Starter Kit Right Reachy, your robot will be composed of two parts: Right Arm and Head.
 
-A debug page for a Full Kit Reachy will typically looks like this:
+A debug page for a Full Kit Reachy will typically look like this:
 
 <p align="center">
   <img src="debug.png" alt="Debug page" width="100%"/>

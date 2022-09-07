@@ -25,7 +25,7 @@ pip3 install -e .
 ```
 ## Check Reachy's services
 To be able to control [Reachy's main services]({{< ref "/advanced/services/available#services-available" >}}) with the dashbaord, the services need to be in --user mode.
-To know if it the case, in a terminal:
+To know if it is the case, in a terminal:
 
 ```bash
 systemctl --user list-unit-files | grep reachy
