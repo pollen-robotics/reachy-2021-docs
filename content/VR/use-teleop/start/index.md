@@ -21,29 +21,26 @@ toc: true
 
 1. Make sure the robot is turned on, connected to the network and that all the robot's services are running before launching the teleoperation application.
 
-2. Enter your robot's IP address **on the computer** at the launch of the app.
+2. Select the robot you want to teleoperate (or create a new one), and click on "Connect".
 
-3. Turn the motors **stiff** in the menu for the robot to be able to move.
-
-4. After having clicked "Validate my choices", **look straight ahead, with your body in the same orientation as your head while pressing A.** *The initial head position is used to determine the coordinate system giving your VR controllers position.* 
+3. When the robot is ready, click on "Click here to start", then **look straight ahead, with your body in the same orientation as your head while pressing A** to start the teleoperation. *The initial head position is used to determine the coordinate system giving your VR controllers position.* 
 
 {{< alert icon="👉" text="<b>Warning:</b> you <b>cannot move</b> anymore after this step. The position of your VR controllers to master the robot arms are calculated depending on the position you had while pressing A." >}}
 
 {{< warning icon="🚨" text="<b>Important:</b> even if Reachy is bio-inspired, it cannot reproduce exactly all your movements. There are <b>positions that cannot be reached</b> by the robot. Please <b>avoid unusual movements</b> and do not persist in trying to reach a position if you see that the robot is stuck before it." >}}
 
-5. Come back any time to menu by pressing A. Teleoperation of the robot is automatically paused if the menu is open. You can move to another place in menu.
+5. Come back any time to menu by **pressing A**. Teleoperation of the robot is automatically paused if the menu is open. You can move to another place in menu.
 
 {{< alert icon="👉" text="Please <b>stop teleoperation before removing your headset</b> (go back to menu or quit the app). If you do not, Reachy will continue following your controllers and headset orientation, and this can cause damages to the robot." >}}
 
 ### Stop teleoperation
 
-1. Come back to the **menu** to pause the teleoperation.  
+1. Come back to the **menu** to pause the teleoperation by **pressing A** at any time during teleoperation.  
 
-2. Leave the app by clicking "**Quit**".  
+2. Leave the app by clicking "**Quit**" in the menu and continue with "Yes, leave.".  
 
-You can switch the motors into compliant mode before turning the app off. If you do so, make sure the arm are close enough to the lowest position they can reach to avoid them falling or hitting something.  
+The motors are automatically turned into compliant mode when not teleoperated. Please make sure the arms are close enough to the lowest position they can reach when coming back to the menu to avoid them falling or hitting something.  
 
-In case you need an immediate and definitive stop with more control on the options for the arms release, use the [emergency stop option]({{< ref "stop" >}}).
 
 ## Step-by-step starting
 1. Prepare your VR equipment to be VR ready: turn on all VR device, make sure they are correctly detected by SteamVR.  
@@ -54,24 +51,85 @@ In case you need an immediate and definitive stop with more control on the optio
 
 3. Launch the application .exe file
 
-4. **On your computer:**
-Connect to your Reachy IP: you need to add or select an IP address to connect to your Reachy robot
-{{< img alt="Select IP" src="select-ip.PNG" width="600px" >}}
-5. Equip yourself with your headset, make sure you can see both controllers and that the scene is moving correctly in accordance with your head movements.
+4. Equip yourself with your headset, make sure you can see both controllers and that the scene is moving correctly in accordance with your head movements.
 
-6. Press A to enter the Menu
-{{< img alt="Enter app" src="enter-teleop.PNG" width="600px" >}}
+5. Choose the robot you want to connect to: you can select a robot with its IP address, or add a new one to the list of available robots.
+
+{{< img alt="Change robot to connect" src="choose-robot.png" width="600px" >}}
+{{< img alt="Select robot to connect" src="select-robot.png" width="600px" >}}
+
+6. Press *Connect* to initiate the communication with the robot.
+
+{{< img alt="Connect to a robot" src="connect.png" width="600px" >}}
+
 7. Make sure the connection status in the top right of the menu is indicating "You are connected to a remote Reachy".
-{{< img alt="Start robot" src="menu-connected.PNG" width="600px" >}}
-8. Choose the mode and view you want. 
 
-9. Turn the motors **stiff**, then click “Validate my choices”
-{{< img alt="Stiff mode" src="stiff-mode.PNG" width="600px" >}}
+8. When Reachy is ready, click on "Click here to start".
 
-10. Choose the place you want to teleoperate Reachy from, position your hand in the posture you want to begin with.
+{{< img alt="Start teleoperation" src="click-here-to-start.png" width="600px" >}}
+
+9. Choose the place you want to teleoperate Reachy from, position your hand in the posture you want to begin with. C
 **Look straight ahead, with your body in the same orientation as your head while pressing A.** The initial head position is used to determine the coordinate system giving your VR controllers position.  
-{{< img alt="Start robot" src="start-robot.PNG" width="600px" >}}
+
+{{< img alt="Validate position before starting" src="ready-to-start.png" width="600px" >}}
 
 {{< alert icon="👉" text="<b>Warning:</b> you <b>cannot move</b> anymore after this step. The position of your VR controllers to master the robot arms are calculated depending on the position you had while pressing A." >}}
 
-11. Come back any time to menu by pressing A. Teleoperation of the robot is automatically paused if the menu is open. You can move to another place until you validate a position.
+10. Come back any time to menu by **pressing A**. Teleoperation of the robot is automatically paused if the menu is open. You can move to another place until you validate a position.
+
+
+## Application features
+
+{{% expand "> Add a new robot" %}}
+Click on the robot to select to open the panel of all saved robots:
+{{< img alt="Select robot" src="choose-robot.png" width="600px" >}}
+Then click on "Add new robot +" at the bottom right of the page:
+{{< img alt="Add robot button" src="add-robot-button.png" width="600px" >}}
+Enter a robot name and the IP address of the robot (if the headset is connected on a computer, use the computer keyboard), and save your robot card:  
+*The IP address is mandatory. If no name is given to the new robot, it will be called @Reachy by default*
+{{< img alt="Add robot panel" src="add-robot-card.png" width="600px" >}}
+{{% /expand %}}
+
+{{% expand "> Modify an existing robot"%}}
+Click on the robot to select to open the panel of all saved robots:
+{{< img alt="Select robot" src="choose-robot.png" width="600px" >}}
+Then click on the pencil icon of the robot you want to modify:
+{{< img alt="Modify robot button" src="modify-robot-button.png" width="600px" >}}
+Modify the info on the robot card and save the card:
+{{< img alt="Modify robot panel" src="modify-robot-panel.png" width="600px" >}}
+{{% /expand %}}
+
+{{% expand "> Delete a saved robot"%}}
+Click on the robot to select to open the panel of all saved robots:
+{{< img alt="Select robot" src="choose-robot.png" width="600px" >}}
+Then click on the bin icon of the robot you want to delete:
+{{< img alt="Delete robot button" src="delete-robot-button.png" width="600px" >}}
+Validate the deletion:
+{{< img alt="Delete robot panel" src="delete-robot-panel.png" width="600px" >}}
+{{% /expand %}}
+
+{{% expand "> Check the gRPC ports"%}}
+Click on "Ports information" in the connection menu, below the Connect button.
+{{< img alt="Connect page" src="connect-page.png" width="600px" >}}
+Find there the info of all the gRPC ports used. You can also modify then if you made changed on your robot:
+{{< img alt="Check ports information" src="port-info.png" width="600px" >}}
+{{% /expand %}}
+
+{{% expand "> Disable the automatic best practice display"%}}
+Disable the "Always show on start" toggle at the bottom of the best practice page:
+{{< img alt="Disable automatic best practice" src="best-practice.png" width="600px" >}}
+{{% /expand %}}
+
+{{% expand "> Refer back to the best practice"%}}
+Click on the guide at the top right of the menu:
+{{< img alt="Access best practice" src="guide-button.png" width="600px" >}}
+{{% /expand %}}
+
+{{% expand "> Disable the use of mobility"%}}
+Go to the help menu:
+{{< img alt="Access best practice" src="help-menu.png" width="600px" >}}
+Switch mobility to off on the button located at the bottom left  
+{{< img alt="Mobility button" src="mobility-button.png" width="600px" >}}
+{{% /expand %}}
+
+{{< my-button link="/vr/use-teleop/old-start/" label="See legacy version" >}}
