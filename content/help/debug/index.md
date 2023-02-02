@@ -21,33 +21,6 @@ If you're using the [Python SDK]({{< ref "sdk/getting-started/introduction" >}})
   <img src="python_sdk_error.png" alt="drawing" width="90%"/>
 </p>
 
-#### Problem with ROS2 control
-
-If you're [working directly at the ROS level]({{< ref "advanced/software/ros2-level" >}}), you might encounter issues of non-existing topics or services. 
-
-The list of topics should look like the following for a Full/Starter kit:
-
-```bash
-$ ros2 topic list
-> /fan_states
-/force_sensors
-/joint_goals
-/joint_states
-/joint_temperatures
-/left_image
-/parameters_events
-/right_image
-/robot_description
-/rosout
-/tf
-/tf_static
-```
-
-For an Arm kit, the list should be the same without */left_image* and */right_image*.
-
-
-{{< alert icon="ℹ️" text="<b>Both these situations are likely due to a problem with the sdk_server.</b>" >}}
-
 ## Debugging the SDK server
 
 ### Verify the service status
