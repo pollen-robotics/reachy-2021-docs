@@ -19,7 +19,7 @@ The face tracking project is an autonomous application in which Reachy will dete
 
 This can be used as is to make demo with the robot, show the capabilities of the [Orbita actuator](http://localhost:1313/sdk/first-moves/head/#reachys-neck-orbita-actuator) or serve as a brick to build more complex and interactive applications.
 
-The source code can be found in the [reachy-face-tracking](https://github.com/pollen-robotics/reachy-face-tracking) GitHub repository.
+The source code can be found in the <a href="https://github.com/pollen-robotics/reachy-face-tracking" target="_blank">reachy-face-tracking</a> GitHub repository.
 
 ## How to install and run the application
 
@@ -48,10 +48,10 @@ cd ~/dev/reachy-face-tracking
 bash launch.bash
 ```
 
-What this bash file does is just making sure that [reachy_sdk_server.service](https://docs.pollen-robotics.com/advanced/services/available/#reachy_sdk_serverservice) (Reachy’s core code) is started and calling the application with the Python command given above.
+What this bash file does is just making sure that [reachy_sdk_server.service]({{< ref "advanced/services/available#reachy_sdk_serverservice" >}}) (Reachy’s core code) is started and calling the application with the Python command given above.
 
 ### Define service
-You can also setup a service to start the application automatically at boot or to control the application directly with the [dashboard](https://docs.pollen-robotics.com/dashboard/introduction/introduction/).
+You can also setup a service to start the application automatically at boot or to control the application directly with the [dashboard]({{< ref "dashboard/introduction/introduction" >}}).
 
 To do that, just use the provided bash file.
 ```bash
@@ -76,5 +76,5 @@ The application is basically a loop composed of three steps:
 1. We grab Reachy’s last frame available from the right camera
 2. For this frame, we use Reachy’s Edge TPU to infer if there are faces or not, using a face detection model [provided by Google](https://coral.ai/models/object-detection/).
 3. If no faces are detected in the frame, then the head does nothing. </br>
-  If faces are actually detected, we check the size of the window for each face. If the size is less than the *tracking_threshold*, then we ignore the face. This prevent from tracking people too far. You can check what how the *tracking_threshold* applies With the face detection tester script.
+  If faces are actually detected, we check the size of the window for each face. If the size is less than the *tracking_threshold*, then we ignore the face. This prevent from tracking people too far. You can check how the *tracking_threshold* applies with the face detection tester script.</br>
   For the remaining faces, we pick the one whose detection window is the biggest and we control Orbita (Reachy’s neck) so that the center of the face gets in the center of the image.
