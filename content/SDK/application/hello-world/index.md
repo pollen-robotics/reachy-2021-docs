@@ -24,6 +24,8 @@ This project has been thought to:
 interaction, making independant components that can be reused and
 integrated in more complex programs. The idea is to be able to integrate this idle mode in any project requiring such a state, without having to re-code this behavior again and again.
 
+The source can be found in the [hello-world](https://github.com/pollen-robotics/hello-world) GitHub repository.
+
 ## How to install and run the application
 
 ### Install
@@ -62,6 +64,8 @@ cd ~/dev/hello-world
 bash setup-service.bash
 ```
 However be careful if you start the application automatically at boot, you need to make sure that the robot is in place and that nothing could enter in collision with it while it is moving.
+
+**We recommend to play a few times with the application using the Python calling before using the service, to be familiar with the hello world.**
 
 ## Good practice
 It is important to give Reachy enough space to move, for the robot and for the people around.
