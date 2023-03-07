@@ -76,6 +76,12 @@
   identifier = "mobile-base"
   url = "/SDK/mobile-base/"
 
+[[sdk]]
+  name = "Application"
+  weight = 40
+  identifier = "application"
+  url = "/SDK/application/"
+
 [[vr]]
   name = "Introduction"
   weight = 10
