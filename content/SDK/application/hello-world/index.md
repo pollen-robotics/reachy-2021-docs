@@ -24,7 +24,7 @@ This project has been thought to:
 interaction, making independant components that can be reused and
 integrated in more complex programs. The idea is to be able to integrate this idle mode in any project requiring such a state, without having to re-code this behavior again and again.
 
-The source can be found in the [hello-world](https://github.com/pollen-robotics/hello-world) GitHub repository.
+The source can be found in the <a href="https://github.com/pollen-robotics/hello-world" target="_blank">hello-world</a> GitHub repository.
 
 ## How to install and run the application
 
@@ -53,10 +53,10 @@ cd ~/dev/hello-world
 bash launch.bash
 ```
 
-What this bash files does is just making sure that [reachy_sdk_server.service](https://docs.pollen-robotics.com/advanced/services/available/#reachy_sdk_serverservice) (Reachy’s core code) is started and calling the application with the Python command given above.
+What this bash file does is just making sure that [reachy_sdk_server.service]({{< ref "advanced/services/available#reachy_sdk_serverservice" >}}) (Reachy’s core code) is started and calling the application with the Python command given above.
 
 ### Define service
-You can also setup a service to start the application automatically at boot or to control the application directly with the [dashboard](https://docs.pollen-robotics.com/dashboard/introduction/introduction/).
+You can also setup a service to start the application automatically at boot or to control the application directly with the [dashboard]({{< ref "dashboard/introduction/introduction" >}}).
 
 To do that, just use the provided bash file.
 ```bash
@@ -86,19 +86,19 @@ The application is a composition of implemented behaviors. Here we will present 
 
 Currently nine behaviors are implemented:
 
-- ***************************asleep***************************: Reachy moves just a bit its arm along its body as if it was breathing, with the head looking down.
-- ***************************look_hand***************************: Reachy moves its gripper and look at it.
-- ***************************lonely***************************: Reachy looks around and act sad at the end.
-- ***************************scratch***************************: Reachy scratches its forearm.
-- ***************************tshirt***************************: Reachy grabs its T-shirt, and put it back in place.
-- ***************************sweat_head***************************: Reachy touches wipe its head as if it was too hot.
-- ***************************sneeze***************************: Reachy sneezes with a head movement.
-- ***************************whistle***************************: Reachy whistles a tune cheerfully.
-- ***************************hello***************************: Reachy waves its hand to say hello.
+- ***asleep***: Reachy moves just a bit its arm along its body as if it was breathing, with the head looking down.
+- ***look_hand***: Reachy moves its gripper and look at it.
+- ***lonely***: Reachy looks around and act sad at the end.
+- ***scratch***: Reachy scratches its forearm.
+- ***tshirt***: Reachy grabs its T-shirt, and put it back in place.
+- ***sweat_head***: Reachy touches wipe its head as if it was too hot.
+- ***sneeze***: Reachy sneezes with a head movement.
+- ***whistle***: Reachy whistles a tune cheerfully.
+- ***hello***: Reachy waves its hand to say hello.
 
-To play any of these behaviors without having to use the app, you can use the [behavior_player script](https://github.com/pollen-robotics/hello-world/blob/main/hello_world/behavior_player.py).
+To play any of these behaviors without having to use the app, you can use the <a href="https://github.com/pollen-robotics/hello-world/tree/main/hello_world/behavior_player.py" target="_blank">behavior_player script</a>.
 
-For example, to play *******sneeze*******:
+For example, to play ***sneeze***:
 
 ```bash
 cd ~/dev/hello-world
@@ -107,9 +107,9 @@ python3 -m hello_world.behavior_player sneeze
 
 ### Idle
 
-The [idle behavior](https://github.com/pollen-robotics/hello-world/blob/main/hello_world/behaviors/idle.py) is the behavior played by the application in the [hello](https://github.com/pollen-robotics/hello-world/blob/main/hello_world/hello.py) script (you can consider hello to be the main file for the application). Idle is composed of sub-behaviors, each of them being the behaviors presented above.
+The <a href="https://github.com/pollen-robotics/hello-world/tree/main/hello_world/behaviors/idle.py" target="_blank">idle behavior</a> is the behavior played by the application in the <a href="https://github.com/pollen-robotics/hello-world/tree/main/hello_world/hello.py" target="_blank">hello</a> script (you can consider hello to be the main file for the application). Idle is composed of sub-behaviors, each of them being the behaviors presented above.
 
-Here is the implementation of Idle, taken from [idle.py](https://github.com/pollen-robotics/hello-world/blob/main/hello_world/behaviors/idle.py):
+Here is the implementation of Idle, taken from <a href="https://github.com/pollen-robotics/hello-world/tree/main/hello_world/behaviors/idle.py" target="_blank">idle.py</a>:
 
 ```python
 class Idle(Behavior):
@@ -149,22 +149,22 @@ class Idle(Behavior):
 
 You can see in the *init* that the nine behaviors presented before are imported and defined as sub behaviors. 
 
-What the idle behavior is actually doing is defined in the ****run**** method: when doing idle, Reachy will alternate between the asleep behavior and one of the other eight behavior, picked randomly.
+What the idle behavior is actually doing is defined in the **run** method: when doing idle, Reachy will alternate between the asleep behavior and one of the other eight behavior, picked randomly.
 
-If you want to remove a behavior from idle, just comment it in the definition of **************self.behaviors**************.
+If you want to remove a behavior from idle, just comment it in the definition of **self.behaviors**.
 
 ### Implement your own behavior
 
 It is also possible for you to implement your own behavior and to add it to the idle behavior.
 
-What you need to know is that your class defining your new behavior should inherit from the [Behavior class](https://github.com/pollen-robotics/hello-world/blob/main/hello_world/behaviors/__init__.py), define an \_\_init\_\_, a run and a terdown method. More info on the README of the [hello-world repository](https://github.com/pollen-robotics/hello-world#add-new-behaviors).
+What you need to know is that your class defining your new behavior should inherit from the <a href="https://github.com/pollen-robotics/hello-world/tree/main/hello_world/behaviors/__init__.py" target="_blank">Behavior class</a>, define an \_\_init\_\_, a run and a terdown method. More info on the README of the <a href="https://github.com/pollen-robotics/hello-world#add-new-behaviors" target="_blank">hello-world repository</a>.
 
-Each existing behavior have been implemented only using [Reachy’s Python SDK](https://docs.pollen-robotics.com/sdk/getting-started/introduction/), whether it was by using [goto](https://docs.pollen-robotics.com/sdk/first-moves/arm/#goto-function) or [look_at](https://docs.pollen-robotics.com/sdk/first-moves/head/#orbita-look_at-method), or by [recording and replaying movements](https://docs.pollen-robotics.com/sdk/first-moves/record/). Take a look at how the behaviors have been implemented to get some inspiration.
+Each existing behavior have been implemented only using [Reachy’s Python SDK]({{< ref "sdk/getting-started/introduction" >}}), whether it was by using [goto]({{< ref "sdk/first-moves/arm#goto-function" >}}) or [look_at]({{< ref "sdk/first-moves/head#orbita-look_at-method" >}}), or by [recording and replaying movements]({{< ref "sdk/first-moves/record" >}}). Take a look at how the behaviors have been implemented to get some inspiration.
 
 ## Other
 ### Run the application on any computer
-Since all the application has been developed using *[reachy-sdk](https://docs.pollen-robotics.com/sdk/getting-started/introduction/)*, it is not mandatory to run the application directly on Reachy’s computer. As long as reachy-sdk is installed on your machine, you can run the application locally on your computer by changing [Reachy_IP variable](https://github.com/pollen-robotics/hello-world/blob/dc13915fddf366077797f42cad8d97119697706c/hello_world/hello.py#L18) in the hello file.
+Since all the application has been developed using *[reachy-sdk]({{< ref "sdk/getting-started/introduction" >}})*, it is not mandatory to run the application directly on Reachy’s computer. As long as reachy-sdk is installed on your machine, you can run the application locally on your computer by changing <a href="https://github.com/pollen-robotics/hello-world/blob/dc13915fddf366077797f42cad8d97119697706c/hello_world/hello.py#L18" target="_blank">Reachy_IP variable</a> in the hello file.
 
 ### Sound
 
-As you will notice, when playing the behaviors, some of them also play sounds simultaneously! This is the case of asleep, sneeze and whistle. Feel free to add sounds to your behaviors or the existing ones using the [playsound tool](https://github.com/pollen-robotics/hello-world/blob/main/hello_world/behaviors/player.py) in the project.
+As you will notice, when playing the behaviors, some of them also play sounds simultaneously! This is the case of asleep, sneeze and whistle. Feel free to add sounds to your behaviors or the existing ones using the <a href="https://github.com/pollen-robotics/hello-world/tree/main/hello_world/behaviors/player.py" target="_blank">playsound tool</a> in the project.
