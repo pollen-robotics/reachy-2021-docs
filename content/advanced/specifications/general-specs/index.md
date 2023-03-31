@@ -1,7 +1,7 @@
 ---
 title: "General specifications"
-description: "Reachy's 2021 general specifications."
-lead: "Reachy 2021 general specifications (full/starter kit only)."
+description: "Reachy's 2023 general specifications."
+lead: "Reachy 2023 general specifications (full/starter kit only)."
 date: 2021-04-06T08:48:57+00:00
 lastmod: 2021-04-06T08:48:57+00:00
 draft: false

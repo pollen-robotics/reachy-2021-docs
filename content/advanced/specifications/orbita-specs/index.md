@@ -15,39 +15,39 @@ toc: true
 
 ## Specifications
 
-**Construction:** 3D printed MJF Painted and Injected PU mechanical parts - Metal bearings and axes.  
+**Construction:** Aluminium machined and SLS printed parts - Custom steel gears - metal bearings and axes.
 
-**Power consumption:** 13W  
+**Power consumption:** 8W  
 **Voltage:** 12V  
-**No-load speed:** 130rpm  
-**Max Continous torque:** 0.97Nm  
-**Gear reduction ratio:** 2.16  
+**No-load speed:** 25rpm  
+**Max Continous torque:** 1.7Nm  
+**Gear reduction ratio:** 4.2666  
 
 **Diameter:** 70mm
-**height:** 158mm
-**Weight:** 450g
+**height:** 170mm
+**Weight:** 850g
 
 ## Motor + Gearbox specifications
 
-**Power consumption:** 4.22W  
+**Power consumption:** 8W  
 **Voltage:** 12V  
-**No-load speed:** 280 rpm  
-**Max Continous torque:** 151 mNm  
+**No-load speed:** 105 rpm  
+**Max Continous torque:** 0.4 Nm  
 **Gear reduction ratio:** 35:1  
 
-**Diameter:** 16mm  
-**Height:** 65mm  
+**Diameter:** 22mm  
+**Height:** 75mm  
 
-<a href="config_maxon.pdf" download>Motor's full specification here</a>  
+<a href="ECXTQ22M-24V_GPX22C-35_1.pdf" download>Motor's full specification here</a>  
 
 
 ## Degrees of freedom
 Orbita has 3 degrees of freedom actuated by three motors described above.   
 They correspond to three rotation at the same point like Roll Pitch Yaw rotations.
 
-{{< img alt="Roll Pitch Yaw Orbita" src="rpy-orbita.png" width="600px" >}}
+{{< img alt="Roll Pitch Yaw Orbita" src="rpy-orbita.jpg" width="600px" >}}
 
 **Angle limits**  
-Roll: -60° to 60°  
-Pitch: -60° to 60°  
+Roll: -46° to 46°  
+Pitch: -46° to 46°  
 Yaw: 360° full rotation  

@@ -72,8 +72,8 @@ Reachy's motors will heat when you are using its joints so you should manage the
 The temperatures of each motor can be accessed using ReachySDK.
 
 There are two important temperature constants you need to know, their values depend on Reachy's part:
-* **fan trigger temperature**: temperature at which the motor will start to get hot and the matching fan should be turned on automatically. The fans allow to work longer with hot joints but enventually the temperature will keep rising if the joints keep being sollicitated. On Reachy's arms: 45°C, on Reachy's neck: 35°C.
-* **shutdown temperature**: when this temperature is reached, the motor will normally shutdown and stop working until it has cooled down. This is a precaution measure to protect the motor. On Reachy's arms: 55°C, on Reachy's neck: 50°C.
+* **fan trigger temperature**: temperature at which the motor will start to get hot and the matching fan should be turned on automatically. The fans allow to work longer with hot joints but enventually the temperature will keep rising if the joints keep being sollicitated. On Reachy's arms: 45°C.
+* **shutdown temperature**: when this temperature is reached, the motor will normally shutdown and stop working until it has cooled down. This is a precaution measure to protect the motor. On Reachy's arms: 55°C.
 
 
 ## Good practices

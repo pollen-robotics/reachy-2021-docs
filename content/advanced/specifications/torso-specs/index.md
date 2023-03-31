@@ -1,7 +1,7 @@
 ---
 title: "Torso specifications"
-description: "Reachy's 2021 torso specifications."
-lead: "Reachy 2021 torso specifications (full/starter kit only)."
+description: "Reachy's 2023 torso specifications."
+lead: "Reachy 2023 torso specifications (full/starter kit only)."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -21,9 +21,7 @@ toc: true
 Reachy's torso area includes the following elements:
 
 ## Computer
-Powerful internal computer NUC intel i3 dual-core 2.1Ghz with 8Go DDR4 and 256Go SSD (NUC8i3PN)
-
-**With computer boost option:** intel i7 quad core, 16 Go DDR4, 512 go SSD
+Powerful internal computer NUC intel i5 quad-core 1.6Ghz with 16Go DDR4 and 256Go SSD (NUC8v5PN)
 
 ## Microphone
 Seeed Studio - ReSpeaker Mic Array v2.0:  Microphone array for NLU (ReSpeaker) and a 3.5mm jack audio output

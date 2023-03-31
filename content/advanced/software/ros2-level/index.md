@@ -1,5 +1,5 @@
 ---
-title: "Working with ROS2 Foxy"
+title: "Working with ROS2 Humble"
 description: "Working at the ROS level of the robot. What are the different nodes available."
 lead: "Working at the ROS level for low-level control."
 date: 2020-11-16T13:59:39+01:00

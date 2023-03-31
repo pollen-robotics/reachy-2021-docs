@@ -1,7 +1,7 @@
 ---
 title: "Arm specifications"
-description: "Reachy's 2021 arm specifications."
-lead: "Reachy 2021 arm specifications."
+description: "Reachy's 2023 arm specifications."
+lead: "Reachy 2023 arm specifications."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -44,13 +44,11 @@ Reachy's arm offers 7 degrees of movement + 1 for the gripper
 |wrist_roll|-55, 35|16| |wrist_roll|-35, 55|26|
 |gripper|-69, 20|17| |gripper|-20, 69|27|
 
-| Motors||
-|---------|--------|
-| **Standard version:** | **Performance version:** |
-|1 Dynamixel MX-106T|3 Dynamixel MX-106T|
-|3 Dynamixel MX-64AT|1 Dynamixel MX-64AT|
-|1 Dynamixel MX-28AT|2 Dynamixel MX-28AT|
-|2 Dynamixel AX-18A|1 Dynamixel AX-18A|
+| Motors|
+|---------|
+|3 Dynamixel MX-106T|
+|1 Dynamixel MX-64AT|
+|4 Dynamixel MX-28AT|
 
 
 ## Fans  

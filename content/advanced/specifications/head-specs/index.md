@@ -1,7 +1,7 @@
 ---
 title: "Head specifications"
-description: "Reachy's 2021 head specifications."
-lead: "Reachy 2021 head specifications (full/starter kit only)."
+description: "Reachy's 2023 head specifications."
+lead: "Reachy 2023 head specifications (full/starter kit only)."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -25,10 +25,10 @@ See the head in action in this video:
 {{< youtube X9dgsLX_u9I >}}
 
 ## Cameras
-Dual 1080p@30fps camera with motorized zoom (FOV 65° to 125°), associated with 2 optical lenses
+Dual 1080p@30fps [camera with motorized zoom](https://www.kurokesu.com/shop/cameras/C2_USBC) (FOV 65° to 125°), associated with 2 optical lenses.
 
 ## Orbita neck joint
-Ball joint actuator that is composed of a parallel mechanism motorized by 3 DC Maxon motors. The control of each motor is done with a magnetic absolute encoder included on the electronic board on top of Orbita.
+Ball joint actuator that is composed of a parallel mechanism motorized by 3 brushless Maxon motors. The control of each motor is done with a magnetic absolute encoder included on the electronic board on top of Orbita.
 
 ## Antennas
 Antennas are animated by a Dynamixel motor and are removable.  

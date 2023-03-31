@@ -1,7 +1,7 @@
 ---
 title: "Gripper specifications"
-description: "Reachy's 2021 gripper specifications."
-lead: "Reachy 2021 gripper specifications."
+description: "Reachy's 2023 gripper specifications."
+lead: "Reachy 2023 gripper specifications."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -13,7 +13,7 @@ weight: 220
 toc: true
 ---
 
-Animated by 1 Dynamixel AX-18A.  
+Animated by 1 Dynamixel MX-28AT.  
 Includes a **micro load cell** 0.78 Kg
 
 **Construction:** 3D printed MJF Painted - Flexible PU molded  
