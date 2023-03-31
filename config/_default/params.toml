@@ -1,9 +1,9 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Reachy 2021"
+title = "Reachy 2023"
 titleSeparator = "-"
-titleAddition = "Reachy 2021 Full Documentation"
+titleAddition = "Reachy 2023 Full Documentation"
 description = "Everything you need to know to setup, program and start interacting with your Reachy!"
 
 ## Open Graph + Twitter Cards
@@ -43,7 +43,7 @@ alert = false
 alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\">Star on GitHub</a>. Thanks!</a>"
 
 # Edit Page
-docsRepo = "https://github.com/pollen-robotics/reachy-2021-docs"
+docsRepo = "https://github.com/pollen-robotics/reachy-2023-docs"
 editPage = true
 
 [options]
