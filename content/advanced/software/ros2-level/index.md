@@ -69,8 +69,26 @@ Similarly, if you want to control a fake Reachy using the SDK, you can run (we a
 
 Other options are available and can be seen below:
 
-TODO: ajouter un screen d'un ros2 launch bringup --help
+```bash
+ros2 launch reachy_bringup reachy.launch.py --show-args
+Arguments (pass arguments as '<name>:=<value>'):
 
+    'start_rviz':
+        Start RViz2 automatically with this launch file. Valid choices are: ['true', 'false']
+        (default: 'false')
+
+    'fake':
+        Start on fake_reachy mode with this launch file. Valid choices are: ['true', 'false']
+        (default: 'false')
+
+    'gazebo':
+        Start a fake_hardware with gazebo as simulation tool. Valid choices are: ['true', 'false']
+        (default: 'false')
+
+    'start_sdk_server':
+        Start sdk_server along with reachy nodes with this launch file. Valid choices are: ['true', 'false']
+        (default: 'false')
+```
 
 This launch file actually runs many other launch files. If you want to have your custom launch file, the better way is probably to directly have a look at what's inside.
 

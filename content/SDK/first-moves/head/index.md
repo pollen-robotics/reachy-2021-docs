@@ -44,7 +44,7 @@ Below you can see Reachy's head front and back supported by the Orbita actuator.
 
 The Orbita actuator is a unique technology developed by Pollen Robotics’ R&D team. This ball joint actuator allows unpreceded dynamic and multi-directional movement. This joint is used as the neck of Reachy and permits to mimic the degrees of freedom of the human neck. With this, the experience of controling Reachy with Virtual Reality gets even more immersive.
 
-Orbita is composed of three disks named *top*, *middle* and *bottom* which can be piloted individually.
+Orbita can be controlled as a 3D rotation.
 
 <p align="center">
   <img src="orbita_schematic.png" alt="drawing" width="60%"/>
@@ -56,8 +56,6 @@ We wrote a [Medium article on Orbita](https://medium.com/pollen-robotics/orbita-
 
 Before starting to control it, connect to your Reachy. As in the other pages:
 
-TODO: update
-
 ```python
 from reachy_sdk import ReachySDK
 
@@ -67,9 +65,9 @@ reachy.head
 >>> <Head joints=<Holder
 	<Joint name="l_antenna" pos="121.26" mode="compliant">
 	<Joint name="r_antenna" pos="-10.70" mode="compliant">
-	<Joint name="neck_disk_top" pos="-49.16" mode="compliant">
-	<Joint name="neck_disk_middle" pos="-61.09" mode="compliant">
-	<Joint name="neck_disk_bottom" pos="-54.92" mode="compliant">
+	<Joint name="neck_roll" pos="9.16" mode="compliant">
+	<Joint name="neck_pitch" pos="-6.09" mode="compliant">
+	<Joint name="neck_yaw" pos="-14.92" mode="compliant">
 >>
 ```
 
@@ -80,15 +78,11 @@ reachy.head.joints
 >>> <Holder
 	<Joint name="l_antenna" pos="-2.49" mode="stiff">
 	<Joint name="r_antenna" pos="-0.44" mode="stiff">
-	<Joint name="neck_disk_top" pos="-54.72" mode="stiff">
-	<Joint name="neck_disk_middle" pos="-69.77" mode="stiff">
-	<Joint name="neck_disk_bottom" pos="-54.11" mode="stiff">
+	<Joint name="neck_roll" pos="-5.72" mode="stiff">
+	<Joint name="neck_pitch" pos="-19.77" mode="stiff">
+	<Joint name="neck_yaw" pos="-54.11" mode="stiff">
 >
 ```
-
-<p align="center">
-  <img src="head_attributes.png" alt="drawing" width="75%"/>
-</p>
 
 ### Orbita: look_at method
 
@@ -150,18 +144,14 @@ Another cool thing is that we can combine Reachy's kinematics with the *look_at*
 ```python
 reachy.turn_on('head')
 
-x, y, z = reachy.r_arm.forward_kinematics()[:3,-1] # We want the translation part of Reachy's pose matrix
-reachy.head.look_at(x=x, y=y, z=z-0.05, duration=1.0) # There is a 5cm offset on the z axis
+x, y, z = reachy.r_arm.forward_kinematics()[:3, -1]
+reachy.head.look_at(x=x, y=y, z=z, duration=1.0)
 
 time.sleep(0.5)
 
 while True:
-    x, y, z = reachy.r_arm.forward_kinematics()[:3,-1]
-    gp_dic = reachy.head._look_at(x, y, z - 0.05)
-    reachy.head.neck_disk_bottom.goal_position = gp_dic[reachy.head.neck_disk_bottom]
-    reachy.head.neck_disk_middle.goal_position = gp_dic[reachy.head.neck_disk_middle]
-    reachy.head.neck_disk_top.goal_position = gp_dic[reachy.head.neck_disk_top]
-    time.sleep(0.01)
+    x, y, z = reachy.r_arm.forward_kinematics()[:3, -1]
+    reachy.head.look_at(x=x, y=y, z=z, duration=0.1)
 ```
 
 What the code says is that we compute the [forward kinematics of Reachy's right arm]({{< ref "sdk/first-moves/kinematics#forward-kinematics" >}}), and the x, y, z of Reachy's right end-effector in the Reachy's coordinates system will be the coordinates of the point used by the *look_at*.

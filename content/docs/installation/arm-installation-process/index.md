@@ -45,17 +45,7 @@ sudo apt install ros-dev-tools
 ```
 ### Check that the installation went well
 To make sure that ROS2 Humble has been successfully installed, you can run the test example from ROS2 Humble. 
-Taken from the [ROS2 Humble documentation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html#try-some-examples):
-
-TODO: update
-<p align="center">
-<img src="ros2_talker_example.png" alt="drawing" width="80%"/>
-</p>
-
-Your two terminals should look like this:
-<p align="center">
-<img src="ros2_talker_example_terminal.png" alt="drawing" width="80%"/>
-</p>
+Taken from the [ROS2 Humble documentation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html#try-some-examples).
 
 ## Install Reachy's ROS2 packages
 ### Create a dedicated workspace
@@ -176,7 +166,34 @@ nano ~/.bashrc
 And add an config file with your model as *~/.reachy.yaml*.  
 For example, to configure only a right arm:
 ```bash
-TODO
+generation: 2023
+model: robotic_right_arm_kit
+zuuu_version: None
+neck_orbita_zero:
+    top: 0.0
+    middle: 0.0
+    bottom: 0.0
+camera_parameters:
+    left:
+        fx: 0.0
+        fy: 0.0
+        cx: 0.0
+        cy: 0.0
+        k1: 0.0
+        k2: 0.0
+        k3: 0.0
+        p1: 0.0
+        p2: 0.0
+    right:
+        fx: 0.0
+        fy: 0.0
+        cx: 0.0
+        cy: 0.0
+        k1: 0.0
+        k2: 0.0
+        k3: 0.0
+        p1: 0.0
+        p2: 0.0
 ```
 
 Make sure to source your *.bashrc* file to take the modification into account:
