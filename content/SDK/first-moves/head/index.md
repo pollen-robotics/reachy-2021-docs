@@ -47,7 +47,7 @@ The Orbita actuator is a unique technology developed by Pollen Robotics’ R&D t
 Orbita can be controlled as a 3D rotation.
 
 <p align="center">
-  <img src="orbita_schematic.png" alt="drawing" width="60%"/>
+  <img src="orbita_rpy.png" alt="drawing" width="60%"/>
 </p>
 
 We wrote a [Medium article on Orbita](https://medium.com/pollen-robotics/orbita-is-turning-heads-literally-d10d378550e2) to explain how it works and what inspired us to create it. If you have 10 minutes, go check it out!
