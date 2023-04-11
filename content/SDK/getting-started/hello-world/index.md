@@ -54,9 +54,9 @@ Joint "r_wrist_roll" is at pos 4.5 degree.
 Joint "r_gripper" is at pos -0.7 degree.
 Joint "l_antenna" is at pos -1.9 degree.
 Joint "r_antenna" is at pos -3.7 degree.
-Joint "neck_disk_top" is at pos -50.1 degree.
-Joint "neck_disk_middle" is at pos -44.1 degree.
-Joint "neck_disk_bottom" is at pos -48.0 degree.
+Joint "neck_roll" is at pos -20.1 degree.
+Joint "neck_pitch" is at pos -14.1 degree.
+Joint "neck_yaw" is at pos -48.0 degree.
 ```
 
 Note that we have accessed the attribute *present_position* to get the joint actual position. You can access the position of a specific joint by using its full name (meaning the part it is attached to plus its name). For instance, to get the position of the 'left shoulder pitch':
@@ -91,8 +91,6 @@ while True:
 ```
 
 You should now see what Reachy sees!
-
-**TODO: add gif**
 
 To stop the code, press Ctrl-C.
 
