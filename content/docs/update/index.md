@@ -29,6 +29,6 @@ The list of all Reachy's packages which may require updates is available here:
 To make sure the updates have been taken into account, build ROS packages after having pulled them.
 ```
 cd ~/reachy_ws
-colcon build 
+colcon build --symlink-install
 source ~/.bashrc
 ```

@@ -15,9 +15,9 @@ toc: true
 
 Reachy's software is composed of three main parts:
 
-- **a HAL** (Hardware Abstraction Layer) handling the communication with some of Reachy's sensors i.e. the Dynamixel motors in the arms, fans, force sensors and Orbita actuator,
-- **ROS packages:** this is the core of the software. We are using ROS (Robotics Operating System), more precisely the **ROS2 Humble distribution**, and interact with the HAL via [ros2 control](https://control.ros.org/master/index.html), to compute the kinematics for Reachy's arms and Orbita, to get the camera feed and to manage the autofocus on Reachy's motorised zooms.   
-A ROS package is also used, along with gRPC, to create a server interacting with the different ROS nodes and services made for Reachy and allowing remote control on the robot without being physically connected to it.
+- **a HAL** (Hardware Abstraction Layer) handling the communication with Reachy's sensors i.e. the Dynamixel motors in the arms, fans, force sensors and Orbita actuator.
+- **ROS packages:** this is the core of the software. We are using ROS (Robotics Operating System), more precisely the **ROS2 Humble distribution**, and interact with the HAL via [ros2 control](https://control.ros.org/master/index.html). ROS packages are used to compute the kinematics for Reachy's arms and Orbita, to get the camera feed and to manage the autofocus on Reachy's motorised zooms.   
+Another ROS package is also used, along with gRPC, to create a server interacting with the different ROS nodes and services made for Reachy and allowing remote control on the robot without being physically connected to it.
     
 - **gRPC client:** the strength of using the gRPC framework is that we can have a remote control to the robot and create clients in any programming language (Python, C++, C#, ...). So knowing how to use ROS is not needed to work with Reachy.
 
@@ -39,13 +39,13 @@ The main package is [**reachy_2023**](https://github.com/pollen-robotics/reachy_
 - [**camera_controllers**](https://github.com/pollen-robotics/reachy_2023/tree/master/camera_controllers): communicates with the camera using v4l2 and zoom.
 - [**gripper_safe_controller**](https://github.com/pollen-robotics/reachy_2023/tree/master/gripper_safe_controller): Smart gripper controller that automatically adjusts target position to avoid forcing.
 
-- [**reachy_msgs:**](https://github.com/pollen-robotics/reachy_2023/tree/master/reachy_msgs): custom ROS messages for the different ROS services and topics
-- [**reachy_bringup:**](https://github.com/pollen-robotics/reachy_2023/tree/master/reachy_bringup): bringup launch file (can launch real, fake or gazebo reachy)
+- [**reachy_msgs**](https://github.com/pollen-robotics/reachy_2023/tree/master/reachy_msgs): specific ROS messages for Reachy
+- [**reachy_bringup**](https://github.com/pollen-robotics/reachy_2023/tree/master/reachy_bringup): bringup launch file (can launch real, fake or gazebo reachy with or without RViz, etc.)
 
-- [**reachy_sdk_server**](https://github.com/pollen-robotics/reachy_2023/tree/develop/reachy_sdk_server): creates two gRPC servers, *camera_server* to get the camera's images and control the motorised zooms and *reachy_sdk_server* for the joints, load sensors, fans and Orbita
+- [**reachy_sdk_server**](https://github.com/pollen-robotics/reachy_2023/tree/develop/reachy_sdk_server): creates two gRPC servers, *camera_server* to get the camera's images and control the motorised zooms and *reachy_sdk_server* for the joints, load sensors, fans and Orbita.
 
 ##### Mobile base
-The following packages are only needed if you have a Reachy with mobile base:
+The following package is only needed if you have a Reachy with mobile base:
 
 - [**mobile_base_controller**](https://github.com/pollen-robotics/reachy_2023/tree/develop/mobile_base_controller)
 
@@ -61,10 +61,12 @@ with the following sub-packages:
 
 (installed in ~/dev folder of Reachy's computer)
 
-- [**reachy_sdk_api**](https://github.com/pollen-robotics/reachy-sdk-api): services and messages for the gRPC servers
-- [**reachy_sdk**](https://github.com/pollen-robotics/reachy-sdk): SDK Python to control Reachy to develop applications
+The main library you will use:
+- [**reachy_sdk**](https://github.com/pollen-robotics/reachy-sdk): SDK Python to control Reachy and develop applications
+
+Other dependencies for more specific use cases:
+- [**reachy_sdk_api**](https://github.com/pollen-robotics/reachy-sdk-api): protobuf services and messages definition for the gRPC servers
 - [**zoom_kurokesu**](https://github.com/pollen-robotics/zoom_kurokesu): Python library to control Reachy's motorized zooms
-- [**reachy_pyluos_hal**](https://github.com/pollen-robotics/reachy_pyluos_hal): HAL as described in the first section
 
 ##### Mobile base
 The following package is only needed if you have a Reachy with mobile base:
@@ -74,12 +76,12 @@ The following package is only needed if you have a Reachy with mobile base:
 
 ## gRPC clients
 
-As explained, the gRPC clients permits to communicate with the gRPC server without being physically connected on the robot. The gRPC clients can be installed on another machine and have few requisites, there is no need for the machine to have ROS installed on it.
+As explained, the gRPC clients permits the communication with the gRPC server through a network and without being physically connected on the robot. The gRPC clients can be installed on another machine and have few requisites, there is no need for the machine to have ROS installed on it.
 
-gRPC clients can be in different programming languages. Currently, two different clients have been developed:
+gRPC clients can be in different programming languages. Currently, you can remotely control your robot using:
 
-- [**reachy_sdk**](https://github.com/pollen-robotics/reachy-sdk): as described above, SDK Python to control Reachy. This is the library that we use when we want to develop an app on Reachy or test a new robot,
-- [**mobile_base_sdk**](https://github.com/pollen-robotics/mobile-base-sdk): SDK Python to control Reachy's mobile base without having Reachy's main code running. It is convenient to have it aside from *reachy_sdk* because sometimes you just want to work on the mobile base alone and with this, you don't have to worry about whether or not Reachy's motors are on or if Reachy's main service is running.
+- [**reachy_sdk**](https://github.com/pollen-robotics/reachy-sdk): as described above, SDK Python to control Reachy's arm, head, gripper. This is the library that we use when we want to develop an app on Reachy or test a new robot,
+- [**mobile_base_sdk**](https://github.com/pollen-robotics/mobile-base-sdk): SDK Python to control Reachy's mobile base. It can work on the mobile base alone and with this, you don't have to worry about whether or not Reachy's motors are on or if Reachy's main service is running.
 
 <br/>
 

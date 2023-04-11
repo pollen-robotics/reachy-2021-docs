@@ -9,6 +9,8 @@ toc: true
 hidden: true
 ---
 
+TODO: update
+
 Each arm of Reachy is equipped with a load sensor to measure how much force is applied by the gripper to the object. It allows to know when the gripper is holding an object.
 
 The load sensor is in two part: the sensor itself and an electronic board reading its values and connected to Reachy's internal computer.

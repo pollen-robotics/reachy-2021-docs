@@ -14,19 +14,16 @@ toc: true
 ---
 The following commands are taken from [systemd documentation](https://www.freedesktop.org/wiki/Software/systemd/). For more details, don't hesitate to check the documentation directly.
 
-> :bulb: **If your Reachy has been produced before or not been upgraded since July 2022**, for each command, replace the first part `systemctl --user` by `sudo systemctl`.
-<br> For example, the first command that we will show you `systemctl --user start reachy_sdk_server.service` would be replaced by `sudo systemctl start reachy_sdk_server.service`.
-
 ## Start, restart or stop a service
 Eachy Reachy's services can be started, stopped or restarted by hand. It can be useful for situations where for example you turned Reachy's computer on but forgot to turn on its motors. By restarting *reachy_sdk_server.service*, you would not have to reboot Reachy's computer.
 
-To start a specific service like [*reachy_sdk_server.service*]({{< ref "/advanced/services/available#reachy_sdk_serverservice" >}}), type the following command in a terminal
+To start a specific service like [*reachy_sdk_server.service*]({{< ref "/advanced/services/available#reachy_sdk_serverservice" >}}), type the following command in a terminal:
 ```bash
 systemctl --user start reachy_sdk_server.service
 ```
 
 Similarly, you can stop or restart a specific service by replacing the start keyword by either stop or restart.
-For example, to restart reachy_sdk_server.service, the command is
+For example, to restart reachy_sdk_server.service, the command is:
 ```bash
 systemctl --user restart reachy_sdk_server.service
 ```

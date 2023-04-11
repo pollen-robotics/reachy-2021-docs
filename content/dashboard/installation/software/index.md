@@ -31,8 +31,6 @@ To know if it is the case, in a terminal:
 systemctl --user list-unit-files | grep reachy
 ```
 
-If the result is empty, it means that Reachy's services are in sudo mode. To learn how to switch the services to user mode, follow the instructions on [this page]({{< ref "/help/system/change-services-user-mode" >}}).
-
 ## Create Reachy's Hotspot
 ```bash
 nmcli dev wifi hotspot ifname wlp0s20f3 con-name Reachy-AP ssid Reachy-AP password "Reachy-AP"

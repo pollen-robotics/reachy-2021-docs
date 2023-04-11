@@ -30,7 +30,7 @@ If you're using the [Python SDK]({{< ref "sdk/getting-started/introduction" >}})
 
 Open a terminal on the computer, and enter:
 ```bash
-sudo systemctl status <name_of_the_service>.service
+systemctl --user status <name_of_the_service>.service
 ```
 
 The service should indicate ⬤ active (running) as shown below.
@@ -41,8 +41,8 @@ The service should indicate ⬤ active (running) as shown below.
 
 If the service is not active, enable it and start it.
 ```bash
-sudo systemctl enable <name_of_the_service>.service
-sudo systemctl start <name_of_the_service>.service
+systemctl --user enable <name_of_the_service>.service
+systemctl --user start <name_of_the_service>.service
 ```
 Get [more information on Reachy system.d services here]({{< ref "advanced/services/available" >}})
 
@@ -81,8 +81,8 @@ Sometimes, Reachy's cameras cannot be accessed correctly by Reachy's computer. W
 A [python script](https://github.com/pollen-robotics/reachy_controllers/blob/master/examples/view_cam.py) is available to view the camera feed. In a terminal in Reachy's computer:
 
 ```bash
-$ sudo systemctl stop reachy_sdk_server.service
-$ python3 ~/reachy_ws/src/reachy_controllers/examples/view_cam.py left opencv
+$ systemctl --user stop reachy_sdk_server.service
+$ python3 ~/reachy_ws/src/reachy_2023/camera_controllers/examples/view_cam.py left opencv
 ```
 
 If a window opens with the camera feed: great, the left camera is correctly detected. You can press 'q' to exit the window.
@@ -90,7 +90,7 @@ If a window opens with the camera feed: great, the left camera is correctly dete
 Same for the right camera:
 
 ```bash
-$ python3 ~/reachy_ws/src/reachy_controllers/examples/view_cam.py right opencv
+$ python3 ~/reachy_ws/src/reachy_2023/camera_controllers/examples/view_cam.py right opencv
 ```
 
 If one (or both) of them is not working, you can check if the USB cable coming from Reachy's neck is correctly connected.
@@ -108,7 +108,7 @@ If you think you were in one of situations above and you solved it, you can rest
 In a terminal:
 
 ```bash
-$ sudo systemctl restart reachy_sdk_server.service
+$ systemctl --user restart reachy_sdk_server.service
 ```
 
 In a Python terminal:
@@ -126,8 +126,8 @@ You should not have the *_InactiveRpcError* again after the second instruction i
 If none of the above worked, you can launch Reachy's server by hand. This is the best way to know what is wrong as it will print everything. However, there might be a lot of information so it can be quite hard to interpret.
 
 ```bash
-$ sudo systemctl stop reachy_sdk_server.service
-$ bash ~/reachy_ws/src/reachy_sdk_server/launch_all.bash
+$ systemctl --user stop reachy_sdk_server.service
+$ bash ~/reachy_ws/src/reachy_2023/reachy_sdk_server/launch.bash
 ```
 
-Don't hesitate to send the output of *launch_all.bash* on the support channel of [Pollen Community](https://discord.gg/Kg3mZHTKgs) on Discord, a team member of Pollen will help you debug it.
+Don't hesitate to send the output of *launch.bash* on the support channel of [Pollen Community](https://discord.gg/Kg3mZHTKgs) on Discord, a team member of Pollen will help you debug it.

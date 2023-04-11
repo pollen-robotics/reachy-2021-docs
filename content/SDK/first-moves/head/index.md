@@ -56,6 +56,8 @@ We wrote a [Medium article on Orbita](https://medium.com/pollen-robotics/orbita-
 
 Before starting to control it, connect to your Reachy. As in the other pages:
 
+TODO: update
+
 ```python
 from reachy_sdk import ReachySDK
 

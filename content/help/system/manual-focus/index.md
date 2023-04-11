@@ -48,6 +48,9 @@ python3 view_cam_sdk.py left --ip_address='your-reachy-ip-address'
 (you can exit the window opened by this script by pressing 'q')
 
 ## Disabling autofocus at boot
+
+TODO: update ?
+
 Once the focus correctly made, we suggest to remove the autofocus from being done automatically everytime you boot Reachy, if this is not already the case. This is done by commenting the lines 25 to 27 of the file *camera_zoom_service.py* of reachy_controllers 
 
 ```python
@@ -65,6 +68,6 @@ Don't forget to rebuild the ROS package so that the changes are taken into accou
 
 ```bash
 cd ~/reachy_ws
-colcon build
+colcon build --symlink-install
 source ~/.bashrc
 ```

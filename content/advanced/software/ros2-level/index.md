@@ -15,15 +15,19 @@ toc: true
 
 Even if [gRPC clients]({{< ref "/advanced/software/presentation#grpc-clients" >}}) are available to control Reachy without knowing how to use ROS, you may want to work at the ROS level to implement new things for Reachy or use the tools provided by ROS. In this page, we will describe how to use the specfic ROS2 packages for Reachy.
 
-Reachy runs natively on [ROS2 Foxy](https://docs.ros.org/en/foxy/index.html). ROS stands for Robotic Operating System, it offers a huge variety of compatible algorithms and hardware drivers.
+Reachy runs natively on [ROS2 Humble](https://docs.ros.org/en/humble/index.html). ROS stands for Robotic Operating System, it offers a huge variety of compatible algorithms and hardware drivers.
 
 The embedded NUC computer comes with ROS2 and Reachy specific packages already installed and running. They provide full access to Reachy. You can:
-- get the */joint_state* and publish joint goals
-- use *Rviz*
+- get the */joint_states* and */dynamic_joint_states*
+- use *Rviz* to visualize your robot (either real or simulated)
 - subscribe to various sensor topic (camera, force sensor, etc)
+- publish position, torque, pid, etc commands using forward controller
 - access client for IK/FK
 
-> NOTE: If you don't know how to use ROS but still want to do it on Reachy, you should check the [official ROS documentation](https://docs.ros.org/en/foxy/index.html), espcecially the [tutorials](https://docs.ros.org/en/foxy/Tutorials.html) showing examples and presenting the different key notions introduced by ROS.
+{{< alert icon="💡" text="At this level, joints angles are handled in radians." >}}
+
+
+> NOTE: If you don't know how to use ROS but still want to do it on Reachy, you should check the [official ROS documentation](https://docs.ros.org/en/humble/index.html), espcecially the [tutorials](https://docs.ros.org/en/humble/Tutorials.html) showing examples and presenting the different key notions introduced by ROS.
 
 ## What is runnning by default
 
@@ -40,80 +44,64 @@ ros2 topic list
 and 
 ```bash
 ros2 service list
-```  
+```
 
-## Launching nodes individually
+## Using launch files directly
+
 The following presents what launch files can be launched, if you don't whant to use the service.
 If you want to learn more about what is run by each launch file, check the README of the corresponding package.
 
-## Controllers nodes
+## Bringup
 
-To control joints, fans and cameras.
+This launch file is the main entry point. It is reponsible for launching everything you need to use your Reachy. It can either connect to a real Reachy or simulate a fake one. You can run the sdk server or not, etc.
 
-### Cameras nodes
+To connect to your robot and run everything needed to control it via ROS you can simply run:
+
+```ros2 launch reachy_bringup reachy.launch.py```
+
+If you want to control it using the SDK:
+
+```ros2 launch reachy_bringup reachy.launch.py start_sdk_server:=true```
+
+Similarly, if you want to control a fake Reachy using the SDK, you can run (we also launch RViz so you can see what's going on):
+
+```ros2 launch reachy_bringup fake:=true start_sdk_server:=true start_rviz:=true```
+
+Other options are available and can be seen below:
+
+TODO: ajouter un screen d'un ros2 launch bringup --help
+
+
+This launch file actually runs many other launch files. If you want to have your custom launch file, the better way is probably to directly have a look at what's inside.
+
+## Cameras nodes
+
 *Cameras nodes are available for full/starter kit only:*  
 
-To launch the **camera view** node ROS services:
+To run the **camera view** node ROS services:
 ```bash
-ros2 launch reachy_controllers camera_publisher.launch.py
+ros2 run camera_controllers camera_publisher
 ```
 To launch the **camera zoom** node ROS services:
 ```bash
-ros2 launch reachy_controllers camera_zoom_service.launch.py
+ros2 run camera_controllers camera_zoom_service
 ```
-
-To launch **all reachy_controllers** nodes related to the **cameras** ROS services:
-```bash
-ros2 launch reachy_controllers camera_controller.launch.py
-```
-
 To launch the **camera focus** node ROS services:
 ```bash
-ros2 launch reachy_focus camera_focus.launch.py
+ros2 run camera_controllers camera_focus
 ```
-
-### Joints nodes
-To launch the node related to the **motors** and **fans** ROS services:
-```bash
-ros2 launch reachy_controllers joint_state_controller.launch.py
-```
-
-### All controllers nodes
-To launch **all** controllers nodes related to ROS services at once:
-```bash
-ros2 launch reachy_controllers reachy_controllers.launch.py
-```
-
-Use `reachy_msgs` to interact with the services. Examples are available [here](https://github.com/pollen-robotics/reachy_controllers/tree/master/examples).
-
-{{< alert icon="💡" text="At this level, joints angles are handled in radians." >}}
-
 
 ## Kinematics nodes
 
-Kinematics services are available to provide inverse and forward kinematics services for the arms, as well as inverse kinematics for Orbita, the spherical joint used in Reachy's neck.  
+The Kinematics services are available to provide inverse and forward kinematics services for the arms, as well as inverse kinematics for the neck. They are launched automatically by the bringup launch file.
 
-Launch files are available to start the ROS services you need:  
+If you need to run them separately:
 
-To launch **description** service with URDF (required by the kinematics services):
 ```bash
-ros2 launch reachy_kinematics description.launch.py
+ros2 run reachy_kdl_kinematics reachy_kdl_kinematics
 ```
 
-To launch **arms** ROS services:
-```bash
-ros2 launch reachy_kinematics arm_kinematics.launch.py
-```
-
-To launch **orbita** ROS services *(full/starter kit only)*:
-```bash
-ros2 launch reachy_kinematics orbita_kinematics_service.launch.py
-```
-
-To launch **all** kinematics ROS services at once:
-```bash
-ros2 launch reachy_kinematics kinematics.launch.py
-```
+It requires the *robot_state_publisher* to be running.
 
 ## Mobile base
 
@@ -126,26 +114,20 @@ Many parameters on the mobile base like the maximum velocity can only be tuned a
 ## SDK server nodes
 
 A layer above ROS, you can interact with **Reachy SDK API**. The Python SDK offers a gRPC (Remote Procedure Call) interface to communicate with the server.  
-To communicate with Reachy through the SDK, you need to launch server nodes that handle gRPC services.  
+To communicate with Reachy through the SDK, you need to launch server nodes that handle gRPC services. The easier way is to use the special flag `start_sdk_server:=true` in the bringup launch file. But if you want to run it independently:
 
 To launch the node for the **joints, fans and kinematics** gRPC services:
 ```bash
-ros2 launch reachy_sdk_server reachy_sdk_server.launch.py
+ros2 run reachy_sdk_server reachy_sdk_server
 ```
 
 To launch the node for the **cameras view and zoom** gRPC services *(full/starter kit only)*:
 ```bash
-ros2 launch reachy_sdk_server camera_server.launch.py
+ros2 run reachy_sdk_server camera_server
 ```
 
-To launch **all** nodes for gRPC services:
-```bash
-ros2 launch reachy_sdk_server reachy_camera_sdk_server.launch.py
-```
+> Note: For the servers to work, the required ROS services must be already launched. The easier way is via the bringup launch file.
 
-> Note: For the servers to work, the required ROS services must be already launched. `reachy_sdk_server` requires all kinematics and controllers ROS nodes (for joints and cameras). 
-
-{{< alert icon="💡" text="At this level, joints angles are handled in radians." >}}
 
 To launch the node for the **mobile base** gRPC services *(mobile kit only)*:
 ```bash

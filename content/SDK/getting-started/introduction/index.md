@@ -51,12 +51,12 @@ To know if the SDK is the right option, the TL;DR here would be something like:
 
 If you are interested in tele-operation and want to control Reachy via VR controllers, you can directly use our Unity VR App. More information on the [dedicated section]({{< ref "VR/introduction/introduction" >}}).
 
-### ROS2 Foxy packages
+### ROS2 Humble packages
 
-Reachy runs on [ROS2 Foxy](https://docs.ros.org/en/foxy/index.html). ROS is a Robotic Operating System, it offers a huge variety of compatible algorithms and hardware drivers. Yet, if you are not familiar with ROS, the beginning can be a bit overwhelming. 
+Reachy runs on [ROS2 Humble](https://docs.ros.org/en/humble/index.html). ROS is a Robotic Operating System, it offers a huge variety of compatible algorithms and hardware drivers. Yet, if you are not familiar with ROS, the beginning can be a bit overwhelming. 
 
 The embedded NUC computer comes with ROS2 and Reachy specific packages already installed and running. They provide full access to Reachy (lower-level than the SDK). You can:
-- get the */joint_state* and publish joint goals
+- get the *joint states* and *forward position controllers*
 - use *Rviz*
 - subscribe to various sensor topic (camera, force sensor, etc)
 - access client for IK/FK

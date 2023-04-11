@@ -33,10 +33,6 @@ Check the [Quick debug]({{< ref "help/debug" >}}) section.
 This means the motor has overheat and needs to cooldown. Turn the robot off, wait for it to cooldown and turn it on again.
 {{% /expand %}}
 
-{{% expand "> One of Reachy's module blue led is blinking" %}}
-This means the module encounter an issue (safety shutdown, incorrect instruction, etc.). You need to turn the robot off and on again to restart the module. For more information on what the blue led means, check the [dedicated page]({{< ref "help/system/orbita-blue-led" >}}). 
-{{% /expand %}}
-
 {{% expand "> Reachy's head doesn't look straight when asked." %}}
 You need to start the robot with the head in a position close to straight when starting the robot. Indeed, Orbita's position encoder only covers part of the whole motion range. We use this starting position to recalibrate the absolute position.
 {{% /expand %}}
@@ -51,7 +47,7 @@ Check the page [Reachy's computer is not running]({{< ref "help/system/computer-
 - If not, you will need to have a computer screen plugged to Reachy using an HDMI cable. 
 To view the left camera, in a terminal in Reachy's computer:
 ```bash
-python3 python3 ~/reachy_ws/src/reachy_controllers/examples/view_cam.py left open_cv
+python3 ~/reachy_ws/src/reachy_2023/camera_controllers/examples/view_cam.py left open_cv
 ```
 {{% /expand %}}
 
@@ -63,10 +59,6 @@ reachy.left_camera.start_autofocus()
 ```
 
 If the autofocus did not work, you can learn how to perform the focus manually with [this page]({{< ref "help/system/manual-focus" >}}).
-{{% /expand %}}
-
-{{% expand "> Can I control Orbita's fan? "%}}
-Orbita's fan is managed automatically based on temperatures limits set for Orbita in Reachy's software. You can't control it using Reachy's SDK.
 {{% /expand %}}
 
 {{% expand "> I connected a computer screen to Reachy, but I can't see any image." %}}

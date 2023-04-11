@@ -19,7 +19,7 @@ Reachy's SDK Server might not work due to a motor that have been disconnected du
 First of all, you need to stop the service running. If you have not modified the default service, open a terminal and enter:
 
 ```bash
-sudo systemctl stop reachy_sdk_server.service
+systemctl --user stop reachy_sdk_server.service
 ```
 
 ## Running the discovery
@@ -29,8 +29,8 @@ Then you can run the discovery python script to detect the connected motors.
 **Make sure that the motors are turned on using the power switch in Reachy's back**.
 
 ```bash
-cd ~/dev/reachy_pyluos_hal
-python3 -m reachy_pyluos_hal.discovery
+cd ~/reachy_ws/src/reachy_2023/reachy_utils
+python3 -m reachy_utils.discovery
 ```
 
 This python script will look at each robot's part (e.g head / left arm / right arm for a Reachy full kit or head / right arm for a Reachy starter kit right) and tell which motors it sees. This is useful to check whether there are missing motors, **most likely due to a disconnected cable**.
@@ -38,21 +38,16 @@ This python script will look at each robot's part (e.g head / left arm / right a
 For a Reachy full kit, the output typically looks like this:
 
 ```bash
-/dev/ttyUSB2
-{0: [LuosContainer(id=1, alias='gate', type='Gate')], 2: [LuosContainer(id=2, alias='dxl_30', type='DynamixelMotor'), LuosContainer(id=3, alias='dxl_31', type='DynamixelMotor')], 5: [LuosContainer(id=4, alias='orbita_40', type='ControllerMotor')]}
-
-/dev/ttyUSB1
-{0: [LuosContainer(id=1, alias='gate', type='Gate')], 2: [LuosContainer(id=2, alias='dxl_20', type='DynamixelMotor'), LuosContainer(id=3, alias='dxl_21', type='DynamixelMotor'), LuosContainer(id=4, alias='dxl_22', type='DynamixelMotor'), LuosContainer(id=5, alias='dxl_23', type='DynamixelMotor'), LuosContainer(id=6, alias='dxl_24', type='DynamixelMotor'), LuosContainer(id=7, alias='dxl_25', type='DynamixelMotor'), LuosContainer(id=8, alias='dxl_26', type='DynamixelMotor'), LuosContainer(id=9, alias='dxl_27', type='DynamixelMotor')], 11: [LuosContainer(id=10, alias='load_20', type='Load')]}
-
-/dev/ttyUSB0
-{0: [LuosContainer(id=1, alias='gate', type='Gate')], 2: [LuosContainer(id=2, alias='dxl_10', type='DynamixelMotor'), LuosContainer(id=3, alias='dxl_11', type='DynamixelMotor'), LuosContainer(id=4, alias='dxl_12', type='DynamixelMotor'), LuosContainer(id=5, alias='dxl_13', type='DynamixelMotor'), LuosContainer(id=6, alias='dxl_14', type='DynamixelMotor'), LuosContainer(id=7, alias='dxl_15', type='DynamixelMotor'), LuosContainer(id=8, alias='dxl_16', type='DynamixelMotor'), LuosContainer(id=9, alias='dxl_17', type='DynamixelMotor')], 11: [LuosContainer(id=10, alias='load_10', type='Load')]}
+TODO
 ```
 
 ## Analysing the discovery's output
 
+TODO
+
 ### Gates
 
-Each part of Reachy is independent and communicate with Reachy's internal computer through a gate.
+Each part of Reachy is independent and communicate with Reachy's internal computer through a USB.
 
 <p align="center">
   <img src="gate.jpg" alt="drawing" width="40%"/>
@@ -121,5 +116,5 @@ Doing a new discovery after each cable manipulation for missing motors or load s
 Once you have all the motors and load sensors you need in the discovery, you can restart Reachy's software.
 
 ```bash
-sudo systemctl start reachy_sdk_server.service
+systemctl start --user reachy_sdk_server.service
 ```

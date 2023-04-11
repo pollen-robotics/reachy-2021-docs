@@ -15,7 +15,7 @@ toc: true
 
 This section assumes that you went through the [Hello World]({{< ref "sdk/getting-started/hello-world" >}}) so that you know how to connect to the robot.
 
-Reachy 2021 has [two high quality cameras](https://www.kurokesu.com/shop/featured/CAMERA_C1_PRO) which can deliver up to 1080p at 30 fps. Each camera is equipped with a motorized zoom allowing to adapt the zoom and focus levels to the situation you're working on.
+Reachy 2023 has [two high quality cameras](https://www.kurokesu.com/shop/cameras/C2_USBC) which can deliver up to 1080p at 30 fps. Each camera is equipped with a motorized zoom allowing to adapt the zoom and focus levels to the situation you're working on.
 
 Each camera can be accessed separately with *reachy.left_camera* and *reachy.right_camera*.
 
@@ -60,16 +60,16 @@ If reachy_sdk_server, the ROS2 server for Reachy SDK, is running.
 
 In a terminal:
 ```bash
-$ python3 ~/reachy_ws/src/reachy_controllers/examples/view_cam.py "camera_you_want" ros
+$ python3 ~/reachy_ws/src/reachy_2023/camera_controllers/examples/view_cam.py "camera_you_want" ros
 ```
 For example, if you want to visualize the left camera:
 ```bash
-$ python3 ~/reachy_ws/src/reachy_controllers/examples/view_cam.py left ros
+$ python3 ~/reachy_ws/src/reachy_2023/camera_controllers/examples/view_cam.py left ros
 ```
 
 If reachy_sdk_server is not running, you can work with opencv.
 ```bash
-$ python3 ~/reachy_ws/src/reachy_controllers/examples/view_cam.py left opencv
+$ python3 ~/reachy_ws/src/reachy_2023/camera_controllers/examples/view_cam.py left opencv
 ```
 
 > NOTE: This will only work if you are working directly on the robot with a computer screen plugged to it and not remotely.
