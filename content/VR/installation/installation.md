@@ -15,7 +15,7 @@ toc: true
 
 ## On the robot
 
-Reachy 2021 is already fully compatible with the teleoperation application. You do not have to install anything else on it.
+Reachy 2023 is already fully compatible with the teleoperation application. You do not have to install anything else on it.
 
 ## On the Windows computer
 

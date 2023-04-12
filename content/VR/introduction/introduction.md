@@ -23,4 +23,4 @@ You can also **manipulate objects** remotely controlling Reachy's grippers with 
 
 Finally, animate Reachy's antennas to **share emotions** with remote people thanks to predefined antennas movements you can select.  
 
-{{< alert icon="💡" text="All Reachy 2021 kits (Arm, Starter or Full kit) can be controlled using the VR teleoperation application, with the functionalities corresponding to the robot configuration." >}}
+{{< alert icon="💡" text="All Reachy 2023 kits (Arm, Starter or Full kit) can be controlled using the VR teleoperation application, with the functionalities corresponding to the robot configuration." >}}

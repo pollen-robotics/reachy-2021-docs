@@ -211,7 +211,7 @@ reachy.r_arm.r_shoulder_pitch.pid
 If you are familiar with control theory, you'll know what it represents, if not don't worry just ignore it!
 
 ### From the force sensor
-In the 2021 version of Reachy, only one force sensor is used per arm and it is placed in the gripper to determine if the gripper has an object in it or not.
+In the 2023 version of Reachy, only one force sensor is used per arm and it is placed in the gripper to determine if the gripper has an object in it or not.
 
 The force sensor is a 0.78kg micro load cell, it is placed in the arm's gripper as shown below
 

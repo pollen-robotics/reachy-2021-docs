@@ -13,7 +13,7 @@ weight: 120
 toc: true
 ---
 
-**Reachy 2021** is fully compatible with the **VR teleoperation application**. You do not need to install anything else on your robot. 
+**Reachy 2023** is fully compatible with the **VR teleoperation application**. You do not need to install anything else on your robot. 
 
 Please refer to the **teleoperation application documentation** for the [installation details]({{< ref "vr/installation/installation" >}}) on the remote computer.
 
