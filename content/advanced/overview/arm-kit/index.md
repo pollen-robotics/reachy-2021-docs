@@ -21,12 +21,11 @@ toc: true
 ## Reachy's arm
 
 <p align="center">
-<img src="arm_photo.png" alt="drawing" width="70%"/>
+<img src="arm_kit_elec.jpg" alt="drawing" width="70%"/>
 </p>
 
 (1) : 12V Power supply board (SMPS2Dynamixel)  
-(2) : Dynamixel control board  
-(3) : USB to serial board (Need to be connected to your computer)  
+(2) : USB to serial board (Need to be connected to your computer)  
 
 
 The arms specifications are available in section [Arm mechanical specifications]({{< ref "arm-specs" >}}).
