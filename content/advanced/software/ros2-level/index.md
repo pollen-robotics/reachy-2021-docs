@@ -17,6 +17,10 @@ Even if [gRPC clients]({{< ref "/advanced/software/presentation#grpc-clients" >}
 
 Reachy runs natively on [ROS2 Humble](https://docs.ros.org/en/humble/index.html). ROS stands for Robotic Operating System, it offers a huge variety of compatible algorithms and hardware drivers.
 
+<p align="center">
+  <img src="reachy-rviz.jpg" alt="drawing" width="90%"/>
+</p>
+
 The embedded NUC computer comes with ROS2 and Reachy specific packages already installed and running. They provide full access to Reachy. You can:
 - get the */joint_states* and */dynamic_joint_states*
 - use *Rviz* to visualize your robot (either real or simulated)
