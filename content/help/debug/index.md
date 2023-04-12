@@ -78,7 +78,7 @@ Reachy is equipped with a force sensor in each gripper connected to Reachy's com
 #### Camera opening failed
 Sometimes, Reachy's cameras cannot be accessed correctly by Reachy's computer. With a computer screen connected to Reachy's back using an HDMI cable, you can check whether the camera reading is working or not.
     
-A [python script](https://github.com/pollen-robotics/reachy_controllers/blob/master/examples/view_cam.py) is available to view the camera feed. In a terminal in Reachy's computer:
+A [python script](https://github.com/pollen-robotics/reachy_2023/camera_controllers/blob/develop/examples/view_cam.py) is available to view the camera feed. In a terminal in Reachy's computer:
 
 ```bash
 $ systemctl --user stop reachy_sdk_server.service

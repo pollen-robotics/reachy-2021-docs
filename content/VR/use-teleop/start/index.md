@@ -131,5 +131,3 @@ Go to the help menu:
 Switch mobility to off on the button located at the bottom left  
 {{< img alt="Mobility button" src="mobility-button.png" width="600px" >}}
 {{% /expand %}}
-
-{{< my-button link="/vr/use-teleop/old-start/" label="See legacy version" >}}

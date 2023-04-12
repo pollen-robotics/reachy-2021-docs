@@ -32,6 +32,8 @@ You have two buttons behind the robot:
 
 ## Arm kit
 
+TODO: update 
+
 Plug the power supply on your arm on element (1):
 
 <p align="center">

@@ -72,5 +72,3 @@ Several elements can make the mobile base unreactive to your inputs.
 |Mobile base is declared and mobility services are available|No mobile base is declared|
 |----------------------|------------------------------|
 |{{< img alt="Mobile base services on" src="mobile-base.png" width="600px" >}}|{{< img alt="No mobile base" src="check-state.png" width="600px" >}}|
-
-{{< my-button link="/vr/problem/old-debug/" label="See legacy debug section" >}}

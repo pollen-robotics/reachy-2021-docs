@@ -87,17 +87,17 @@ cd ~/reachy_ws/src
 git clone https://github.com/pollen-robotics/reachy_2023.git
 ```
 
-Once everything cloned in your ROS2 workspace, build the packages:
+Once everything cloned in your ROS2 workspace, install the dependencies and build the packages:
 ```bash
 cd ~/reachy_ws
+bash ./src/reachy_2023/dependencies.sh
+pip3 install -r ./src/reachy_2023/requirements.txt
 colcon build --symlink-install
 ```
 
 ## Install Reachy's Python packages
 
-***We recommend working in a [virtual environment](https://virtualenvwrapper.readthedocs.io/en/latest/) to install Reachy's Python packages.***
-
-### Dependencies
+### Other ependencies
 Some of Reachy's Python packages have dependencies that you should install. The dependencies are *numpy, scipy, pyquaternion, sklearn, pykdl*.
 * Using pip install:
 ```bash
@@ -105,10 +105,6 @@ pip3 install numpy
 pip3 install scipy
 pip3 install pyquaternion
 pip3 install sklearn
-```
-* Using apt install:
-```bash
-sudo apt install python3-pykdl
 ```
 
 We also recommend to install the *jupyter* and *matplotlib* libraries.

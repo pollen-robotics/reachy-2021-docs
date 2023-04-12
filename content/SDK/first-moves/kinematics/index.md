@@ -57,9 +57,17 @@ The **kinematic model** describes the motion of a robot in mathematical form wit
 
 We have defined the whole kinematic model of the arm. This means the translation and rotation required to go from one joint to the next one. On a right arm equipped with a force gripper this actually look like this:
 
-<p align="center">
-  <img src="right_arm_kinematic_model.png" alt="drawing" width="50%"/>
-</p>
+|Motor|Translation|Rotation|
+|-----|-----------|--------|
+|r_shoulder_pitch|(0, -0.019, 0)|(0, 1, 0)
+|r_shoulder_roll|(0, 0, 0)|(1, 0, 0)
+|r_arm_yaw|(0, 0, 0)|(0, 0, 1)
+|r_elbow_pitch|(0, 0, -0.28)|(0, 1, 0)
+|r_forearm_yaw|(0, 0, 0)|(0, 0, 1)
+|r_wrist_pitch|(0, 0, -0.25)|(0, 1, 0)
+|r_wrist_roll|(0, 0, -0.0325)|(1, 0, 0)
+|r_gripper|(0, -0.01, -0.075)|(0, 0, 0)
+
 
 To use and understand the kinematic model, you need to know how Reachy coordinate system is defined (from Reachy's perspective), see below:
 

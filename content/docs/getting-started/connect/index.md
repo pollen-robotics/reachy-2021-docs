@@ -39,34 +39,49 @@ ros2 topic list
 ### Full/Starter kit topic list
 You should see the following list:
 ```bash
-/fan_states
-/force_sensors
-/joint_goals
+/antenna_forward_position_controller/commands
+/antenna_forward_position_controller/transition_event
+/diagnostics
+/dynamic_joint_commands
+/dynamic_joint_states
+/forward_fan_controller/commands
+/forward_fan_controller/transition_event
+/forward_pid_controller/commands
+/forward_pid_controller/transition_event
+/forward_speed_limit_controller/commands
+/forward_speed_limit_controller/transition_event
+/forward_torque_controller/commands
+/forward_torque_controller/transition_event
+/forward_torque_limit_controller/commands
+/forward_torque_limit_controller/transition_event
+/gripper_forward_position_controller/commands
+/gripper_forward_position_controller/transition_event
+/grippers/commands
+/head/averaged_target_pose
+/head/target_pose
+/joint_commands
+/joint_state_broadcaster/transition_event
 /joint_states
-/joint_temperatures
-/left_image
-/parameters_events
-/right_image
+/kinematics/transition_event
+/l_arm/averaged_target_pose
+/l_arm/target_pose
+/l_arm_forward_position_controller/commands
+/l_arm_forward_position_controller/transition_event
+/left_image/image_raw/compressed
+/neck_forward_position_controller/commands
+/neck_forward_position_controller/transition_event
+/parameter_events
+/r_arm/averaged_target_pose
+/r_arm/target_pose
+/r_arm_forward_position_controller/commands
+/r_arm_forward_position_controller/transition_event
+/right_image/image_raw/compressed
 /robot_description
 /rosout
 /tf
 /tf_static
 ```
 
-### Arm kit topic list
-You should see the following list:
-```bash
-/fan_states
-/force_sensors
-/joint_goals
-/joint_states
-/joint_temperatures
-/parameters_events
-/robot_description
-/rosout
-/tf
-/tf_static
-```
 
 ## Check the topics are correctly updated
 On a terminal on the computer, and enter:

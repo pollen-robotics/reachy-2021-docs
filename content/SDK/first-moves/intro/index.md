@@ -46,7 +46,6 @@ reachy.fans
 	<Fan name="r_shoulder_fan" state="off">
 	<Fan name="r_elbow_fan" state="off">
 	<Fan name="r_wrist_fan" state="off">
-	<Fan name="neck_fan" state="off">
 	<Fan name="l_antenna_fan" state="off">
 	<Fan name="r_antenna_fan" state="off">
 >
@@ -72,9 +71,11 @@ Contains the three joints composing the Orbita actuator along with methods for i
 ```python
 reachy.head
 >>> <Head joints=<Holder
-	<Joint name="neck_disk_top" pos="-21.58" mode="compliant">
-	<Joint name="neck_disk_middle" pos="-79.71" mode="compliant">
-	<Joint name="neck_disk_bottom" pos="-59.27" mode="compliant">
+	<Joint name="neck_roll" pos="0.00" mode="compliant">
+	<Joint name="neck_pitch" pos="0.00" mode="compliant">
+	<Joint name="neck_yaw" pos="0.00" mode="compliant">
+	<Joint name="l_antenna" pos="0.00" mode="compliant">
+	<Joint name="r_antenna" pos="0.00" mode="compliant">
 >>
 ```
 
@@ -103,9 +104,9 @@ reachy.joints
 	<Joint name="r_gripper" pos="19.50" mode="compliant">
 	<Joint name="l_antenna" pos="140.32" mode="compliant">
 	<Joint name="r_antenna" pos="79.03" mode="compliant">
-	<Joint name="neck_disk_top" pos="-21.58" mode="compliant">
-	<Joint name="neck_disk_middle" pos="-79.71" mode="compliant">
-	<Joint name="neck_disk_bottom" pos="-59.27" mode="compliant">
+	<Joint name="neck_roll" pos="-21.58" mode="compliant">
+	<Joint name="neck_pitch" pos="-79.71" mode="compliant">
+	<Joint name="neck_yaw" pos="-59.27" mode="compliant">
 >
 ```
 

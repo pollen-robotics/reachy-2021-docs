@@ -32,7 +32,6 @@ reachy.fans
 	<Fan name="r_shoulder_fan" state="off">
 	<Fan name="r_elbow_fan" state="off">
 	<Fan name="r_wrist_fan" state="off">
-	<Fan name="neck_fan" state="off">
 	<Fan name="l_antenna_fan" state="off">
 	<Fan name="r_antenna_fan" state="off">
 >
@@ -56,7 +55,6 @@ for fan in reachy.fans.values():
 <Fan name="r_shoulder_fan" state="off">
 <Fan name="r_elbow_fan" state="off">
 <Fan name="r_wrist_fan" state="off">
-<Fan name="neck_fan" state="off">
 <Fan name="l_antenna_fan" state="off">
 <Fan name="r_antenna_fan" state="off">
 ```

@@ -58,7 +58,3 @@ hidden: true
 |**Controller left position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
 |**Controller right position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
 |**Headset orientation**|**During teleoperation:** Reachy's head orientation|
-
-
-
-{{< my-button link="/vr/use-teleop/old-commands/" label="See legacy version" >}}
