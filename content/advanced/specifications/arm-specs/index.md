@@ -42,7 +42,7 @@ Reachy's arm offers 7 degrees of movement + 1 for the gripper
 |forearm_yaw|-100, 100|14| |forearm_yaw|-100, 100|24|
 |wrist_pitch|-45, 45|15| |wrist_pitch|-45, 45|25|
 |wrist_roll|-55, 35|16| |wrist_roll|-35, 55|26|
-|gripper|-69, 20|17| |gripper|-20, 69|27|
+|gripper|-50, 25|17| |gripper|-25, 50|27|
 
 | Motors|
 |---------|
