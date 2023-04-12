@@ -1,5 +1,5 @@
 ---
-title: "Hello World"
+title: "Hello World App"
 description: "The Hello World application defines an idle mode for Reachy which can run autonomously."
 lead: ""
 date: 2020-10-06T08:48:57+00:00
