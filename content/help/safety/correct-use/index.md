@@ -48,7 +48,7 @@ It cannot be controlled with code, setting a new target position will have no ef
     Reachy's right arm motors resisting in stiff mode
 </p>
 
-Check out the [Python SDK section](https://docs.pollen-robotics.com/sdk/first-moves/arm/#from-the-joints) on how to switch between the two modes.
+Check out the [Python SDK section](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/arm/#from-the-joints) on how to switch between the two modes.
 
 
 > #### :rotating_light: What you need to keep in mind

@@ -34,4 +34,4 @@ The LED can have three behaviors:
 
 The limits for each disk are dependent of each other. So, unfortunately there is no simple way to know if you reached the limit. The best option is to check whether the motor reached the target position you set or not.
 
-To know that, refer to [Reachy's SDK documentation](https://docs.pollen-robotics.com/sdk/first-moves/head/).
+To know that, refer to [Reachy's SDK documentation](https://pollen-robotics.github.io/reachy-2021-docs/sdk/first-moves/head/).

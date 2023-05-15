@@ -10,7 +10,7 @@ toc: true
 hidden: true
 ---
 
-{{< warning icon="👉🏾" text="Before starting teleoperating Reachy, please make sure you read the  <b><a href=\"https://docs.pollen-robotics.com/vr/use-teleop/best-practice/\">Best Practice</a></b>" >}}
+{{< warning icon="👉🏾" text="Before starting teleoperating Reachy, please make sure you read the  <b><a href=\"https://pollen-robotics.github.io/reachy-2021-docs/vr/use-teleop/best-practice/\">Best Practice</a></b>" >}}
 
 ## In brief
 

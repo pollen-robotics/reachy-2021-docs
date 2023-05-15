@@ -28,7 +28,7 @@ For example in the photo below showing the back of Reachy's wrist, we can see th
 
 ## How can I know if a cable is disconnected?
 
-If you can't connect to Reachy using its [Python SDK](https://docs.pollen-robotics.com/sdk/getting-started/introduction/) or the [VR Teleoperation app'](https://docs.pollen-robotics.com/vr/introduction/introduction/), there might be an issue of motor connection.
+If you can't connect to Reachy using its [Python SDK](https://pollen-robotics.github.io/reachy-2021-docs/sdk/getting-started/introduction/) or the [VR Teleoperation app'](https://pollen-robotics.github.io/reachy-2021-docs/vr/introduction/introduction/), there might be an issue of motor connection.
 
 To check which motors are actually detected, use the [discovery tool]({{< ref "help/system/discovery-tool" >}}). It will tell you the motors that the system can see and you would be able to check the missing ones. If one motor is disconnected, the following motors in the arm's chain will not be detected. 
 

@@ -64,7 +64,7 @@ The connection is not fast enough between the robot and your computer, or anothe
 
 ## The mobile base doesn't move
 Several elements can make the mobile base unreactive to your inputs.  
-* If you are too close to a wall or object, the LIDAR anti-collision safety unables the mobile base to go closer to the obstacle. The mobile base will therefore not move in this direction, but you can still go in other directions. [More information on the anti-collision safety](https://docs.pollen-robotics.com/sdk/mobile-base/safety/)
+* If you are too close to a wall or object, the LIDAR anti-collision safety unables the mobile base to go closer to the obstacle. The mobile base will therefore not move in this direction, but you can still go in other directions. [More information on the anti-collision safety](https://pollen-robotics.github.io/reachy-2021-docs/sdk/mobile-base/safety/)
 * The mobility button has been disabled: to check the status of the mobility button, go in the help panel in the menu (welcome page). Set the mobility to ON.
 {{< img alt="Mobility button" src="mobility-button.png" width="600px" >}}
 * The mobility services are unavailable: check the status of the service in the help panel of the menu. The status of the mobility services is displayed in the Connection Status section. 

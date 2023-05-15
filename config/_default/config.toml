@@ -1,4 +1,4 @@
-baseurl = "https://docs.pollen-robotics.com/"
+baseurl = "https://pollen-robotics.github.io/reachy-2021-docs/"
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
