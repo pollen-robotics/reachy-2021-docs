@@ -15,9 +15,9 @@ toc: true
 
 ## Discord
 
-Join **[our discord](https://discord.gg/Kg3mZHTKgs)** if you have any questions or simply want to join the discussion!
+Join **[our discord](https://discord.gg/vnYD6GAqJR)** if you have any questions or simply want to join the discussion!
 
-{{< alert icon="👉" text="Any questions relative to your development with Reachy?</br><b>Go to <a href=\"https://discord.gg/Kg3mZHTKgs\" target=\"_blank\" rel=\"noopener noreferrer\">Pollen Community on Discord</a></b>" >}}
+{{< alert icon="👉" text="Any questions relative to your development with Reachy?</br><b>Go to <a href=\"https://discord.gg/vnYD6GAqJR\" target=\"_blank\" rel=\"noopener noreferrer\">Pollen Community on Discord</a></b>" >}}
 
 
 ## Pollen Robotics support

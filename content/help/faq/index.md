@@ -13,7 +13,7 @@ weight: 110
 toc: true
 ---
 Non exhaustive list of common questions from Reachy's users. 
-If you don't see yours in it, don't hesitate to drop a message on our support channel on [Discord](https://discord.gg/Kg3mZHTKgs)!
+If you don't see yours in it, don't hesitate to drop a message on our support channel on [Discord](https://discord.gg/vnYD6GAqJR)!
 
 <br/>
 

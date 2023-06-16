@@ -8,7 +8,7 @@ draft: false
 images: ["reachy.png"]
 ---
 
-{{< my-button-new-page link="https://discord.gg/Kg3mZHTKgs" label="Join Pollen Community on Discord!" >}}  
+{{< my-button-new-page link="https://discord.gg/vnYD6GAqJR" label="Join Pollen Community on Discord!" >}}  
 
 <br />  
 

@@ -130,4 +130,4 @@ $ sudo systemctl stop reachy_sdk_server.service
 $ bash ~/reachy_ws/src/reachy_sdk_server/launch_all.bash
 ```
 
-Don't hesitate to send the output of *launch_all.bash* on the support channel of [Pollen Community](https://discord.gg/Kg3mZHTKgs) on Discord, a team member of Pollen will help you debug it.
+Don't hesitate to send the output of *launch_all.bash* on the support channel of [Pollen Community](https://discord.gg/vnYD6GAqJR) on Discord, a team member of Pollen will help you debug it.
