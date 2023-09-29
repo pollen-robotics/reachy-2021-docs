@@ -19,10 +19,12 @@ The Python SDK is a pure Python library. The installation should thus be rather 
 
 We recommend to use [virtual environment](https://docs.python.org/3/tutorial/venv.html) for your development. They make the installation simple and avoid compatibility issues. They also come with their [pip](https://pip.pypa.io/en/stable/) command.
 
+⚠️ Make sure that you have the 0.5.4 version of reachy-sdk for your Reachy 2021. Versions subsequent to this one are only compatible with Reachy 2023! ⚠️
+
 ### From PyPi
 
 ```bash
-pip3 install reachy-sdk
+pip3 install reachy-sdk==0.5.4
 ```
 
 ### From the source
